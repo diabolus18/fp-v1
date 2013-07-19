@@ -1,12 +1,12 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 15:13:35
-         compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\preferences\helpers\options\options.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3077751dc37f24d3565-31226594%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 15:13:45
+         compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\stores\helpers\options\options.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2489251e93b892e6797-12609202%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4e311bd2e81288ca9e7587cf0e97ff0cd5c6a3da' => 
+    '79a92ad424112004541d796161439565a44d6d16' => 
     array (
-      0 => 'C:\\wamp\\www\\fp-v1\\admin0057\\themes\\default\\template\\controllers\\preferences\\helpers\\options\\options.tpl',
+      0 => 'C:\\wamp\\www\\fp-v1\\admin0057\\themes\\default\\template\\controllers\\stores\\helpers\\options\\options.tpl',
       1 => 1374231320,
       2 => 'file',
     ),
@@ -17,12 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3077751dc37f24d3565-31226594',
+  'nocache_hash' => '2489251e93b892e6797-12609202',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51dc37f2dcb404_60091442',
   'variables' => 
   array (
     'show_toolbar' => 0,
@@ -53,8 +51,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'hookName' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e93b89b0df42_93679601',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51dc37f2dcb404_60091442')) {function content_51dc37f2dcb404_60091442($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51e93b89b0df42_93679601')) {function content_51e93b89b0df42_93679601($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_replace')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.replace.php';
 ?>
 
@@ -150,11 +150,6 @@ $_smarty_tpl->tpl_vars['field']->_loop = true;
 					
 						<div class="margin-form">
 					
-	<?php if ($_smarty_tpl->tpl_vars['field']->value['type']=='disabled'){?>
-		<?php echo $_smarty_tpl->tpl_vars['field']->value['disabled'];?>
-
-	<?php }else{ ?>
-		
 						<?php if ($_smarty_tpl->tpl_vars['field']->value['type']=='select'){?>
 							<?php if ($_smarty_tpl->tpl_vars['field']->value['list']){?>
 								<select name="<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
@@ -407,8 +402,6 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 						<?php if (isset($_smarty_tpl->tpl_vars['field']->value['hint'])){?><span class="hint" name="help_box"><?php echo $_smarty_tpl->tpl_vars['field']->value['hint'];?>
 <span class="hint-pointer">&nbsp;</span></span><?php }?>
 					
-	<?php }?>
-
 					<?php if (isset($_smarty_tpl->tpl_vars['field']->value['desc'])){?><p class="preference_description"><?php echo $_smarty_tpl->tpl_vars['field']->value['desc'];?>
 </p><?php }?>
 					<?php if ($_smarty_tpl->tpl_vars['field']->value['is_invisible']){?><p class="warn"><?php echo smartyTranslate(array('s'=>'You can\'t change the value of this configuration field in the context of this shop.'),$_smarty_tpl);?>
@@ -468,5 +461,43 @@ if (!empty($_capture_buffer)) {
 	<?php }?>
 </form>
 
+
+<script type="text/javascript">
+    function ajaxStoreStates(id_state_selected)
+{
+    $.ajax({
+	url: "ajax.php",
+	cache: false,
+	data: "ajaxStates=1&id_country="+$('#PS_SHOP_COUNTRY_ID').val() + "&id_state=" + $('#PS_SHOP_STATE_ID').val(),
+	success: function(html)
+	{
+	    if (html == 'false')
+	    {
+		$("#conf_id_PS_SHOP_STATE_ID").fadeOut();
+		$('#PS_SHOP_STATE_ID option[value=0]').attr("selected", "selected");
+	    }
+	    else
+	    {
+		$("#PS_SHOP_STATE_ID").html(html);
+		$("#conf_id_PS_SHOP_STATE_ID").fadeIn();
+		$('#PS_SHOP_STATE_ID option[value=' + id_state_selected + ']').attr("selected", "selected");
+	    }
+	}
+    });
+}
+
+$(document).ready(function(){
+    <?php if (isset($_smarty_tpl->tpl_vars['categoryData']->value['fields']['PS_SHOP_STATE_ID']['value'])){?>
+    if ($('#PS_SHOP_COUNTRY_ID') && $('#PS_SHOP_STATE_ID'))
+    {
+	ajaxStoreStates(<?php echo $_smarty_tpl->tpl_vars['categoryData']->value['fields']['PS_SHOP_STATE_ID']['value'];?>
+);
+	$('#PS_SHOP_COUNTRY_ID').change(function() {
+	    ajaxStoreStates();
+	});
+    }
+    <?php }?>
+});
+</script>
 
 <?php }} ?>

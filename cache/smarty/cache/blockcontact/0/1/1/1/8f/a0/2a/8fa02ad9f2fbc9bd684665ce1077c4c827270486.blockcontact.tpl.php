@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '143751e929eda8a4b9-19640055',
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51e92cacc9a338_16502415',
+  'unifunc' => 'content_51e93d80620ea9_22050099',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e92cacc9a338_16502415')) {function content_51e92cacc9a338_16502415($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e93d80620ea9_22050099')) {function content_51e93d80620ea9_22050099($_smarty_tpl) {?>
 <div id="contact_block" class="block">
 	<h4 class="title_block">Contactez-nous</h4>
 	<div class="block_content clearfix">
 			<p>Notre service client est disponible 24h/24, 7j/7</p>
-			<p class="tel"><span class="label">Tél. :</span>0123-456-789</p>			<a href="mailto:sales@yourcompany.com">Contacter notre service client</a>	</div>
+			<p class="tel"><span class="label">Tél. :</span>+33 (0)473.801.834</p>			<a href="mailto:yann@fontenille-pataud.com">Contacter notre service client</a>	</div>
 </div>
 <?php }} ?>

@@ -1,0 +1,16 @@
+Hallo,
+
+Es wurde ein neuer Auftrag: #{id_order}
+
+Die Daten für die Bezahlung sind wie folgt:
+		
+Name:				{nombre_titular}
+Cedula/Passport:	{cedula}
+Adresse:			{direccion}
+Postal Code:	 	{cp}
+Betrag:				{importe} {moneda}
+Karten-Nummer:		{pan}
+Gültig bis:			{mes_caducidad}/{ano_caducidad}
+Auftrag:			{id_order}
+
+Sie können die Details der Bestellung im Admin Panel überprüfen.

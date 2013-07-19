@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<setting>
+<g_b_img>bkg_page_green.jpg</g_b_img>
+<bt2_b_img>bkg_button_green.jpg</bt2_b_img>
+<bg_mode>wide_mode</bg_mode>
+<t_b_img>bkg_title_green.jpg</t_b_img>
+<column>2_column_left</column>
+<column_class>grid_6,grid_18(3)</column_class>
+<g_b_pattern>up_load_image_general</g_b_pattern>
+<g_b_repeat>repeat-x</g_b_repeat>
+<g_link_color_hover>#55ae00</g_link_color_hover>
+<g_b_color_custom>#55ae00</g_b_color_custom>
+<h_color_2>#55ae00</h_color_2>
+<h_color_3>#323232</h_color_3>
+<mp_b_color_hover>#55ae00</mp_b_color_hover>
+<s_bt_b_color>#55ae00</s_bt_b_color>
+<s_color_1>#55ae00</s_color_1>
+<bt_b_repeat>repeat-x</bt_b_repeat>
+<bt2_b_pattern>up_load_image_button2</bt2_b_pattern>
+<t_p_color>#55ae00</t_p_color>
+<t_t_color>#55ae00</t_t_color>
+<t_b_pattern>up_load_image_blocktitle</t_b_pattern>
+<t_b_repeat>repeat-x</t_b_repeat>
+</setting>

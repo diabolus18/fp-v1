@@ -1,0 +1,38 @@
+div.addresses{position:relative;width:100%}
+div.addresses p{margin-bottom:10px;width:100%;clear:both;display:block}
+div.addresses p label{text-transform:none}
+div.addresses p.address_delivery label,div.addresses p#address_invoice_form label{float:none;font-weight:700;line-height:25px;width:100%;margin:0;display:block}
+div.addresses p select{width:236px;}
+div.addresses p.checkbox{width:auto;margin-bottom:20px}
+div.addresses #address_invoice_form{margin-left:0;margin-top:10px;padding-top:0!important;width:100%;overflow:hidden}
+div.addresses p.address_add, div.addresses p#address_invoice_form{padding-bottom:20px;margin-bottom:20px;}
+div.addresses #address_invoice_form a.button_large,div.addresses .address_add a.button_large{float:left;margin-left:0!important; background: url("../img/bkg_add_cart.jpg") repeat-x scroll 0 0 transparent; border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    color: #323232;}
+div.addresses h3{margin:0}
+div.addresses p.checkbox input{height:auto;margin-right:4px!important;vertical-align:-2px}
+div.addresses ul.item{clear:both}
+ul.address{float:left;list-style-image:none;list-style-position:outside;list-style-type:none;margin-bottom:7px;position:relative;width:300px}
+ul#address_delivery.address{margin-right:70px}
+ul.address li{line-height:20px;text-transform:none}
+li.address_title{  background: url("../img/bkg_title_block.jpg") repeat-x scroll left bottom transparent;
+    color: #397ABD;
+    font: 700 14px/15px "Roboto Condensed",Helvetica,arial;
+    margin-bottom: 15px;
+    padding: 0 0 7px;
+    text-transform: uppercase!important;}
+li.address_name,li.address_firstname,li.address_lastname{font-weight:700;color:#323232}
+span.address_name,span.address_firstname,span.address_lastname,span.address_update a,span.address_delete a{color:#4c4c4c}
+span.address_name,span.address_firstname,span.address_lastname,span.address_company{font-weight:700}
+li.address_update,li.address_delete{color:#28d0e9;font-weight:700;margin-top:10px}
+.addresses #ordermsg{float:left;padding-top:5px;width:100%}
+.addresses #ordermsg p{padding-left:0}
+.addresses #ordermsg .textarea textarea{height:100px;width:90%;}
+li.address_update a,li.address_delete a,l li.address_update a,li.address_delete a{font-weight:700;text-transform:none;color:#397abd}
+p.cart_navigation.submit{float:left;width:100%}
+p.cart_navigation.submit a.button{float:left;background: url("../img/bkg_add_cart.jpg") repeat-x scroll 0 0 transparent; border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    color: #323232;}
+p.cart_navigation.submit a.button:hover{}
+
+

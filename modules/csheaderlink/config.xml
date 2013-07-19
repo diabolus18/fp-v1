@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>csheaderlink</name>
+            <displayName><![CDATA[CS Header links block]]></displayName>
+            <version><![CDATA[0.1]]></version>
+            <description><![CDATA[Adds a block that displays information about the customer.]]></description>
+            <author><![CDATA[codespot]]></author>
+            <tab><![CDATA[Orther Module]]></tab>
+            <is_configurable>0</is_configurable>
+            <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+        </module>

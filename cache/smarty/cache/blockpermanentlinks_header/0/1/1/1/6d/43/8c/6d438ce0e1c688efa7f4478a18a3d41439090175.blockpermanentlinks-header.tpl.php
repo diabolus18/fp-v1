@@ -12,22 +12,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'nocache_hash' => '2123251d18c400e1f79-50384018',
   'cache_lifetime' => 31536000,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51e920b8801b98_63109819',
-  'variables' => 
-  array (
-    'link' => 0,
-    'come_from' => 0,
-    'meta_title' => 0,
-  ),
+  'unifunc' => 'content_51e92cac9ef072_18448370',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e920b8801b98_63109819')) {function content_51e920b8801b98_63109819($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e92cac9ef072_18448370')) {function content_51e92cac9ef072_18448370($_smarty_tpl) {?>
 <!-- Block permanent links module HEADER -->
 <ul id="header_links">
 	<li id="header_link_contact"><a href="http://localhost/fp-v1/index.php?controller=contact" title="contact">contact</a></li>
 	<li id="header_link_sitemap"><a href="http://localhost/fp-v1/index.php?controller=sitemap" title="plan du site">plan du site</a></li>
 	<li id="header_link_bookmark">
-		<script type="text/javascript">writeBookmarkLink('http://localhost/fp-v1/index.php', 'Fontenille-Pataud', 'favoris');</script>
+		<script type="text/javascript">writeBookmarkLink('http://localhost/fp-v1/index.php?id_product=8&amp;controller=product', 'Sperone - Fontenille-Pataud', 'favoris');</script>
 	</li>
 </ul>
 <!-- /Block permanent links module HEADER -->

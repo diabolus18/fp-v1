@@ -1,0 +1,18 @@
+#center_column h1 {margin-bottom:20px}
+
+#my-account  #center_column .title_block  {
+	font-weight:700;
+	color:#397abd;text-transform:none;font-family:Helvetica,Arial, Verdana, sans-serif;
+}
+
+#center_column .myaccount_lnk_list {list-style-type:none;border-bottom:1px solid #d5d5d5;padding-bottom:20px;margin-bottom:20px;}
+#center_column .myaccount_lnk_list li {
+	line-height:17px;padding:10px 0;
+}
+#center_column .myaccount_lnk_list li  a{color:#969696;font-weight:700}
+#center_column .myaccount_lnk_list li  a:hover{color:#323232;text-decoration:underline}
+#center_column  .myaccount_lnk_list img.icon,
+p img.icon {
+	position:relative;vertical-align:middle;padding-right:7px
+}
+p a.home{float:left}

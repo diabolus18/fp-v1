@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<setting>
+<g_b_img>bkg_page_orange.jpg</g_b_img>
+<t_b_img>bkg_title_orange.jpg</t_b_img>
+<bg_mode>wide_mode</bg_mode>
+<column>2_column_left</column>
+<column_class>grid_6,grid_18(3)</column_class>
+<g_b_pattern>up_load_image_general</g_b_pattern>
+<g_b_repeat>repeat-x</g_b_repeat>
+<g_link_color_hover>#ff6000</g_link_color_hover>
+<g_b_color_custom>#ff7400</g_b_color_custom>
+<h_color_2>#ff6000</h_color_2>
+<h_color_3>#323232</h_color_3>
+<mp_b_color_hover>#ff7400</mp_b_color_hover>
+<s_bt_b_color>#ff6000</s_bt_b_color>
+<s_color_1>#ff6000</s_color_1>
+<p_price_color>#3485c6</p_price_color>
+<t_p_color>#ff6000</t_p_color>
+<t_t_color>#ff6000</t_t_color>
+<t_b_pattern>up_load_image_blocktitle</t_b_pattern>
+<t_b_repeat>repeat-x</t_b_repeat>
+</setting>

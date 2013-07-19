@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<setting>
+<g_b_img>bkg_page_dfault.jpg</g_b_img>
+<t_b_img>bkg_title_default.jpg</t_b_img>
+<bg_mode>wide_mode</bg_mode>
+<column>2_column_left</column>
+<column_class>grid_6,grid_18(3)</column_class>
+<g_b_pattern>up_load_image_general</g_b_pattern>
+<g_b_repeat>repeat-x</g_b_repeat>
+<g_link_color_hover>#397abd</g_link_color_hover>
+<g_color_1>#397abd</g_color_1>
+<g_b_color_custom>#397abc</g_b_color_custom>
+<h_color_2>#397abd</h_color_2>
+<h_color_3>#323232</h_color_3>
+<mp_b_color_hover>#397abd</mp_b_color_hover>
+<p_price_color>#d13e3b</p_price_color>
+<t_p_color>#397abd</t_p_color>
+<t_t_color>#397abd</t_t_color>
+<t_b_pattern>up_load_image_blocktitle</t_b_pattern>
+<t_b_repeat>repeat-x</t_b_repeat>
+</setting>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-01 16:05:03
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:39:36
          compiled from "C:\wamp\www\fp-v1\modules\gamification\views\templates\hook\notification.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1337151d18c8fe1b9f3-20253683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ae8051ba66f194105c387b9b227d63eec7dbc731' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\gamification\\views\\templates\\hook\\notification.tpl',
-      1 => 1372687248,
+      1 => 1374231329,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d18c8ff3d583_10792809',
   'variables' => 
   array (
     'current_id_tab' => 0,
@@ -26,8 +28,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c8ff3d583_10792809',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51d18c8ff3d583_10792809')) {function content_51d18c8ff3d583_10792809($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><script>

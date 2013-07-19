@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-05 15:02:11
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:39:44
          compiled from "C:\wamp\www\fp-v1\modules\gamification\views\templates\admin\gamification\helpers\view\filters.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:84551d6c3d3ebb217-55971618%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd94514427b8a3a2791ac42374235cde1b7ca9271' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\gamification\\views\\templates\\admin\\gamification\\helpers\\view\\filters.tpl',
-      1 => 1372687248,
+      1 => 1374231329,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d6c3d4021594_85268422',
   'variables' => 
   array (
     'type' => 0,
@@ -26,8 +28,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'level' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d6c3d4021594_85268422',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51d6c3d4021594_85268422')) {function content_51d6c3d4021594_85268422($_smarty_tpl) {?><div class="badges_filters">
 <?php if ($_smarty_tpl->tpl_vars['type']->value=='badges_feature'||$_smarty_tpl->tpl_vars['type']->value=='badges_achievement'){?>

@@ -1,0 +1,15 @@
+
+/*************** Block MANUFACTURER ***************/
+.blockmanufacturer li {display:block;padding:7px 0}
+.blockmanufacturer li.last {	border:none;}
+	.blockmanufacturer li a {
+		padding:0;text-transform:capitalize;
+	}
+	.blockmanufacturer li a:hover{color:#323232;text-decoration:none}
+
+
+.blockmanufacturer form {margin-top:10px;position:relative}
+.blockmanufacturer p {
+	padding:0;
+	text-align:center
+}

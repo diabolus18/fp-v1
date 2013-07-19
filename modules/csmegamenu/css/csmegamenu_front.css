@@ -1,0 +1,215 @@
+#menu {clear:both;padding: 0px;background-image: url(../img/bkg_menu.jpg);min-height:65px;background-repeat:repeat-x;background-position:left bottom;padding:0;margin-bottom:10px;}
+#menu ul {list-style: none;margin: 0;padding: 0;}
+#menu ul  li.menu_item{width:115px;position:relative;margin:0;padding:10px 0 0;display:inline-block;vertical-align:top;min-height:81px;}
+#menu ul  li.menu_item:hover{background:#397abd}
+#menu ul  li.menu_item.menu_first{padding-left:0}
+#menu ul  li.menu_item a{float:none;padding:0;color:#646464;font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;}	
+#menu ul  li.menu_item a.title_menu_parent span.icon_menu{display:block;margin-bottom:0;}
+#menu ul  li.menu_item a.title_menu_parent{text-align:center;display:block;padding:0 5px 6px;min-height:75px;}
+#menu ul  li.menu_item a.title_menu_parent:hover,#menu ul  li.menu_item:hover  a.title_menu_parent {color:#fff;text-decoration:none}
+#menu > ul > li:last-child{padding-right:0}
+#menu > ul > li ul > li{padding:5px 20px;display:block;width:auto;position:relative;z-index:20;}
+#menu > ul > li ul > li.parent{background: url(../img/bkg_arrow.png) no-repeat center right;}
+#menu > ul > li ul > li.parent:hover{z-index:100}
+#menu > ul  li > div.options_list,#menu > ul  li > div.sub_menu {
+	display: none;top:auto;border:1px solid #417fc0;
+	margin:0;background:#fff;
+	position: absolute;
+	z-index:100;
+	padding:20px 0;text-align:left;
+}
+#menu > ul  li > div.sub_menu{width:100%!important}
+#menu > ul > li > div {
+	display: none;}
+#menu > ul > li:hover > div {display: block;}
+#menu  ul ul > li.parent:hover div.sub_menu{left:100%;top:-21px;z-index:100;}
+#menu > ul li.menu_item > div a{
+	color: #646464;
+	line-height:16px;
+	text-decoration: none;text-transform:none;
+	display: block;
+	padding:0;
+	margin:0;
+	z-index: 20;height:auto;
+	position: relative;font:700 11px/15px arial;}
+#menu > ul li.menu_item > div a:hover{transition: all 0.5s ease 0s;color:#323232;text-decoration:underline;}
+#menu > ul > li > div > ul {
+	display: table-cell;
+}
+#menu > ul > li .options_list ul{float:left}
+
+#menu > ul > li div a.cat_parent{padding:7px 0 0;display:block;}
+#menu > ul > li div a.cat_parent img{display:block;margin-bottom:10px;max-width:100%}
+#menu > ul > li div a:hover,
+#menu > ul li.menu_item > div a:hover,#menu ul li .product_item a:hover {
+	color:#323232;text-decoration:underline;transition: all 0.5s ease 0s;
+}
+#menu > ul > li > div > ul > li > a {
+	color: #FFFFFF;
+}
+
+#menu .option ul li {position: relative}
+#menu ul li ul li{position:relative}
+#menu ul li ul li:hover > div.sub_menu{display:block}
+#menu ul li .div_static{margin:0;color:#202020;padding:0 20px}
+#menu ul li .div_static a{text-align:center;display:block;padding-bottom:10px}
+#menu ul li .div_static a img{max-width:100%}
+#menu ul li .div_static h3{padding-bottom:10px;}
+#menu ul li .div_static h3.title_2{margin-top:30px}
+#menu .column.product li.product_item p{color:#fff;padding-left:12px;}
+#menu ul li .out_cat_parent{display:block;padding:0 20px;text-align:left}
+#menu ul li .out_cat_parent a.ms_text1_color_normal,
+#menu ul li .div_static h5{color:#323232;font:700 12px/15px "Roboto Condensed",arial;text-transform:uppercase}
+
+#menu > ul > li .out_cat_parent a.cat_parent + a{}
+#menu > ul > li .out_cat_parent a{padding:0;display:block;text-align:left}
+
+#menu ul li .product_item{width:auto;float:left;padding:0 0 0 20px;}
+#menu ul li .product_item a{}
+#menu ul li .ajax_block_product{padding:0 20px!important;overflow:hidden}
+#menu ul li .ajax_block_product + .ajax_block_product{margin-top:20px;}
+#menu ul li .ajax_block_product,#menu ul li .ajax_block_product a {}
+#menu ul li .ajax_block_product .image{float:left;padding-right:20px;}
+#menu ul li .ajax_block_product h3 a{color:#323232}
+#menu ul li a.product_image{text-align:center}
+#menu ul li .ajax_block_product a:hover{text-decoration:none}
+#menu ul li .ajax_block_product p{margin:0 0 5px}
+#menu ul li .ajax_block_product .exclusive{width:auto;padding:0 15px!important;text-transform:uppercase!important;display:inline-block!important;min-width:50px}
+#menu ul li .ajax_block_product .exclusive:hover{color:#fff;text-decoration:none}
+/* Responsive Menu */
+#megamenu-responsive{
+    width:100%;position:relative;z-index:98;clear:both;
+    line-height:17px;display:none;text-align:left
+}
+
+.menu-toggle > p{
+    display:block;
+    float:left;
+    margin:-6px 10px 0 0;
+    background: url('../img/menu.png') no-repeat 50%;
+    height:30px;
+    width:30px;
+}
+
+.menu-toggle{
+    padding:5px;
+    margin:0!important;
+    background:#eee;
+    color:#000;
+    font-size:15px;
+    cursor:pointer;    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+#megamenu-responsive-root{
+
+}
+#megamenu-responsive-root > li{padding:10px 0;display:block;text-transform:uppercase;font:700 14px/16px "Lato",arial;}
+#megamenu-responsive-root li.root > ul{
+    display:none;
+}
+
+#megamenu-responsive-root li.root.open > ul{
+    display:block;
+}
+
+#megamenu-responsive-root li.parent > ul{
+    display:none;
+}
+
+
+#megamenu-responsive li.parent {clear:both
+}
+#megamenu-responsive .root li{padding:10px 0;}
+#megamenu-responsive .root li + li{
+    border-top:1px dotted #c0c0c0;    
+}
+
+#megamenu-responsive .root li a:hover{
+    color:#55ADFF;text-decoration:none
+}
+
+#megamenu-responsive li.parent ul{
+    margin-left:10px;margin-top:10px;clear:both;
+}
+#megamenu-responsive .root li ul{padding:5px 15px;overflow:hidden}
+#megamenu-responsive ul span{}
+
+#megamenu-responsive .root > ul > li > a,
+#megamenu-responsive .root > ul > li > ul > li > a{
+    text-transform: uppercase;
+    font-weight:700;
+    color:#404040;
+}
+
+#megamenu-responsive a{
+    display:block;
+}
+
+#megamenu-responsive li.parent > a span{
+    display:block;
+}
+
+#megamenu-responsive li.parent > p{
+    display:block;
+    float:right;
+    padding:0 10px;
+    width:10px;height:18px;line-height:19px;
+    text-align:center;
+    cursor:default;
+    font-weight:700;
+    font-size:14px;
+    background:#ececec;
+    color:#555555;
+    margin-top:3px;
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+a.product_image img{
+max-width : 100%;
+}
+#cs_megamenu_more{width:auto;
+    position: relative;display:inline-block;text-align:right;vertical-align:top;
+	}
+#cs_megamenu_more a.more{     float: none;
+    text-transform: uppercase;
+	background: url(../img/more.png) no-repeat right center;padding:0 15px!important;height:67px;display:table-cell!important;vertical-align:middle;min-width:50px;text-align:right!important}
+#cs_megamenu_more .more-menu{position:absolute;top:90px;right:0}
+#cs_megamenu_more .more-menu ul.cms{border:1px solid #417fc0;
+	margin:0;background: url(../img/bkg_sub.png) repeat 0 0;
+	padding:20px;text-align:left;float:left}
+#menu #cs_megamenu_more ul li.parent{background-image:none}
+#cs_megamenu_more .more-menu div.options_list{top:0}
+/* Media Queries */
+@media only screen and (min-width:1024px) and (max-width: 1279px) {
+	
+	#menu > ul > li div a.cat_parent img{width:100%}
+}
+@media only screen and (max-width: 1023px) {
+	#menu ul li.menu_item a{min-width:auto;padding:0 10px}
+	#menu > ul > li div a.cat_parent img{width:100%}
+	#menu > ul > li .options_list ul{width:100%!important;margin-bottom:15px}
+}
+
+@media only screen and (max-width: 767px) {
+	#menu{display:none!important;}
+	#megamenu-responsive{display:block;margin-bottom:10px}
+}
+
+/* ipad */
+#cs_megamenu_more .more-menu li:hover div.options_list{display:block;left:auto;right:100%;}
+#cs_megamenu_more .more-menu li:hover div ul li div.options_list{display:none;}
+#cs_megamenu_more .more-menu li:hover div ul li:hover div.options_list{display:block;}
+#menu #cs_megamenu_more .more-menu li a.title_menu_parent{color:#646464}
+#menu #cs_megamenu_more .more-menu li:hover a.title_menu_parent{color:#fff}
+/*.spanOption,.spanColumn{display:none}*/
+/* ipad hover */
+/*@media only screen and (min-width:768px) and (max-width:1199px){
+#menu ul li.level-1.parent{padding-right:3px;padding-left:7px;}
+}*/
+
+.spanColumn{display:none}

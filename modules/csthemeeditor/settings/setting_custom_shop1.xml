@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<setting>
+<bg_mode>wide_mode</bg_mode>
+<column>2_column_left</column>
+<column_class>grid_6,grid_18(3)</column_class>
+<g_b_pattern>shinedotted.png</g_b_pattern>
+<gb_b_pattern>1.png</gb_b_pattern>
+<h_b_color>#9898ab</h_b_color>
+</setting>

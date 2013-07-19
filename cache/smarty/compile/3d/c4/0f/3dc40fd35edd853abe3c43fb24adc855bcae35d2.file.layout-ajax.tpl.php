@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-01 16:05:03
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:39:36
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\layout-ajax.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:776151d18c8f1d2300-73426582%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3dc40fd35edd853abe3c43fb24adc855bcae35d2' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\admin0057\\themes\\default\\template\\layout-ajax.tpl',
-      1 => 1372670578,
+      1 => 1374231320,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d18c8f3aee26_32276899',
   'variables' => 
   array (
     'json' => 0,
@@ -31,8 +33,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'warning' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c8f3aee26_32276899',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51d18c8f3aee26_32276899')) {function content_51d18c8f3aee26_32276899($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['json']->value)){?>

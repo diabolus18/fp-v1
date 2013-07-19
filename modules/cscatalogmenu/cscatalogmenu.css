@@ -1,0 +1,41 @@
+/* Block categories */
+#categories_block_left .tree {overflow:hidden}
+#categories_block_left .tree li {
+	border: none;
+	padding:4px 0;
+	background: none;
+	margin-left: 0;
+	
+	line-height: 15px;display:block;
+}
+#categories_block_left .tree ul { padding:0 0 0 20px;border:none;margin:12px 0 0;display:block;clear:left;}
+#categories_block_left .tree li li {
+	padding: 0 0 7px;
+	background: none;
+	font-size: 12px;
+	font-weight: normal
+}
+#categories_block_left .tree li li li {
+	padding-left: 15px;
+	font-size: 11px
+}
+#categories_block_left .tree a {
+	padding:0;
+	color: #646464;font-weight:700;font-size:11px;
+}
+#categories_block_left .tree li li a{font-weight:400}
+#categories_block_left .tree a:hover { text-decoration: none;color:#323232;}
+#categories_block_left ul.tree a.selected {
+	color: #323232;
+}
+#categories_block_left span.grower {
+	display: block;
+	float: right;
+	width: 9px;
+	height:5px;
+	margin: 5px 0 0!important;
+	padding: 0;cursor:pointer;  transition: all 0.3s ease 0s;background-image: url('img/less_more.png')
+}
+#categories_block_left span.OPEN { background-position:100% 100%}
+#categories_block_left span.CLOSE {background-position:0 0 }
+

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<setting>
+<bg_mode>wide_mode</bg_mode>
+<column>2_column_left</column>
+<column_class>grid_6,grid_18(3)</column_class>
+</setting>

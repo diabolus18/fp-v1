@@ -1,0 +1,40 @@
+#menu > ul  li > div{left:0}
+#subcategories ul li{display:inline}
+.sortPagiBar select#selectPrductSort{margin-top:5px;}
+form.pagination select{margin-top:5px;}
+.name_product h3 a{float:left}
+p.select select{margin-top:5px;}
+#account-creation_form p.radio span,
+		#account-creation_form p.text label,
+		#account-creation_form p.password label,
+		#account-creation_form p.select label,
+		#account-creation_form p.select span,
+		#account-creation_form p.textarea label {float:left;line-height:28px;}
+#account-creation_form p.radio label{float:left;margin-top:-4px}
+#account-creation_form p.radio input{float:left;margin-top:3px}
+#order .delivery_option.item, #order-opc .delivery_option.item{border-bottom:1px solid #BDC2C9}
+#identity .std .radio input{vertical-align:3px}
+#new_comment_form button{border:none;vertical-align:middle;line-height:16px;}
+.new_comment_form_content{padding-bottom:25px}
+.homecategoryfeature .col  .exclusive{border-bottom:none!important;border-top:none!important;}
+#footer{padding-bottom:80px;margin-bottom:40px;}
+#menu ul li.menu_item{display:inline}
+#menu .column.manufacture li.product_item{float:left;display:block}
+#cs_home_center_bottom_left .ul_cat_popular li.cat_group{float:left;}
+.comparison_product_infos {position:static}
+#product_comparison .cmp_remove{position:static;top:0;float:left;clear:both;left:0;margin-bottom:7px}
+#header_right{z-index:100}
+#header_logo{z-index:50}
+#cs_reset_setting{height:24px;line-height:24px;padding:0 15px;border:1px solid #e4e4e4}
+#menu ul li.menu_item.parent:hover{z-index:100}
+#cs_megamenu_more a.more{background-position:right 10px;padding-top:5px!important}
+#header_logo{margin-bottom:15px;}
+#cs_megamenu_more a.more{float:left!important}
+.static_block_free_account{white-space:nowrap}
+.cpanelContainer{display:none!important;}
+input[type=submit],
+input[type=reset],
+input[type=button]
+{
+    filter:chroma(color=#000000);overflow:visible;border:none!important
+}

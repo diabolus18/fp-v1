@@ -1,0 +1,38 @@
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-01 13:43:12
+         compiled from "C:\wamp\www\fp-V1\admin\themes\default\template\controllers\cms_content\content.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:3087051d187709d24e0-94197235%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '45f1f5e8d3a56f2a85c724bd92eb3f21c75b8f41' => 
+    array (
+      0 => 'C:\\wamp\\www\\fp-V1\\admin\\themes\\default\\template\\controllers\\cms_content\\content.tpl',
+      1 => 1372670578,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '3087051d187709d24e0-94197235',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'cms_breadcrumb' => 0,
+    'content' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d18770a03bf4_88865072',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_51d18770a03bf4_88865072')) {function content_51d18770a03bf4_88865072($_smarty_tpl) {?>
+<?php if (isset($_smarty_tpl->tpl_vars['cms_breadcrumb']->value)){?>
+	<div class="cat_bar">
+		<span style="color: #3C8534;"><?php echo smartyTranslate(array('s'=>'Current category'),$_smarty_tpl);?>
+ :</span>&nbsp;&nbsp;&nbsp;<?php echo $_smarty_tpl->tpl_vars['cms_breadcrumb']->value;?>
+
+	</div>
+<?php }?>
+
+<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+
+<?php }} ?>

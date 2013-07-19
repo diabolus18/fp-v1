@@ -5,11 +5,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ddffd054ccbc1427fae7d6e8e3e930ded691c06b' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockmyaccountfooter\\blockmyaccountfooter.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '2773051d18c4172f709-48021813',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bd290d98_83437486',
   'variables' => 
   array (
     'link' => 0,
@@ -18,11 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_BLOCK_MY_ACCOUNT' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c41883112_95594338',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c41883112_95594338')) {function content_51d18c41883112_95594338($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bd290d98_83437486')) {function content_51e920bd290d98_83437486($_smarty_tpl) {?>
 <!-- Block myaccount module -->
 <div class="block myaccount">
 	<p class="title_block"><a href="http://localhost/fp-v1/index.php?controller=my-account" title="Gérer mon compte client" rel="nofollow">Mon compte</a></p>

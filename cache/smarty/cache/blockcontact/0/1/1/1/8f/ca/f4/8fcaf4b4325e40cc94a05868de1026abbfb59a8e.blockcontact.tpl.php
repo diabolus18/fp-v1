@@ -5,22 +5,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8fcaf4b4325e40cc94a05868de1026abbfb59a8e' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockcontact\\blockcontact.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '2960151d18c41237a75-24132985',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bba96eb3_54738442',
   'variables' => 
   array (
     'telnumber' => 0,
     'email' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c41295486_47124434',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c41295486_47124434')) {function content_51d18c41295486_47124434($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bba96eb3_54738442')) {function content_51e920bba96eb3_54738442($_smarty_tpl) {?>
 <div id="contact_block" class="block">
 	<p class="title_block">Contactez-nous</p>
 	<div class="block_content clearfix">

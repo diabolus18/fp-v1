@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-01 16:03:45
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:19:24
          compiled from "C:\wamp\www\fp-v1\themes\default\modules\blockcategories\blockcategories_footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:939651d18c414ca646-98594253%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1e1e3540a57f64927623ae0cc4a231058449371f' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockcategories\\blockcategories_footer.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d18c4154c2a7_50484934',
   'variables' => 
   array (
     'widthColumn' => 0,
@@ -24,8 +27,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'numberColumn' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c4154c2a7_50484934',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51d18c4154c2a7_50484934')) {function content_51d18c4154c2a7_50484934($_smarty_tpl) {?>
 

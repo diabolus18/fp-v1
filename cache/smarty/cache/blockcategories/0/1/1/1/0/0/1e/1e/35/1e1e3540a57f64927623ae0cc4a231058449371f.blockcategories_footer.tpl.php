@@ -5,17 +5,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1e1e3540a57f64927623ae0cc4a231058449371f' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockcategories\\blockcategories_footer.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '939651d18c414ca646-98594253',
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51e00c411d46e0_37189979',
-  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bd083b98_36220274',
+  'variables' => 
+  array (
+    'widthColumn' => 0,
+    'isDhtml' => 0,
+    'blockCategTree' => 0,
+    'child' => 0,
+    'numberColumn' => 0,
+  ),
+  'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e00c411d46e0_37189979')) {function content_51e00c411d46e0_37189979($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bd083b98_36220274')) {function content_51e920bd083b98_36220274($_smarty_tpl) {?>
 <!-- Block categories module -->
 <div class="blockcategories_footer">
 	<p class="title_block">Catégories</p>

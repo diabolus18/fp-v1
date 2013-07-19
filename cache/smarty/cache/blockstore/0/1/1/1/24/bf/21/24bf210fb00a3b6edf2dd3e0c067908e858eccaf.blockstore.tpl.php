@@ -5,11 +5,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '24bf210fb00a3b6edf2dd3e0c067908e858eccaf' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockstore\\blockstore.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '410451d18c4112da34-98443928',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bb7f3c61_04249534',
   'variables' => 
   array (
     'link' => 0,
@@ -17,11 +20,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'store_img' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c4119d0f9_17999985',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c4119d0f9_17999985')) {function content_51d18c4119d0f9_17999985($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bb7f3c61_04249534')) {function content_51e920bb7f3c61_04249534($_smarty_tpl) {?>
 <!-- Block stores module -->
 <div id="stores_block_left" class="block">
 	<p class="title_block"><a href="http://localhost/fp-v1/index.php?controller=stores" title="Nos magasins">Nos magasins</a></p>

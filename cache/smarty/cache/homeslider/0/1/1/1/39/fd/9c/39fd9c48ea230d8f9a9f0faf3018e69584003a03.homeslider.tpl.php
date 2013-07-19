@@ -5,11 +5,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '39fd9c48ea230d8f9a9f0faf3018e69584003a03' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\homeslider\\homeslider.tpl',
-      1 => 1372670653,
+      1 => 1374231329,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '3117451d18c412c8a60-59318838',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bc81a8b2_33683576',
   'variables' => 
   array (
     'homeslider' => 0,
@@ -17,11 +20,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'slide' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c413a0e49_12912508',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c413a0e49_12912508')) {function content_51d18c413a0e49_12912508($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bc81a8b2_33683576')) {function content_51e920bc81a8b2_33683576($_smarty_tpl) {?>
 <!-- Module HomeSlider -->
 <script type="text/javascript">
 			var homeslider_loop = true;

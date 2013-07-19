@@ -5,11 +5,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '872f4fddb0d5e2996955d150bfc8d461eda990b8' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\blockreinsurance\\blockreinsurance.tpl',
-      1 => 1372670645,
+      1 => 1374231329,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '2394351d18c41423bc2-24803907',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bcef0744_07818892',
   'variables' => 
   array (
     'infos' => 0,
@@ -18,11 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'info' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c414a6ed9_08386606',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c414a6ed9_08386606')) {function content_51d18c414a6ed9_08386606($_smarty_tpl) {?><!-- MODULE Block reinsurance -->
+<?php if ($_valid && !is_callable('content_51e920bcef0744_07818892')) {function content_51e920bcef0744_07818892($_smarty_tpl) {?><!-- MODULE Block reinsurance -->
 <div id="reinsurance_block" class="clearfix">
 	<ul class="width5">	
 					<li><img src="/fp-v1/modules/blockreinsurance/img/reinsurance-1-1.jpg" alt="Satisfait ou remboursé" /> <span>Satisfait ou remboursé</span></li>

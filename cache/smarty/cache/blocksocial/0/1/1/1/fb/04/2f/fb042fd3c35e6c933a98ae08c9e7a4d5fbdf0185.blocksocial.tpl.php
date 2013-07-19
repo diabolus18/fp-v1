@@ -5,11 +5,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fb042fd3c35e6c933a98ae08c9e7a4d5fbdf0185' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blocksocial\\blocksocial.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '1923551d18c41897ac0-03088035',
+  'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920bd3b96e0_49664116',
   'variables' => 
   array (
     'facebook_url' => 0,
@@ -17,11 +20,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'rss_url' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d18c419191c4_43584023',
-  'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d18c419191c4_43584023')) {function content_51d18c419191c4_43584023($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920bd3b96e0_49664116')) {function content_51e920bd3b96e0_49664116($_smarty_tpl) {?>
 <div id="social_block">
 	<p class="title_block">Nous suivre</p>
 	<ul>

@@ -5,17 +5,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2c984f7b8923c90cd6ef483997aa1ca95170f53f' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\default\\modules\\blockcategories\\blockcategories.tpl',
-      1 => 1372670665,
+      1 => 1374231351,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '2307751d18c40a07221-16547486',
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51e00c410c20f7_76734764',
-  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51e920ba00e169_28480240',
+  'variables' => 
+  array (
+    'isDhtml' => 0,
+    'blockCategTree' => 0,
+    'child' => 0,
+  ),
+  'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e00c410c20f7_76734764')) {function content_51e00c410c20f7_76734764($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51e920ba00e169_28480240')) {function content_51e920ba00e169_28480240($_smarty_tpl) {?>
 <!-- Block categories module -->
 <div id="categories_block_left" class="block">
 	<p class="title_block">Catégories</p>

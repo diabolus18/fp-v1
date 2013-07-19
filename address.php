@@ -1,6 +1,6 @@
 <?php
 /*
-* 2008-2013 PrestaShop
+* 2007-2013 PrestaShop
 *
 * NOTICE OF LICENSE
 *

@@ -11,11 +11,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '1323651e92b0caf87d7-88957208',
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51e92cacdb7f00_17096408',
+  'unifunc' => 'content_51ee71895ea679_58617471',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e92cacdb7f00_17096408')) {function content_51e92cacdb7f00_17096408($_smarty_tpl) {?><!-- Static Block module -->
+<?php if ($_valid && !is_callable('content_51ee71895ea679_58617471')) {function content_51ee71895ea679_58617471($_smarty_tpl) {?><!-- Static Block module -->
 			<div class="static-blokc-follow-us">
 			<h4>Suivez-nous</h4>
 			<ul class="col">
@@ -29,4 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<li><img src="http://localhost/fp-v1/themes/bestchoice/img/cms/i_rss_1.png" alt="" width="16" height="16" /><a title="RSS feed " href="#">RSS feed </a></li>
 			</ul>
 			</div>
+				<div class="static-blokc-follow-us">
+<h4>INFORMATIONS</h4>
+</div>
 	<!-- /Static block module --><?php }} ?>

@@ -289,9 +289,9 @@ table.table_block  td {
 
 /* BLOCK .block ******************************************************************************** */
 .block {margin-bottom:25px}
-#footer .block {margin-bottom:0}
+#footer .block {width:280px;float:left;margin-right:20px;}
 	.block .title_block, .block h4 {
-	font:700 14px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;color:#397abd;padding:0 0 10px;background:url(../img/bkg_title_block.jpg) repeat-x left bottom;margin-bottom:15px;
+	border-bottom:1px solid #e4e4e4;margin-bottom:10px;
 	}
 		.block .title_block a, .block h4 a {color:#397abd}
 	.block ul {list-style-type:none}

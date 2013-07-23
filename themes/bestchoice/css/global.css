@@ -1910,9 +1910,9 @@ tr.subitem > td:first-child + td {
 #footer  .block_customer_service_links,
 #footer  .block_various_links,
 #footer  #block_contact_infos,
-#footer  .static-blokc-follow-us{width:280px;float:left;margin-right:20px;}
+#footer  .static-blokc-follow-us{width:280px;float:left;margin-right:10px;}
 .cs_sample_block_footer .col.consectetur_2,
-#footer  .static-blokc-follow-us{margin-right:0}
+#footer  .static-blokc-follow-us{margin-right:10px;}
 .cs_sample_block_footer .col .s_f_img{position:relative;padding-bottom:15px;margin-bottom:10px;text-align:left}
 .cs_sample_block_footer .col .s_f_img img{max-width:100%;}
 .cs_sample_block_footer .col .s_f_img  .bkg_color{position:absolute;bottom:0;left:0;width:93%;background-position:left bottom;background-repeat:repeat-x;padding:10px;color:#ffffff;font:700 14px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;text-align:center}

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:19:20
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-26 13:42:37
          compiled from "C:\wamp\www\fp-v1\modules\blocklanguages\blocklanguages.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1126251dc3894bd5df8-57503410%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1036051f260ad60ca52-19140457%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1126251dc3894bd5df8-57503410',
+  'nocache_hash' => '1036051f260ad60ca52-19140457',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51dc3894c99bd1_77157812',
   'variables' => 
   array (
     'languages' => 0,
@@ -28,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51f260ad6c64c3_91716949',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51dc3894c99bd1_77157812')) {function content_51dc3894c99bd1_77157812($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51f260ad6c64c3_91716949')) {function content_51f260ad6c64c3_91716949($_smarty_tpl) {?>
 
 <!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value)>1){?>

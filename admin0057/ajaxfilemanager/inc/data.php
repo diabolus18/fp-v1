@@ -1,8 +1,8 @@
 <pre>Array
 (
-    [currentFolderPath] => ../uploaded/
-    [new_folder] => Test
+    [currentFolderPath] => ../../img/cms/
+    [new_folder] => Banner Home Page
 )
 </pre>
 
-22/Sep/2008 13:17:12
+26/Jul/2013 17:10:30

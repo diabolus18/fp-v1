@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-05 14:59:30
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-25 11:58:54
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\products\combination\helpers\list\list_footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:959751d6c3328c1418-96680526%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '755021fb39e2ad12fc13a2bdcb507ee3201bce67' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\admin0057\\themes\\default\\template\\controllers\\products\\combination\\helpers\\list\\list_footer.tpl',
-      1 => 1372670580,
+      1 => 1374231320,
       2 => 'file',
     ),
     '4f1909768bcecb4f8bcd0cf875f7a9f0638e0696' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\admin0057\\themes\\default\\template\\helpers\\list\\list_footer.tpl',
-      1 => 1372670583,
+      1 => 1374231320,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51d6c332984cf7_91263207',
   'variables' => 
   array (
     'bulk_actions' => 0,
@@ -33,8 +35,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'hookName' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d6c332984cf7_91263207',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51d6c332984cf7_91263207')) {function content_51d6c332984cf7_91263207($_smarty_tpl) {?>
 

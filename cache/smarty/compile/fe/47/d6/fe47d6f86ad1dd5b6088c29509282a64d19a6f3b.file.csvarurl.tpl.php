@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 12:07:52
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 15:04:38
          compiled from "C:\wamp\www\fp-v1\modules\csquickview\views\templates\front\csvarurl.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2166951f790783b87e7-43710739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1920351f7b9e6483097-33646647%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2166951f790783b87e7-43710739',
+  'nocache_hash' => '1920351f7b9e6483097-33646647',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f790784423e5_84013498',
+  'unifunc' => 'content_51f7b9e65100b4_09736391',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f790784423e5_84013498')) {function content_51f790784423e5_84013498($_smarty_tpl) {?><?php if (!isset($_smarty_tpl->tpl_vars['resize_type']->value)){?><?php $_smarty_tpl->tpl_vars['resize_type'] = new Smarty_variable(0, null, 0);?><?php }?>
+<?php if ($_valid && !is_callable('content_51f7b9e65100b4_09736391')) {function content_51f7b9e65100b4_09736391($_smarty_tpl) {?><?php if (!isset($_smarty_tpl->tpl_vars['resize_type']->value)){?><?php $_smarty_tpl->tpl_vars['resize_type'] = new Smarty_variable(0, null, 0);?><?php }?>
 <?php if (!isset($_smarty_tpl->tpl_vars['resize_width']->value)){?><?php $_smarty_tpl->tpl_vars['resize_width'] = new Smarty_variable(50, null, 0);?><?php }?>
 <?php if (!isset($_smarty_tpl->tpl_vars['resize_height']->value)){?><?php $_smarty_tpl->tpl_vars['resize_height'] = new Smarty_variable(65, null, 0);?><?php }?>
 <?php if (!isset($_smarty_tpl->tpl_vars['itemsclass']->value)){?><?php $_smarty_tpl->tpl_vars['itemsclass'] = new Smarty_variable('', null, 0);?><?php $_smarty_tpl->tpl_vars['num_item'] = new Smarty_variable(0, null, 0);?><?php }?>

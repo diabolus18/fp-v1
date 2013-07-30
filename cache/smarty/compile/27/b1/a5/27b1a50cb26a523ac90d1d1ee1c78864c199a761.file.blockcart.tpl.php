@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 12:07:52
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 15:04:38
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\blockcart\blockcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1082251f790788dfcf3-41057342%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:521551f7b9e67fe299-21506050%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '27b1a50cb26a523ac90d1d1ee1c78864c199a761' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\blockcart\\blockcart.tpl',
-      1 => 1374854446,
+      1 => 1375188204,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1082251f790788dfcf3-41057342',
+  'nocache_hash' => '521551f7b9e67fe299-21506050',
   'function' => 
   array (
   ),
@@ -27,11 +27,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cart' => 0,
     'products' => 0,
     'product' => 0,
-    'product_link' => 0,
-    'awp_product_link' => 0,
-    'productAttributeId' => 0,
-    'amp_pos' => 0,
     'productId' => 0,
+    'productAttributeId' => 0,
     'customizedDatas' => 0,
     'static_token' => 0,
     'id_customization' => 0,
@@ -50,9 +47,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f790790fb785_06007397',
+  'unifunc' => 'content_51f7b9e70f62d0_14070185',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f790790fb785_06007397')) {function content_51f790790fb785_06007397($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51f7b9e70f62d0_14070185')) {function content_51f7b9e70f62d0_14070185($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_replace')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.replace.php';
 ?>
 
@@ -70,7 +67,7 @@ var img_dir = '<?php echo $_smarty_tpl->tpl_vars['img_dir']->value;?>
 <script type="text/javascript">
 var customizationIdMessage = '<?php echo smartyTranslate(array('s'=>'Customization #','mod'=>'blockcart','js'=>1),$_smarty_tpl);?>
 ';
-var removingLinkText = '<?php echo smartyTranslate(array('s'=>'Please remove this product from my cart.','mod'=>'blockcart','js'=>1),$_smarty_tpl);?>
+var removingLinkText = '<?php echo smartyTranslate(array('s'=>'remove this product from my cart','mod'=>'blockcart','js'=>1),$_smarty_tpl);?>
 ';
 var freeShippingTranslation = '<?php echo smartyTranslate(array('s'=>'Free shipping!','mod'=>'blockcart','js'=>1),$_smarty_tpl);?>
 ';
@@ -78,6 +75,11 @@ var freeProductTranslation = '<?php echo smartyTranslate(array('s'=>'Free!','mod
 ';
 var delete_txt = '<?php echo smartyTranslate(array('s'=>'Delete','mod'=>'blockcart','js'=>1),$_smarty_tpl);?>
 ';
+$(window).ready(function(){
+	$("#shopping_cart").bind("touchstart",function(){
+		$("#cart_block").toggle();
+	});
+});
 </script>
 
 
@@ -136,36 +138,27 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 ?>
 			<?php $_smarty_tpl->tpl_vars['productId'] = new Smarty_variable($_smarty_tpl->tpl_vars['product']->value['id_product'], null, 0);?>
 			<?php $_smarty_tpl->tpl_vars['productAttributeId'] = new Smarty_variable($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], null, 0);?>
-			<?php $_smarty_tpl->tpl_vars["product_link"] = new Smarty_variable(smarty_modifier_escape($_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value['id_product'],$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category'],null,null,$_smarty_tpl->tpl_vars['product']->value['id_shop'],$_smarty_tpl->tpl_vars['product']->value['id_product_attribute']), 'htmlall', 'UTF-8'), null, 0);?>
-			<?php if (strpos($_smarty_tpl->tpl_vars['product_link']->value,'?')===false){?>
-				<?php $_smarty_tpl->tpl_vars["awp_product_link"] = new Smarty_variable("?", null, 0);?>
-			<?php }else{ ?>
-				<?php $_smarty_tpl->tpl_vars["awp_product_link"] = new Smarty_variable("&", null, 0);?>
-			<?php }?>
-			<?php $_smarty_tpl->tpl_vars["awp_product_link"] = new Smarty_variable((((($_smarty_tpl->tpl_vars['awp_product_link']->value).('ipa=')).($_smarty_tpl->tpl_vars['productAttributeId']->value)).('&ins=')).($_smarty_tpl->tpl_vars['product']->value['instructions_valid']), null, 0);?>
-			<?php if (strpos($_smarty_tpl->tpl_vars['product_link']->value,'#')>0){?>
-				<?php $_smarty_tpl->tpl_vars['amp_pos'] = new Smarty_variable(strpos($_smarty_tpl->tpl_vars['product_link']->value,'#'), null, 0);?>
-				<?php $_smarty_tpl->tpl_vars['product_link'] = new Smarty_variable(substr($_smarty_tpl->tpl_vars['product_link']->value,0,$_smarty_tpl->tpl_vars['amp_pos']->value), null, 0);?>
-			<?php }?>
-			<?php $_smarty_tpl->tpl_vars['product_link'] = new Smarty_variable(($_smarty_tpl->tpl_vars['product_link']->value).($_smarty_tpl->tpl_vars['awp_product_link']->value), null, 0);?>
 			<dt id="cart_block_product_<?php echo $_smarty_tpl->tpl_vars['product']->value['id_product'];?>
 _<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']){?><?php echo $_smarty_tpl->tpl_vars['product']->value['id_product_attribute'];?>
-<?php }else{ ?>0<?php }?><?php if ($_smarty_tpl->tpl_vars['product']->value['instructions_valid']){?>_<?php echo $_smarty_tpl->tpl_vars['product']->value['instructions_valid'];?>
-<?php }?>_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']){?><?php echo $_smarty_tpl->tpl_vars['product']->value['id_address_delivery'];?>
-<?php }else{ ?>0<?php }?>" class="<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['first']){?>first_item<?php }elseif($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['last']){?>last_item<?php }else{ ?>item<?php }?>">
-				<span class="quantity-formated"><span class="quantity"><?php echo $_smarty_tpl->tpl_vars['product']->value['cart_quantity'];?>
-</span>x</span>
-				<a class="cart_block_product_name" href="<?php echo $_smarty_tpl->tpl_vars['product_link']->value;?>
+<?php }else{ ?>0<?php }?>_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']){?><?php echo $_smarty_tpl->tpl_vars['product']->value['id_address_delivery'];?>
+<?php }else{ ?>0<?php }?>" class="<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['first']){?>first_item<?php }elseif($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['last']){?>last_item<?php }else{ ?>item<?php }?>">				
+				<span class="image">
+					<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value,$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category'],null,null,$_smarty_tpl->tpl_vars['product']->value['id_shop'],$_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
+" title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'html', 'UTF-8');?>
+"><img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['id_image'],'small_default');?>
+" alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['legend'], 'htmlall', 'UTF-8');?>
+"/></span>
+				</span>
+				<a class="cart_block_product_name" href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value,$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category'],null,null,$_smarty_tpl->tpl_vars['product']->value['id_shop'],$_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'html', 'UTF-8');?>
 ">
-				<?php echo smarty_modifier_escape($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['product']->value['name'],13,'...'), 'html', 'UTF-8');?>
+				<?php echo smarty_modifier_escape($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['product']->value['name'],35,'...'), 'html', 'UTF-8');?>
 </a>
-				<span class="remove_link"><?php if (!isset($_smarty_tpl->tpl_vars['customizedDatas']->value[$_smarty_tpl->tpl_vars['productId']->value][$_smarty_tpl->tpl_vars['productAttributeId']->value])&&(!isset($_smarty_tpl->tpl_vars['product']->value['is_gift'])||!$_smarty_tpl->tpl_vars['product']->value['is_gift'])){?><a rel="nofollow" class="ajax_cart_block_remove_link" href="<?php ob_start();?><?php echo urlencode($_smarty_tpl->tpl_vars['product']->value['instructions_valid']);?>
-<?php $_tmp1=ob_get_clean();?><?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"delete=1&amp;id_product=".((string)$_smarty_tpl->tpl_vars['product']->value['id_product'])."&amp;special_instructions=".$_tmp1."&amp;ipa=".((string)$_smarty_tpl->tpl_vars['product']->value['id_product_attribute'])."&amp;id_address_delivery=".((string)$_smarty_tpl->tpl_vars['product']->value['id_address_delivery'])."&amp;token=".((string)$_smarty_tpl->tpl_vars['static_token']->value),true);?>
-" title="<?php echo smartyTranslate(array('s'=>'Please remove this product from my cart.','mod'=>'blockcart'),$_smarty_tpl);?>
+				<span class="remove_link"><?php if (!isset($_smarty_tpl->tpl_vars['customizedDatas']->value[$_smarty_tpl->tpl_vars['productId']->value][$_smarty_tpl->tpl_vars['productAttributeId']->value])&&($_smarty_tpl->tpl_vars['product']->value['total']>0)){?><a rel="nofollow" class="ajax_cart_block_remove_link" href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"delete&amp;id_product=".((string)$_smarty_tpl->tpl_vars['product']->value['id_product'])."&amp;ipa=".((string)$_smarty_tpl->tpl_vars['product']->value['id_product_attribute'])."&amp;id_address_delivery=".((string)$_smarty_tpl->tpl_vars['product']->value['id_address_delivery'])."&amp;token=".((string)$_smarty_tpl->tpl_vars['static_token']->value),true);?>
+" title="<?php echo smartyTranslate(array('s'=>'remove this product from my cart','mod'=>'blockcart'),$_smarty_tpl);?>
 ">&nbsp;</a><?php }?></span>
 				<span class="price">
-					<?php if (!isset($_smarty_tpl->tpl_vars['product']->value['is_gift'])||!$_smarty_tpl->tpl_vars['product']->value['is_gift']){?>
+					<?php if ($_smarty_tpl->tpl_vars['product']->value['total']>0){?>
 						<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==@constant('PS_TAX_EXC')){?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayWtPrice'][0][0]->displayWtPrice(array('p'=>((string)$_smarty_tpl->tpl_vars['product']->value['total'])),$_smarty_tpl);?>
 <?php }else{ ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayWtPrice'][0][0]->displayWtPrice(array('p'=>((string)$_smarty_tpl->tpl_vars['product']->value['total_wt'])),$_smarty_tpl);?>
 <?php }?>
@@ -174,14 +167,15 @@ _<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']){?><
 </b>
 					<?php }?>
 				</span>
+				<span class="quantity-formated"><span class="quantity"><?php echo $_smarty_tpl->tpl_vars['product']->value['cart_quantity'];?>
+</span>x</span>
 			</dt>
 			<?php if (isset($_smarty_tpl->tpl_vars['product']->value['attributes_small'])){?>
 			<dd id="cart_block_combination_of_<?php echo $_smarty_tpl->tpl_vars['product']->value['id_product'];?>
 <?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']){?>_<?php echo $_smarty_tpl->tpl_vars['product']->value['id_product_attribute'];?>
-<?php }?><?php if ($_smarty_tpl->tpl_vars['product']->value['instructions_valid']){?>_<?php echo $_smarty_tpl->tpl_vars['product']->value['instructions_valid'];?>
 <?php }?>_<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']);?>
 " class="<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['first']){?>first_item<?php }elseif($_smarty_tpl->getVariable('smarty')->value['foreach']['myLoop']['last']){?>last_item<?php }else{ ?>item<?php }?>">
-				<a href="<?php echo $_smarty_tpl->tpl_vars['product_link']->value;?>
+				<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value,$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category'],null,null,$_smarty_tpl->tpl_vars['product']->value['id_shop'],$_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
 " title="<?php echo smartyTranslate(array('s'=>'Product detail','mod'=>'blockcart'),$_smarty_tpl);?>
 "><?php echo $_smarty_tpl->tpl_vars['product']->value['attributes_small'];?>
 </a>
@@ -204,13 +198,14 @@ $_smarty_tpl->tpl_vars['customization']->_loop = true;
  $_smarty_tpl->tpl_vars['id_customization']->value = $_smarty_tpl->tpl_vars['customization']->key;
 ?>
 						<li name="customization">
+							
 							<div class="deleteCustomizableProduct" id="deleteCustomizableProduct_<?php echo intval($_smarty_tpl->tpl_vars['id_customization']->value);?>
 _<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
 _<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
 _<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']);?>
 "><a class="ajax_cart_block_remove_link" href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product']);?>
-<?php $_tmp2=ob_get_clean();?><?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
-<?php $_tmp3=ob_get_clean();?><?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"delete=1&amp;id_product=".$_tmp2."&amp;ipa=".$_tmp3."&amp;id_customization=".((string)$_smarty_tpl->tpl_vars['id_customization']->value)."&amp;token=".((string)$_smarty_tpl->tpl_vars['static_token']->value),true);?>
+<?php $_tmp1=ob_get_clean();?><?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']);?>
+<?php $_tmp2=ob_get_clean();?><?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart',true,null,"delete&amp;id_product=".$_tmp1."&amp;ipa=".$_tmp2."&amp;id_customization=".((string)$_smarty_tpl->tpl_vars['id_customization']->value)."&amp;token=".((string)$_smarty_tpl->tpl_vars['static_token']->value),true);?>
 " rel="nofollow"> </a></div>
 							<span class="quantity-formated"><span class="quantity"><?php echo $_smarty_tpl->tpl_vars['customization']->value['quantity'];?>
 </span>x</span><?php if (isset($_smarty_tpl->tpl_vars['customization']->value['datas'][$_smarty_tpl->tpl_vars['CUSTOMIZE_TEXTFIELD']->value][0])){?>
@@ -227,16 +222,6 @@ _<?php echo intval($_smarty_tpl->tpl_vars['product']->value['id_address_delivery
 			<?php }?>
 
 			<?php if (isset($_smarty_tpl->tpl_vars['product']->value['attributes_small'])){?></dd><?php }?>
-			<?php if (isset($_smarty_tpl->tpl_vars['product']->value['instructions'])){?>
-			<dd id="cart_block_instructions_<?php echo $_smarty_tpl->tpl_vars['product']->value['id_product'];?>
-_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']){?><?php echo $_smarty_tpl->tpl_vars['product']->value['id_product_attribute'];?>
-<?php }?><?php if ($_smarty_tpl->tpl_vars['product']->value['instructions_valid']){?>_<?php echo $_smarty_tpl->tpl_vars['product']->value['instructions_valid'];?>
-<?php }?>_<?php if ($_smarty_tpl->tpl_vars['product']->value['id_address_delivery']){?><?php echo $_smarty_tpl->tpl_vars['product']->value['id_address_delivery'];?>
-<?php }else{ ?>0<?php }?>" class="item">
-				<?php echo $_smarty_tpl->tpl_vars['product']->value['instructions'];?>
-
-			</dd>
-			<?php }?>
 
 		<?php } ?>
 		</dl>
@@ -244,89 +229,93 @@ _<?php if ($_smarty_tpl->tpl_vars['product']->value['id_product_attribute']){?><
 		<p <?php if ($_smarty_tpl->tpl_vars['products']->value){?>class="hidden"<?php }?> id="cart_block_no_products"><?php echo smartyTranslate(array('s'=>'No products','mod'=>'blockcart'),$_smarty_tpl);?>
 </p>
 	<?php if (count($_smarty_tpl->tpl_vars['discounts']->value)>0){?>
-		<table id="vouchers">
-			<tbody>
-					<?php  $_smarty_tpl->tpl_vars['discount'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['discount']->_loop = false;
+		<div id="vouchers">
+			<dl>
+				<?php  $_smarty_tpl->tpl_vars['discount'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['discount']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['discounts']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['discount']->key => $_smarty_tpl->tpl_vars['discount']->value){
 $_smarty_tpl->tpl_vars['discount']->_loop = true;
 ?>
-						<?php if ($_smarty_tpl->tpl_vars['discount']->value['value_real']>0){?>
-						<tr class="bloc_cart_voucher" id="bloc_cart_voucher_<?php echo $_smarty_tpl->tpl_vars['discount']->value['id_discount'];?>
+					<?php if ($_smarty_tpl->tpl_vars['discount']->value['value_real']>0){?>
+					<dt class="bloc_cart_voucher" id="bloc_cart_voucher_<?php echo $_smarty_tpl->tpl_vars['discount']->value['id_discount'];?>
 ">
-							<td class="quantity">1x</td>
-							<td class="name" title="<?php echo $_smarty_tpl->tpl_vars['discount']->value['description'];?>
+						<span class="quantity">1x</span>
+						<span class="name" title="<?php echo $_smarty_tpl->tpl_vars['discount']->value['description'];?>
 "><?php echo smarty_modifier_escape($_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate((($_smarty_tpl->tpl_vars['discount']->value['name']).(' : ')).($_smarty_tpl->tpl_vars['discount']->value['description']),18,'...'), 'htmlall', 'UTF-8');?>
-</td>
-							<td class="price">-<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==1){?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['discount']->value['value_tax_exc']),$_smarty_tpl);?>
-<?php }else{ ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['discount']->value['value_real']),$_smarty_tpl);?>
-<?php }?></td>
-							<td class="delete">
-								<?php if (strlen($_smarty_tpl->tpl_vars['discount']->value['code'])){?>
-									<a class="delete_voucher" href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('$order_process',true);?>
+</span>
+						<span class="delete">
+							<?php if (strlen($_smarty_tpl->tpl_vars['discount']->value['code'])){?>
+								<a class="delete_voucher" href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('$order_process.php',true);?>
 ?deleteDiscount=<?php echo $_smarty_tpl->tpl_vars['discount']->value['id_discount'];?>
 " title="<?php echo smartyTranslate(array('s'=>'Delete','mod'=>'blockcart'),$_smarty_tpl);?>
-" rel="nofollow"><img src="<?php echo $_smarty_tpl->tpl_vars['img_dir']->value;?>
-icon/delete.gif" alt="<?php echo smartyTranslate(array('s'=>'Delete','mod'=>'blockcart'),$_smarty_tpl);?>
+"><img src="<?php echo $_smarty_tpl->tpl_vars['img_dir']->value;?>
+icon/delete.png" alt="<?php echo smartyTranslate(array('s'=>'Delete','mod'=>'blockcart'),$_smarty_tpl);?>
 " class="icon" /></a>
-								<?php }?>
-							</td>
-						</tr>
-						<?php }?>
-					<?php } ?>
-			</tbody>
-		</table>
+							<?php }?>
+						</span>
+						<span class="price">-<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==1){?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['discount']->value['value_tax_exc']),$_smarty_tpl);?>
+<?php }else{ ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['discount']->value['value_real']),$_smarty_tpl);?>
+<?php }?></span>						
+					</dt>
+					<?php }?>
+				<?php } ?>
+			</dl>
+		</div>
 		<?php }?>
 		
-		<p id="cart-prices">
-			<span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost"><?php echo $_smarty_tpl->tpl_vars['shipping_cost']->value;?>
+		<div id="cart-prices">
+			<p><span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost"><?php echo $_smarty_tpl->tpl_vars['shipping_cost']->value;?>
 </span>
 			<span><?php echo smartyTranslate(array('s'=>'Shipping','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
-			<br/>
+			</p>			
 			<?php if ($_smarty_tpl->tpl_vars['show_wrapping']->value){?>
+			<p>
 				<?php $_smarty_tpl->tpl_vars['cart_flag'] = new Smarty_variable(constant('Cart::ONLY_WRAPPING'), null, 0);?>
 				<span id="cart_block_wrapping_cost" class="price cart_block_wrapping_cost"><?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==1){?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['cart']->value->getOrderTotal(false,$_smarty_tpl->tpl_vars['cart_flag']->value)),$_smarty_tpl);?>
 <?php }else{ ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['cart']->value->getOrderTotal(true,$_smarty_tpl->tpl_vars['cart_flag']->value)),$_smarty_tpl);?>
 <?php }?></span>
 				<span><?php echo smartyTranslate(array('s'=>'Wrapping','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
-				<br/>
+			</p>
 			<?php }?>
 			<?php if ($_smarty_tpl->tpl_vars['show_tax']->value&&isset($_smarty_tpl->tpl_vars['tax_cost']->value)){?>
+			<p>
 				<span id="cart_block_tax_cost" class="price ajax_cart_tax_cost"><?php echo $_smarty_tpl->tpl_vars['tax_cost']->value;?>
 </span>
 				<span><?php echo smartyTranslate(array('s'=>'Tax','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
-				<br/>
+			</p>
 			<?php }?>
+			<p>
 			<span id="cart_block_total" class="price ajax_block_cart_total"><?php echo $_smarty_tpl->tpl_vars['total']->value;?>
 </span>
 			<span><?php echo smartyTranslate(array('s'=>'Total','mod'=>'blockcart'),$_smarty_tpl);?>
 </span>
-		</p>
+			</p>
+		</div>
 		<?php if ($_smarty_tpl->tpl_vars['use_taxes']->value&&$_smarty_tpl->tpl_vars['display_tax_label']->value==1&&$_smarty_tpl->tpl_vars['show_tax']->value){?>
 			<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==0){?>
 				<p id="cart-price-precisions">
-					<?php echo smartyTranslate(array('s'=>'Prices include tax.','mod'=>'blockcart'),$_smarty_tpl);?>
+					<?php echo smartyTranslate(array('s'=>'Prices are tax included','mod'=>'blockcart'),$_smarty_tpl);?>
 
 				</p>
 			<?php }?>
 			<?php if ($_smarty_tpl->tpl_vars['priceDisplay']->value==1){?>
 				<p id="cart-price-precisions">
-					<?php echo smartyTranslate(array('s'=>'Prices do not include tax.','mod'=>'blockcart'),$_smarty_tpl);?>
+					<?php echo smartyTranslate(array('s'=>'Prices are tax excluded','mod'=>'blockcart'),$_smarty_tpl);?>
 
 				</p>
 			<?php }?>
 		<?php }?>
-		<p id="cart-buttons">
+		<p id="cart-buttons">						
 			<?php if ($_smarty_tpl->tpl_vars['order_process']->value=='order'){?><a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink(((string)$_smarty_tpl->tpl_vars['order_process']->value),true);?>
 " class="button_small" title="<?php echo smartyTranslate(array('s'=>'View my shopping cart','mod'=>'blockcart'),$_smarty_tpl);?>
 " rel="nofollow"><?php echo smartyTranslate(array('s'=>'Cart','mod'=>'blockcart'),$_smarty_tpl);?>
 </a><?php }?>
 			<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink(((string)$_smarty_tpl->tpl_vars['order_process']->value),true);?>
-" id="button_order_cart" class="exclusive<?php if ($_smarty_tpl->tpl_vars['order_process']->value=='order-opc'){?>_large<?php }?>" title="<?php echo smartyTranslate(array('s'=>'Checkout','mod'=>'blockcart'),$_smarty_tpl);?>
-" rel="nofollow"><span></span><?php echo smartyTranslate(array('s'=>'Checkout','mod'=>'blockcart'),$_smarty_tpl);?>
+" id="button_order_cart" class="exclusive<?php if ($_smarty_tpl->tpl_vars['order_process']->value=='order-opc'){?>_large<?php }?>" title="<?php echo smartyTranslate(array('s'=>'Check out','mod'=>'blockcart'),$_smarty_tpl);?>
+" rel="nofollow"><?php echo smartyTranslate(array('s'=>'Check out','mod'=>'blockcart'),$_smarty_tpl);?>
 </a>
 		</p>
 	</div>

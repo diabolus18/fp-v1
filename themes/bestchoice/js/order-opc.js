@@ -27,9 +27,9 @@ function updateCarrierList(json)
 {
 	var html = json.carrier_block;
 	
-	// @todo  check with theme 1.4
+	/* @todo  check with theme 1.4
 	//if ($('#HOOK_EXTRACARRIER').length == 0 && json.HOOK_EXTRACARRIER !== null && json.HOOK_EXTRACARRIER != undefined)
-	//	html += json.HOOK_EXTRACARRIER;
+	//	html += json.HOOK_EXTRACARRIER; */
 	
 	$('#carrier_area').replaceWith(html);
 	bindInputs();
@@ -91,14 +91,14 @@ function updateAddressSelection()
 			{
 				var errors = '';
 				for(var error in jsonData.errors)
-					//IE6 bug fix
+					/*/IE6 bug fix */
 					if(error !== 'indexOf')
 						errors += jsonData.errors[error] + "\n";
 				alert(errors);
 			}
 			else
 			{
-				// Update all product keys with the new address id
+				/*/ Update all product keys with the new address id */
 				$('#cart_summary .address_'+deliveryAddress).each(function() {
 					$(this)
 						.removeClass('address_'+deliveryAddress)
@@ -140,7 +140,7 @@ function updateAddressSelection()
 					}	
 				});
 
-				// Update global var deliveryAddress
+				/*/ Update global var deliveryAddress */
 				deliveryAddress = idAddress_delivery;
 				if (window.ajaxCart !== undefined)
 				{
@@ -184,7 +184,7 @@ function getCarrierListAndUpdate()
 			{
 				var errors = '';
 				for(var error in jsonData.errors)
-					//IE6 bug fix
+					/*/IE6 bug fix */
 					if(error !== 'indexOf')
 						errors += jsonData.errors[error] + "\n";
 				alert(errors);
@@ -234,7 +234,7 @@ function updateCarrierSelectionAndGift()
 			{
 				var errors = '';
 				for(var error in jsonData.errors)
-					//IE6 bug fix
+					/*/IE6 bug fix */
 					if(error !== 'indexOf')
 						errors += jsonData.errors[error] + "\n";
 				alert(errors);
@@ -265,7 +265,6 @@ function confirmFreeOrder()
 	else
 		$('#opc_account-overlay').fadeIn('slow');
 	$('#opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeOut('slow');
-	$('#confirmOrder').attr('disabled', 'disabled');
 	$.ajax({
 		type: 'POST',
 		headers: { "cache-control": "no-cache" },
@@ -276,7 +275,6 @@ function confirmFreeOrder()
 		data: 'ajax=true&method=makeFreeOrder&token=' + static_token ,
 		success: function(html)
 		{
-			$('#confirmOrder').attr('disabled', '');
 			var array_split = html.split(':');
 			if (array_split[0] == 'freeorder')
 			{
@@ -317,7 +315,7 @@ function saveAddress(type)
 		params += 'opc_id_address_delivery='+encodeURIComponent($('#opc_id_address_delivery').val())+'&';
 	if (type == 'invoice' && $('#opc_id_address_invoice').val() != undefined && parseInt($('#opc_id_address_invoice').val()) > 0)			
 		params += 'opc_id_address_invoice='+encodeURIComponent($('#opc_id_address_invoice').val())+'&';		
-	// Clean the last &
+	/*/ Clean the last & */
 	params = params.substr(0, params.length-1);
 
 	var result = false;
@@ -337,7 +335,7 @@ function saveAddress(type)
 				var tmp = '';
 				var i = 0;
 				for(var error in jsonData.errors)
-					//IE6 bug fix
+					/*/IE6 bug fix */
 					if(error !== 'indexOf')
 					{
 						i = i+1;
@@ -355,7 +353,7 @@ function saveAddress(type)
 			}
 			else
 			{
-				// update addresses id
+				/*/ update addresses id */ */
 				$('input#opc_id_address_delivery').val(jsonData.id_address_delivery);
 				$('input#opc_id_address_invoice').val(jsonData.id_address_invoice);
 				result = true;
@@ -390,7 +388,7 @@ function updateNewAccountToAddressBlock()
 			
 			$('#opc_new_account').fadeOut('fast', function() {
 				$('#opc_new_account').html(json.order_opc_adress);
-				// update block user info
+				/*/ update block user info */
 				if (json.block_user_info !== '' && $('#header_user').length == 1)
 				{
 					var elt = $(json.block_user_info).find('#header_user_info').html();					
@@ -399,10 +397,11 @@ function updateNewAccountToAddressBlock()
 					});
 				}
 				$('#opc_new_account').fadeIn('fast', function() {
-					//After login, the products are automatically associated to an address
+					/*/After login, the products are automatically associated to an address */
 					$.each(json.summary.products, function() {
-						updateAddressId(this.id_product, this.id_product_attribute, '0', this.id_address_delivery);
+						updateAddressId(this.id_product, this.id_product_attribute, '0', this.id_address_delivery, undefined, this.instructions_valid);
 					});
+					updateCartSummary(json.summary);
 					updateAddressesDisplay(true);
 					updateCarrierList(json.carrier_data);
 					updateCarrierSelectionAndGift();
@@ -422,7 +421,7 @@ function updateNewAccountToAddressBlock()
 }
 
 $(function() {
-	// GUEST CHECKOUT / NEW ACCOUNT MANAGEMENT
+	/*/ GUEST CHECKOUT / NEW ACCOUNT MANAGEMENT */
 	if ((!isLogged) || (isGuest))
 	{
 		if (guestCheckoutEnabled && !isLogged)
@@ -472,7 +471,7 @@ $(function() {
 			updateZipCode();
 		}
 		
-		// LOGIN FORM
+		/*/ LOGIN FORM */
 		$('#openLoginFormBlock').click(function() {
 			$('#openNewAccountBlock').show();
 			$(this).hide();
@@ -480,7 +479,7 @@ $(function() {
 			$('#new_account_form_content').slideUp('slow');
 			return false;
 		});
-		// LOGIN FORM SENDING
+		/*/ LOGIN FORM SENDING */
 		$('#SubmitLogin').click(function() {
 			$.ajax({
 				type: 'POST',
@@ -496,7 +495,7 @@ $(function() {
 					{
 						var errors = '<b>'+txtThereis+' '+jsonData.errors.length+' '+txtErrors+':</b><ol>';
 						for(var error in jsonData.errors)
-							//IE6 bug fix
+							/*/IE6 bug fix */
 							if(error !== 'indexOf')
 								errors += '<li>'+jsonData.errors[error]+'</li>';
 						errors += '</ol>';
@@ -504,7 +503,7 @@ $(function() {
 					}
 					else
 					{
-						// update token
+						/*/ update token */
 						static_token = jsonData.token;
 						updateNewAccountToAddressBlock();
 					}
@@ -517,12 +516,12 @@ $(function() {
 			return false;
 		});
 		
-		// INVOICE ADDRESS
+		/*/ INVOICE ADDRESS */
 		$('#invoice_address').click(function() {
 			bindCheckbox();
 		});
 		
-		// VALIDATION / CREATION AJAX
+		/*/ VALIDATION / CREATION AJAX */
 		$('#submitAccount').click(function() {
 			$('#opc_new_account-overlay, #opc_delivery_methods-overlay, #opc_payment_methods-overlay').fadeIn('slow')
 						
@@ -562,7 +561,7 @@ $(function() {
 			params += 'alias='+encodeURIComponent($('#alias').val())+'&';
 			params += 'other='+encodeURIComponent($('#other').val())+'&';
 			params += 'is_new_customer='+encodeURIComponent($('#is_new_customer').val())+'&';
-			// Clean the last &
+			/*/ Clean the last & */
 			params = params.substr(0, params.length-1);
 			
 			$.ajax({
@@ -580,7 +579,7 @@ $(function() {
 						var tmp = '';
 						var i = 0;
 						for(var error in jsonData.errors)
-							//IE6 bug fix
+							/*/IE6 bug fix */
 							if(error !== 'indexOf')
 							{
 								i = i+1;
@@ -602,7 +601,7 @@ $(function() {
 					}
 
 					isGuest = parseInt($('#is_new_customer').val()) == 1 ? 0 : 1;
-					// update addresses id
+					/*/ update addresses id */
 					if(jsonData.id_address_delivery !== undefined && jsonData.id_address_delivery > 0)
 						$('#opc_id_address_delivery').val(jsonData.id_address_delivery);
 					if(jsonData.id_address_invoice !== undefined && jsonData.id_address_invoice > 0)
@@ -610,15 +609,15 @@ $(function() {
 					
 					if (jsonData.id_customer !== undefined && jsonData.id_customer !== 0 && jsonData.isSaved)
 					{
-						// update token
+						/*/ update token */
 						static_token = jsonData.token;
 						
-						// It's not a new customer
+						/*/ It's not a new customer */
 						if ($('#opc_id_customer').val() !== '0')
 							if (!saveAddress('delivery'))
 								return false;
 						
-						// update id_customer
+						/*/ update id_customer */
 						$('#opc_id_customer').val(jsonData.id_customer);
 						
 						if ($('#invoice_address:checked').length !== 0)
@@ -627,10 +626,10 @@ $(function() {
 								return false;
 						}
 						
-						// update id_customer
+						/*/ update id_customer */
 						$('#opc_id_customer').val(jsonData.id_customer);
 						
-						// force to refresh carrier list
+						/*/ force to refresh carrier list */
 						if (isGuest)
 						{
 							isLogged = 1;
@@ -683,7 +682,7 @@ function bindCheckbox()
 
 function bindInputs()
 {
-	// Order message update
+	/*/ Order message update */
 	$('#message').blur(function() {
 		$('#opc_delivery_methods-overlay').fadeIn('slow');
 		$.ajax({
@@ -700,7 +699,7 @@ function bindInputs()
 				{
 					var errors = '';
 					for(var error in jsonData.errors)
-						//IE6 bug fix
+						/*/IE6 bug fix */
 						if(error !== 'indexOf')
 							errors += jsonData.errors[error] + "\n";
 					alert(errors);
@@ -716,12 +715,12 @@ function bindInputs()
 		});
 	});
 	
-	// Recyclable checkbox
+	/*/ Recyclable checkbox */
 	$('#recyclable').click(function() {
 		updateCarrierSelectionAndGift();
 	});
 	
-	// Gift checkbox update
+	/*/ Gift checkbox update */
 	$('#gift').click(function() {
 		if ($('#gift').is(':checked'))
 			$('#gift_div').show();
@@ -735,12 +734,12 @@ function bindInputs()
 	else
 		$('#gift_div').hide();
 
-	// Gift message update
+	/*/ Gift message update */
 	$('#gift_message').change(function() {
 		updateCarrierSelectionAndGift();
 	});
 	
-	// Term Of Service (TOS)
+	/*/ Term Of Service (TOS) */
 	$('#cgv').click(function() {
 		updatePaymentMethodsDisplay();
 	});
@@ -765,7 +764,7 @@ function multishippingMode(it)
 			'type': 'ajax',
 			'onClosed': function()
 			{
-				// Reload the cart
+				/*/ Reload the cart */
 				$.ajax({
 					type: 'POST',
 					headers: { "cache-control": "no-cache" },
@@ -782,8 +781,8 @@ function multishippingMode(it)
 			},
 			'onStart': function()
 			{
-				// Removing all ids on the cart to avoid conflic with the new one on the fancybox
-				// This action could "break" the cart design, if css rules use ids of the cart
+				/*/ Removing all ids on the cart to avoid conflic with the new one on the fancybox
+				// This action could "break" the cart design, if css rules use ids of the cart */
 				$.each($('#cart_summary *'), function(it, el) {
 					$(el).attr('id', '');
 				});
@@ -825,7 +824,7 @@ function multishippingMode(it)
 			$('#address_invoice_form').show();
 		$('.address_add a').attr('href', addressUrl);
 		
-		// Disable multi address shipping
+		/*/ Disable multi address shipping */
 		$.ajax({
 			type: 'POST',
 			headers: { "cache-control": "no-cache" },			
@@ -835,7 +834,7 @@ function multishippingMode(it)
 			data: 'ajax=true&method=noMultiAddressDelivery'
 		});
 		
-		// Reload the cart
+		/*/ Reload the cart */
 		$.ajax({
 			type: 'POST',
 			headers: { "cache-control": "no-cache" },			
@@ -852,9 +851,9 @@ function multishippingMode(it)
 }
 
 $(document).ready(function() {
-	// If the multishipping mode is off assure us the checkbox "I want to specify a delivery address for each products I order." is unchecked.
+	/*/ If the multishipping mode is off assure us the checkbox "I want to specify a delivery address for each products I order." is unchecked. */
 	$('#multishipping_mode_checkbox').attr('checked', false);
-	// If the multishipping mode is on, check the box "I want to specify a delivery address for each products I order.".
+	/*/ If the multishipping mode is on, check the box "I want to specify a delivery address for each products I order.". */
 	if (typeof(multishipping_mode) !== 'undefined' && multishipping_mode)
 	{
 		$('#multishipping_mode_checkbox').click();

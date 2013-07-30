@@ -2,6 +2,6 @@
 <options>
 <js_tab>true</js_tab>
 <numProduct>20</numProduct>
-<scrollPanel>false</scrollPanel>
+<scrollPanel>true</scrollPanel>
 <show>2</show>
 </options>

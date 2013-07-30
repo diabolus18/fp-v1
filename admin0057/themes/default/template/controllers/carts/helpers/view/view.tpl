@@ -125,7 +125,7 @@
 					<td align="center">{$product.image}</td>
 					<td>
 						<a href="{$link->getAdminLink('AdminProducts')|escape:'htmlall':'UTF-8'}&id_product={$product.id_product}&updateproduct">
-						<span class="productName">{$product.name}</span>{if isset($product.attributes)}<br />{$product.attributes}{/if}<br />
+						<span class="productName">{$product.name}</span>{if isset($product.attributes)}<br />{$product.attributes}{/if}{if isset($product.instructions)}<br />{$product.instructions}{/if}<br />
 						{if $product.reference}{l s='Ref:'} {$product.reference}{/if}
 						{if $product.reference && $product.supplier_reference} / {$product.supplier_reference}{/if}
 						</a>

@@ -221,7 +221,6 @@ $(window).load(function(){
 
 {include file="$tpl_dir./breadcrumb.tpl"}
 <div id="primary_block" class="clearfix">
-
 	{if isset($adminActionDisplay) && $adminActionDisplay}
 	<div id="admin-action">
 		<p>{l s='This product is not visible to your customers.'}
@@ -291,6 +290,7 @@ $(window).load(function(){
 
 	<!-- left infos-->
 	<div id="pb-left-column" class="grid_10 omega">
+
 		<div class="share">
 				<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4d9545df0e46a4cf"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
 
@@ -302,6 +302,7 @@ $(window).load(function(){
 		
 		
 		<div id="short_description_block">
+		
 			{if $product->description_short}
 				<div id="short_description_content" class="rte align_justify">{$product->description_short}</div>
 			{/if}
@@ -322,6 +323,8 @@ $(window).load(function(){
 		</div>
 		{/if}
 		
+{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}		
+		
 		{*{if isset($colors) && $colors}
 		<!-- colors -->
 		<div id="color_picker">
@@ -337,6 +340,7 @@ $(window).load(function(){
 		{/if}*}
 
 		{if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
+		
 		<!-- add to cart form-->
 		<form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart')}" method="post">
 
@@ -534,6 +538,7 @@ $(window).load(function(){
 		</form>
 		{/if}
 		{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
+		
 	</div>
 </div>
 
@@ -704,6 +709,7 @@ $(window).load(function(){
 					<span id="ajax-loader" style="display:none"><img src="{$img_ps_dir}loader.gif" alt="loader" /></span>
 				</p>
 			</form>
+			
 			<p class="clear required"><sup>*</sup> {l s='required fields'}</p>
 		</div>
 	{/if}
@@ -712,7 +718,7 @@ $(window).load(function(){
 	</div>
 </div>
 {/if}
-{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}
+
 {if isset($packItems) && $packItems|@count > 0}
 	<div id="blockpack">
 		<h2>{l s='Pack content'}</h2>

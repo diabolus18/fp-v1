@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-26 17:32:03
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 12:07:57
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2976851f29673626449-31973783%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2907551f7907d480803-21237347%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'def7c0e5679f7051b0c52d2bdc71ebd7893013af' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\product.tpl',
-      1 => 1374235091,
+      1 => 1375178869,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2976851f29673626449-31973783',
+  'nocache_hash' => '2907551f7907d480803-21237347',
   'function' => 
   array (
   ),
@@ -69,6 +69,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_EXTRA_LEFT' => 0,
     'packItems' => 0,
     'packItem' => 0,
+    'HOOK_PRODUCT_FOOTER' => 0,
     'HOOK_PRODUCT_ACTIONS' => 0,
     'static_token' => 0,
     'tax_enabled' => 0,
@@ -106,13 +107,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'customizationField' => 0,
     'textFields' => 0,
     'HOOK_PRODUCT_TAB_CONTENT' => 0,
-    'HOOK_PRODUCT_FOOTER' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f29674f422f4_03759501',
+  'unifunc' => 'content_51f7907f12f596_52111471',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f29674f422f4_03759501')) {function content_51f29674f422f4_03759501($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51f7907f12f596_52111471')) {function content_51f7907f12f596_52111471($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.date_format.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.counter.php';
@@ -431,7 +431,6 @@ $(window).load(function(){
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./breadcrumb.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <div id="primary_block" class="clearfix">
-
 	<?php if (isset($_smarty_tpl->tpl_vars['adminActionDisplay']->value)&&$_smarty_tpl->tpl_vars['adminActionDisplay']->value){?>
 	<div id="admin-action">
 		<p><?php echo smartyTranslate(array('s'=>'This product is not visible to your customers.'),$_smarty_tpl);?>
@@ -539,6 +538,7 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 
 	<!-- left infos-->
 	<div id="pb-left-column" class="grid_10 omega">
+
 		<div class="share">
 				<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4d9545df0e46a4cf"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
 
@@ -552,6 +552,7 @@ $_smarty_tpl->tpl_vars['image']->_loop = true;
 		
 		
 		<div id="short_description_block">
+		
 			<?php if ($_smarty_tpl->tpl_vars['product']->value->description_short){?>
 				<div id="short_description_content" class="rte align_justify"><?php echo $_smarty_tpl->tpl_vars['product']->value->description_short;?>
 </div>
@@ -583,9 +584,13 @@ $_smarty_tpl->tpl_vars['packItem']->_loop = true;
 		</div>
 		<?php }?>
 		
+<?php if (isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value){?><?php echo $_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value;?>
+<?php }?>		
+		
 		
 
 		<?php if (($_smarty_tpl->tpl_vars['product']->value->show_price&&!isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value))||isset($_smarty_tpl->tpl_vars['groups']->value)||$_smarty_tpl->tpl_vars['product']->value->reference||(isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_ACTIONS']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_ACTIONS']->value)){?>
+		
 		<!-- add to cart form-->
 		<form id="buy_block" <?php if ($_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value&&!isset($_smarty_tpl->tpl_vars['groups']->value)&&$_smarty_tpl->tpl_vars['product']->value->quantity>0){?>class="hidden"<?php }?> action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart');?>
 " method="post">
@@ -874,6 +879,7 @@ $_smarty_tpl->tpl_vars['group_attribute']->_loop = true;
 		<?php }?>
 		<?php if (isset($_smarty_tpl->tpl_vars['HOOK_EXTRA_RIGHT']->value)&&$_smarty_tpl->tpl_vars['HOOK_EXTRA_RIGHT']->value){?><?php echo $_smarty_tpl->tpl_vars['HOOK_EXTRA_RIGHT']->value;?>
 <?php }?>
+		
 	</div>
 </div>
 
@@ -1150,6 +1156,7 @@ $_smarty_tpl->tpl_vars['field']->_loop = true;
 loader.gif" alt="loader" /></span>
 				</p>
 			</form>
+			
 			<p class="clear required"><sup>*</sup> <?php echo smartyTranslate(array('s'=>'required fields'),$_smarty_tpl);?>
 </p>
 		</div>
@@ -1160,8 +1167,7 @@ loader.gif" alt="loader" /></span>
 	</div>
 </div>
 <?php }?>
-<?php if (isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value){?><?php echo $_smarty_tpl->tpl_vars['HOOK_PRODUCT_FOOTER']->value;?>
-<?php }?>
+
 <?php if (isset($_smarty_tpl->tpl_vars['packItems']->value)&&count($_smarty_tpl->tpl_vars['packItems']->value)>0){?>
 	<div id="blockpack">
 		<h2><?php echo smartyTranslate(array('s'=>'Pack content'),$_smarty_tpl);?>

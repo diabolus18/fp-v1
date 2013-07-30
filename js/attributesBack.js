@@ -183,8 +183,8 @@ function add_attr()
 	if (attr_name.val() == 0)
 		return jAlert(msg_combination_2);
 	
-	if (attr_group.val() in storeUsedGroups)
-		return jAlert(msg_combination_3);
+/*	if (attr_group.val() in storeUsedGroups)
+		return jAlert(msg_combination_3);*/
 
 	storeUsedGroups[attr_group.val()] = true;
 	$('<option></option>')

@@ -260,10 +260,10 @@
 									{if isset($is_guest) && $is_guest}
 										<a href="{$link->getPageLink('get-file', true, NULL, "key={$product.filename|escape:'htmlall':'UTF-8'}-{$product.download_hash|escape:'htmlall':'UTF-8'}&id_order={$order->id}&secure_key={$order->secure_key}")}" title="{l s='Download this product'}"> {$product.product_name|escape:'htmlall':'UTF-8'} 	</a>
 									{else}
-									<a href="{$link->getPageLink('get-file', true, NULL, "key={$product.filename|escape:'htmlall':'UTF-8'}-{$product.download_hash|escape:'htmlall':'UTF-8'}")}" title="{l s='Download this product'}"> {$product.product_name|escape:'htmlall':'UTF-8'} 	</a>
+									<a href="{$link->getPageLink('get-file', true, NULL, "key={$product.filename|escape:'htmlall':'UTF-8'}-{$product.download_hash|escape:'htmlall':'UTF-8'}")}" title="{l s='download this product'}"> {$product.product_name|escape:'htmlspecialchars':'UTF-8'} 	</a>
 									{/if}
 								{else}
-									{$product.product_name|escape:'htmlall':'UTF-8'}
+									{$product.product_name|escape:'htmlspecialchars':'UTF-8'}
 								{/if}
 							</label>
 						</td>

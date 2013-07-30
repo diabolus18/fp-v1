@@ -28,9 +28,21 @@
 {foreach from=$products item=product name='products'}
 {assign var='productId' value=$product.id_product}
 {assign var='productAttributeId' value=$product.id_product_attribute}
+{assign var="product_link" value=$link->getProductLink($product.id_product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)|escape:'htmlall':'UTF-8'}
+{if $product_link|strpos:'?' === false}
+	{assign var="awp_product_link" value="?"}
+{else}
+	{assign var="awp_product_link" value="&"}
+{/if}
+{assign var="awp_product_link" value=$awp_product_link|cat:'ipa='|cat:$productAttributeId|cat:'&ins='|cat:$product.instructions_valid}
+{if $product_link|strpos:'#' > 0}
+	{assign var='amp_pos' value=$product_link|strpos:'#'}
+	{assign var='product_link' value=$product_link|substr:0:$amp_pos}
+{/if}
+{assign var='product_link' value=$product_link|cat:$awp_product_link}
 	{ldelim}
 		"id":            {$product.id_product},
-		"link":          "{$link->getProductLink($product.id_product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)|addslashes|replace:'\\\'':'\''}",
+		"link":          "{$product_link|addslashes|replace:'\\\'':'\''}",
 		"quantity":      {$product.cart_quantity},
 		"priceByLine":   "{if $priceDisplay == $smarty.const.PS_TAX_EXC}{displayWtPrice|html_entity_decode:2:'UTF-8' p=$product.total}{else}{displayWtPrice|html_entity_decode:2:'UTF-8' p=$product.total_wt}{/if}",
 		"name":          "{$product.name|html_entity_decode:2:'UTF-8'|escape:'htmlall'|truncate:15:'...':true}",
@@ -44,6 +56,10 @@
 		"attributes":    "{$product.attributes_small|addslashes|replace:'\\\'':'\''}",
 {else}
 		"hasAttributes": false,
+{/if}
+{if isset($product.instructions)}
+		"instructions":    "{$product.instructions|addslashes|replace:'\\\'':'\''}",
+		"instructions_valid":    "{$product.instructions_valid|addslashes}",
 {/if}
 		"hasCustomizedDatas": {if isset($customizedDatas.$productId.$productAttributeId)}true{else}false{/if},
 		"customizedDatas":[

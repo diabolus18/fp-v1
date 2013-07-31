@@ -325,10 +325,18 @@ if (awp_add_to_cart_display == "bottom")
 							{$group.name|escape:'htmlspecialchars':'UTF-8'}
 						{/if}
 						{if isset($group.group_description) && $group.group_description != ""}
-							<br />
+							
+							<!--  MISE EN COMMENTAITE DE LA DIV POUR AFFICHER TITRE ET DESCRIPTION SUR MEME LIGNE
 							<div class="awp_description">
+							-->
+							
 								{$group.group_description|escape:'htmlspecialchars':'UTF-8'}
+							
+							<!--
 							</div>
+							-->
+							
+							
 						{/if}
 					</div>
 					<div class="awp_content">

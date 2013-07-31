@@ -116,8 +116,10 @@ span.view_scroll_spacer {}
 }
 
 /* form */
+/*AJOUT DISPLAY:NONE POUR NE PAS AJOUTER MESSAGE IL VOUS RESTE 1 CARCTERE CHAMP GRAVURE*/
 #pb-left-column #buy_block {
 	margin-top:10px;
+	display : none;
 }
 
 #buy_block p {

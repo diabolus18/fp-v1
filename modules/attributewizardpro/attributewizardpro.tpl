@@ -468,7 +468,10 @@ if (awp_add_to_cart_display == "bottom")
                								<input type="hidden" name="pi_default_{$group.id_group}" id="pi_default_{$group.id_group}" value="{$default_impact}" />
                							{/if}
                						</div>
-               						<div id="awp_impact_cell{$id_attribute}" class="{if !$group.group_layout}awp_nila{else}awp_nica{/if}">
+									
+									
+               						<!-- MISE EN COMMENTAIRE AJOUT X € A DROITE BOITE TEXTE GRAVURE
+									<div id="awp_impact_cell{$id_attribute}" class="{if !$group.group_layout}awp_nila{else}awp_nica{/if}">
                    						{foreach from=$attributeImpacts key=id_attributeImpact item=attributeImpact}
 										{strip}
                    							{if $id_attribute == $attributeImpact.id_attribute}
@@ -491,7 +494,9 @@ if (awp_add_to_cart_display == "bottom")
                    							{/if}
                    						{/strip}
    	              						{/foreach}
-               						</div>
+               						</div>      -->
+									
+									
        								{if !$group.group_layout && $group.group_height}
 		           						<script type="text/javascript">
            								$("#awp_textbox_cell{$id_attribute}").css('margin-top',({$group.group_height}/2) - 8);

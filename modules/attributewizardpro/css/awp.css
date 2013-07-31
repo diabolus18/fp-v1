@@ -167,6 +167,7 @@ div#attributes { display: none !important; }
 .awp_red
 {
 	color: red;
+	display : none;
 }
 .awp_pop_close
 {

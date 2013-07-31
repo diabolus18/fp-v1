@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-31 08:17:50
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-31 11:35:37
          compiled from "C:\wamp\www\fp-v1\modules\attributewizardpro\attributewizardpro.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:48751f8ac0e690f75-09470583%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1446051f8da6903f306-22576028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '96dafc33662f979d6f670c65a1f789cdb70e1a55' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\attributewizardpro\\attributewizardpro.tpl',
-      1 => 1374854437,
+      1 => 1375263329,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '48751f8ac0e690f75-09470583',
+  'nocache_hash' => '1446051f8da6903f306-22576028',
   'function' => 
   array (
   ),
@@ -65,9 +65,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f8ac109cc735_91867853',
+  'unifunc' => 'content_51f8da6b52d4b8_32846776',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f8ac109cc735_91867853')) {function content_51f8ac109cc735_91867853($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51f8da6b52d4b8_32846776')) {function content_51f8da6b52d4b8_32846776($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 ?><!-- MODULE Attribute Wizard Pro-->
 <?php if (isset($_smarty_tpl->tpl_vars['groups']->value)){?>
@@ -660,7 +660,7 @@ _<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
 , false);" />&nbsp;<?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['awp_loop']['first']){?><input type="hidden" name="pi_default_<?php echo $_smarty_tpl->tpl_vars['group']->value['id_group'];?>
 " id="pi_default_<?php echo $_smarty_tpl->tpl_vars['group']->value['id_group'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['default_impact']->value;?>
-" /><?php }?></div><div id="awp_impact_cell<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
+" /><?php }?></div><!-- <div id="awp_impact_cell<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
 " class="<?php if (!$_smarty_tpl->tpl_vars['group']->value['group_layout']){?>awp_nila<?php }else{ ?>awp_nica<?php }?>"><?php  $_smarty_tpl->tpl_vars['attributeImpact'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['attributeImpact']->_loop = false;
  $_smarty_tpl->tpl_vars['id_attributeImpact'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['attributeImpacts']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -680,7 +680,9 @@ $_smarty_tpl->tpl_vars['attributeImpact']->_loop = true;
 "><?php echo $_smarty_tpl->tpl_vars['group']->value['group_max_limit'];?>
 </span></div><?php }?><?php }?>
    	              						<?php } ?>
-               						</div>
+               						</div>      -->
+									
+									
        								<?php if (!$_smarty_tpl->tpl_vars['group']->value['group_layout']&&$_smarty_tpl->tpl_vars['group']->value['group_height']){?>
 		           						<script type="text/javascript">
            								$("#awp_textbox_cell<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>

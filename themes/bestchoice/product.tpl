@@ -242,6 +242,7 @@ $(window).load(function(){
 	<!-- right infos-->
 	<div id="pb-right-column" class="grid_7 alpha">
 		<!-- product img-->
+		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
 		<div id="image-block">
 		{if $have_image}
 			<span id="view_full_size">
@@ -279,24 +280,8 @@ $(window).load(function(){
 		</div>
 		{/if}
 		{if isset($images) && count($images) > 1}<p class="resetimg clear"><span id="wrapResetImages" style="display: none;"><a id="resetImages" href="{$link->getProductLink($product)}" onclick="$('span#wrapResetImages').hide('slow');return (false);">{l s='Display all pictures'}</a></span></p>{/if}
-		<!-- usefull links-->
-		<ul id="usefull_link_block">
-			{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-			<li class="print"><a href="javascript:print();">{l s='Print'}</a></li>
-			{if $have_image && !$jqZoomEnabled}
-			{/if}
-		</ul>
-	</div>
-
-	<!-- left infos-->
-	<div id="pb-left-column" class="grid_10 omega">
-
-		<div class="share">
-				<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4d9545df0e46a4cf"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
-
-			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d9545df0e46a4cf"></script>
-		</div>
-		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
+		
+		
 		<p class="category_name">{$product->category|escape:'htmlall':'UTF-8'}</p>
 		{if $product->description_short OR $packItems|@count > 0}
 		
@@ -322,6 +307,29 @@ $(window).load(function(){
 			{/if}
 		</div>
 		{/if}
+		<br/>
+		<br/>
+		<!-- usefull links-->
+		<ul id="usefull_link_block">
+			{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
+			<li class="print"><a href="javascript:print();">{l s='Print'}</a></li>
+			{if $have_image && !$jqZoomEnabled}
+			{/if}
+		</ul>
+		
+		
+	</div>
+
+	<!-- left infos-->
+	<div id="pb-left-column" class="grid_10 omega">
+
+		<div class="share">
+				<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4d9545df0e46a4cf"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d9545df0e46a4cf"></script>
+		</div>
+	
+		
 		
 {if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}		
 		

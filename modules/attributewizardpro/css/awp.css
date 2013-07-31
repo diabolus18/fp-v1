@@ -22,26 +22,24 @@ div#attributes { display: none !important; }
 .awp_box
 {
 	background: transparent;
-	margin:0 0 10px 0;
+	margin:0px 0px 8px 0px;
 	width: 100%;
 }
-.xtop, .xbottom {display:block; background:transparent; font-size:1px;}
+.xtop, .xbottom {display:block; background:transparent;}
 .xb1, .xb2, .xb3, .xb4 {display:block; overflow:hidden;}
-.xb1, .xb2, .xb3 {height:1px;}
-.xb2, .xb3, .xb4 {background:#eeeeee; border-left:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
-.xb1 {margin:0 5px; background:#d9d9d9;}
-.xb2 {margin:0 3px; border-width:0 2px;}
-.xb3 {margin:0 2px;}
-.xb4 {height:2px; margin:0 1px;}
-.xbtop {background-color:#f3f3f3}
-.xbbot {background-color:#ffffff}
+.xb1, .xb2, .xb3 {}
+.xb2, .xb3, .xb4 {}
+.xb1 {}
+.xb2 {}
+.xb3 {}
+.xb4 {}
+.xbtop {}
+.xbbot {}
 
 .awp_header {
 	display:block;
-	background:#f3f3f3; 
-	border:0 solid #d9d9d9; 
-	border-width:0 1px; 
-	padding: 0px 10px 5px 10px;
+	background:#ffffff;  
+	padding: 0px 0px 3px 10px;
 	font-weight: bold;
 	font-size: 13px;
 }
@@ -53,11 +51,11 @@ div#attributes { display: none !important; }
 
 .awp_content {
 	display:block; 
-	background:#ffffff; 
-	border:0 solid #d9d9d9; 
-	border-width:0 1px; 
-	padding: 10px 10px 5px 10px;
+	border-width:0 0 1px 0; 
+	padding: 10px 0px 5px 10px;
 	overflow: auto;
+	border-style:dashed;
+	border-color:#cccccc;
 }
 
 
@@ -118,7 +116,7 @@ div#attributes { display: none !important; }
 }
 .awp_cell_cont{
 	float: left;
-	margin: 0 6px 10px 0;
+	margin: 0 0px 5px 0;
 }
 .awp_rrla
 {

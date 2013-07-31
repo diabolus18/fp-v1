@@ -24,7 +24,7 @@
 }
 #subcategories ul{overflow:hidden;padding:10px 0;width:104%}
 
-#subcategories ul li{width:124px;display:inline-block;margin:0 25px 10px 0;vertical-align:top;}
+#subcategories ul li{width:30%;display:inline-block;margin:0 25px 10px 0;vertical-align:top;}
 #subcategories ul li a.img{text-align:center;display:block;margin-bottom:10px;}
 #subcategories ul li a.img img{max-width:100%}
 #subcategories ul li a{font-weight:700}

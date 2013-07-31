@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-25 11:58:48
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 22:17:50
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\products\multishop\checkbox.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2664051d6c2be3d25f7-85143793%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2454751f81f6ef38b44-96667007%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2664051d6c2be3d25f7-85143793',
+  'nocache_hash' => '2454751f81f6ef38b44-96667007',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d6c2be4b7eb3_01261314',
   'variables' => 
   array (
     'display_multishop_checkboxes' => 0,
@@ -29,8 +27,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'multishop_check' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51f81f6f7466c0_49609290',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d6c2be4b7eb3_01261314')) {function content_51d6c2be4b7eb3_01261314($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51f81f6f7466c0_49609290')) {function content_51f81f6f7466c0_49609290($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['display_multishop_checkboxes']->value)&&$_smarty_tpl->tpl_vars['display_multishop_checkboxes']->value){?>
 	<?php if (isset($_smarty_tpl->tpl_vars['multilang']->value)&&$_smarty_tpl->tpl_vars['multilang']->value){?>

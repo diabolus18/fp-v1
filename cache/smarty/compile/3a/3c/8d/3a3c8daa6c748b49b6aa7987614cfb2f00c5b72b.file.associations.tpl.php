@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-25 11:58:53
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 22:18:12
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\products\associations.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2176651d6c2c236e043-98698053%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:865751f81f844b6dd4-85776643%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2176651d6c2c236e043-98698053',
+  'nocache_hash' => '865751f81f844b6dd4-85776643',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d6c2c24f2937_67899415',
   'variables' => 
   array (
     'category_tree' => 0,
@@ -29,8 +27,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'product' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51f81f84d4d911_20483860',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d6c2c24f2937_67899415')) {function content_51d6c2c24f2937_67899415($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51f81f84d4d911_20483860')) {function content_51f81f84d4d911_20483860($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 
 <input type="hidden" name="submitted_tabs[]" value="Associations" />

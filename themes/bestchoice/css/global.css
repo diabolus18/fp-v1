@@ -706,8 +706,9 @@ table#cart_summary .cart_unit,th.cart_availability {text-align: center}
 table#cart_summary  .cart_quantity {text-align:left!important}
 table#cart_summary .customization .cart_quantity {}
 .cart_quantity .cart_quantity_input {
-	width: 30px;color:#646464;text-align:left;
-	border:1px solid #e4e4e4;position:absolute;left:-10px;top:18px;height:22px;line-height:22px;padding:0 5px
+	width: 30px;color:#646464;text-align:right;
+	border:1px solid #e4e4e4;position:absolute;left:-10px;top:18px;height:22px;line-height:22px;padding:0 5px;
+	display : none;
 }
 .cart_quantity .cart_quantity_button {
 	position: relative;

@@ -4,7 +4,7 @@
 <t_b_img>bkg_title_default.jpg</t_b_img>
 <bg_mode>wide_mode</bg_mode>
 <column>1_column</column>
-<column_class>grid_24(3)</column_class>
+<column_class>grid_24(4)</column_class>
 <g_b_pattern>up_load_image_general</g_b_pattern>
 <g_b_repeat>repeat-x</g_b_repeat>
 <g_link_color_normal>#eedc77</g_link_color_normal>

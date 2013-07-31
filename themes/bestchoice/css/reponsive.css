@@ -1,6 +1,6 @@
 	/* Bigger then standard 960px (1280px) */
 	@media only screen and (min-width: 1200px) {
-		.one_column #pb-left-column{width:780px}
+		.one_column #pb-left-column{width:30%}
 		.two_column  .grid_16  #pb-left-column{width:380px;}
 		.two_column  .grid_20  #pb-left-column{width:580px;}
 

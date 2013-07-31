@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-19 13:39:44
+<?php /* Smarty version Smarty-3.1.13, created on 2013-07-30 22:26:34
          compiled from "C:\wamp\www\fp-v1\modules\gamification\views\templates\admin\gamification\helpers\view\filters.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:84551d6c3d3ebb217-55971618%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:569451f8217ae31040-30183484%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,12 +11,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '84551d6c3d3ebb217-55971618',
+  'nocache_hash' => '569451f8217ae31040-30183484',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51d6c3d4021594_85268422',
   'variables' => 
   array (
     'type' => 0,
@@ -28,8 +26,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'level' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_51f8217b0602d7_89038393',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51d6c3d4021594_85268422')) {function content_51d6c3d4021594_85268422($_smarty_tpl) {?><div class="badges_filters">
+<?php if ($_valid && !is_callable('content_51f8217b0602d7_89038393')) {function content_51f8217b0602d7_89038393($_smarty_tpl) {?><div class="badges_filters">
 <?php if ($_smarty_tpl->tpl_vars['type']->value=='badges_feature'||$_smarty_tpl->tpl_vars['type']->value=='badges_achievement'){?>
 	<div><?php echo smartyTranslate(array('s'=>"Type:",'mod'=>'gamification'),$_smarty_tpl);?>
 

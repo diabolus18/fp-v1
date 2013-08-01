@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-31 18:02:37
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:19:47
          compiled from "C:\wamp\www\fp-v1\modules\cssearchpopular\cssearchpopular.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1352951f9351d4d4e08-33113357%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2621251fa1a2364b391-54728841%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1352951f9351d4d4e08-33113357',
+  'nocache_hash' => '2621251fa1a2364b391-54728841',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f9351d511777_37385457',
+  'unifunc' => 'content_51fa1a2370b531_68161554',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f9351d511777_37385457')) {function content_51f9351d511777_37385457($_smarty_tpl) {?><!-- MODULE search popular -->
+<?php if ($_valid && !is_callable('content_51fa1a2370b531_68161554')) {function content_51fa1a2370b531_68161554($_smarty_tpl) {?><!-- MODULE search popular -->
 <?php if ($_smarty_tpl->tpl_vars['searchList']->value){?>
 <div class="block_popular_word_search clearfix">
 	<h4 class="title_block"><?php echo smartyTranslate(array('s'=>"Most popular top searches",'mod'=>"cssearchpopular"),$_smarty_tpl);?>

@@ -12,12 +12,16 @@
 			<h3 class="cs-cat-title">
 				<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}">{$category.name}</a>
 			</h3>
+			
+			<!-- MISE EN COMMENTAIRE AFFICHAGE SOUS CATEGORIES PAGE ACCUEIL
 			<ul class="sub_cat">
 				{foreach from=$category.subs item=sub name=subs}
 					<li ><a href="{$link->getCategoryLink($sub.id_category, $sub.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$sub.name|escape:'htmlall':'UTF-8'}">{$sub.name}</a></li>
 				{/foreach}
 				
 			</ul>
+			
+			-->
 		</div>
 		<div class="product-latest">
 			{foreach from=$category.product_latest item=product name=product_latest}

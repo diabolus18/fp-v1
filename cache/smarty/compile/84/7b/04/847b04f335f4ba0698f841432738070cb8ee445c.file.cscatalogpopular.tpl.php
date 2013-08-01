@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-07-31 18:02:36
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:19:46
          compiled from "C:\wamp\www\fp-v1\modules\cscatalogpopular\cscatalogpopular.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2115351f9351c56d8f1-78428799%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1070051fa1a224612c3-80642154%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '847b04f335f4ba0698f841432738070cb8ee445c' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cscatalogpopular\\cscatalogpopular.tpl',
-      1 => 1374235263,
+      1 => 1375345116,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2115351f9351c56d8f1-78428799',
+  'nocache_hash' => '1070051fa1a224612c3-80642154',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51f9351c732257_35693935',
+  'unifunc' => 'content_51fa1a22933737_13562549',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51f9351c732257_35693935')) {function content_51f9351c732257_35693935($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51fa1a22933737_13562549')) {function content_51fa1a22933737_13562549($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS catalog popular -->
 <?php if (isset($_smarty_tpl->tpl_vars['category_list']->value)){?>
 <?php $_smarty_tpl->tpl_vars['col'] = new Smarty_variable(2, null, 0);?>
@@ -54,6 +54,8 @@ $_smarty_tpl->tpl_vars['category']->_loop = true;
 "><?php echo $_smarty_tpl->tpl_vars['category']->value['name'];?>
 </a>
 			</h3>
+			
+			<!-- MISE EN COMMENTAIRE AFFICHAGE SOUS CATEGORIES PAGE ACCUEIL
 			<ul class="sub_cat">
 				<?php  $_smarty_tpl->tpl_vars['sub'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['sub']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['category']->value['subs']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -67,6 +69,8 @@ $_smarty_tpl->tpl_vars['sub']->_loop = true;
 				<?php } ?>
 				
 			</ul>
+			
+			-->
 		</div>
 		<div class="product-latest">
 			<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['product']->_loop = false;

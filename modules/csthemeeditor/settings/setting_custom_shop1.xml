@@ -2,7 +2,7 @@
 <setting>
 <g_b_img>1374846197bkg_page_dfault_fontenille-pataud.jpg</g_b_img>
 <t_b_img>bkg_title_default.jpg</t_b_img>
-<bg_mode>wide_mode</bg_mode>
+<bg_mode>box_mode</bg_mode>
 <column>1_column</column>
 <column_class>grid_24(3)</column_class>
 <g_b_pattern>up_load_image_general</g_b_pattern>
@@ -13,7 +13,12 @@
 <g_b_color_custom>#000000</g_b_color_custom>
 <h_color_2>#eedc77</h_color_2>
 <h_color_3>#eedc77</h_color_3>
-<h_fstyle_1>Bokor</h_fstyle_1>
+<h_fstyle_1>Open Sans</h_fstyle_1>
+<h_fsize_1>12</h_fsize_1>
+<h_fweight_1>normal</h_fweight_1>
+<h_fstyle_2>Open Sans</h_fstyle_2>
+<h_fsize_2>12</h_fsize_2>
+<h_fweight_2>normal</h_fweight_2>
 <f_b_color>#edae76</f_b_color>
 <mp_b_color_hover>#e0e0e0</mp_b_color_hover>
 <p_price_color>#edae76</p_price_color>

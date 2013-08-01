@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:19:46
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:40:57
          compiled from "C:\wamp\www\fp-v1\modules\cscatalogpopular\cscatalogpopular.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1070051fa1a224612c3-80642154%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1871251fa1f19b03645-43660563%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '847b04f335f4ba0698f841432738070cb8ee445c' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cscatalogpopular\\cscatalogpopular.tpl',
-      1 => 1375345116,
+      1 => 1375346352,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1070051fa1a224612c3-80642154',
+  'nocache_hash' => '1871251fa1f19b03645-43660563',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa1a22933737_13562549',
+  'unifunc' => 'content_51fa1f19e7fcb6_74477039',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa1a22933737_13562549')) {function content_51fa1a22933737_13562549($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51fa1f19e7fcb6_74477039')) {function content_51fa1f19e7fcb6_74477039($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS catalog popular -->
 <?php if (isset($_smarty_tpl->tpl_vars['category_list']->value)){?>
 <?php $_smarty_tpl->tpl_vars['col'] = new Smarty_variable(2, null, 0);?>
@@ -66,12 +66,26 @@ $_smarty_tpl->tpl_vars['sub']->_loop = true;
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['sub']->value['name'], 'htmlall', 'UTF-8');?>
 "><?php echo $_smarty_tpl->tpl_vars['sub']->value['name'];?>
 </a></li>
-				<?php } ?>
-				
+				<?php } ?>				
 			</ul>
-			
 			-->
+			
 		</div>
+		<div class="product-latest">
+			<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['product']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['category']->value['product_latest']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['product']->key => $_smarty_tpl->tpl_vars['product']->value){
+$_smarty_tpl->tpl_vars['product']->_loop = true;
+?>
+				<a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['link']->value->getCategoryLink($_smarty_tpl->tpl_vars['category']->value['id_category'],$_smarty_tpl->tpl_vars['category']->value['link_rewrite']), 'htmlall', 'UTF-8');?>
+" title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['category']->value['name'], 'htmlall', 'UTF-8');?>
+"><img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['id_image'],'home_default');?>
+" alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'html', 'UTF-8');?>
+" /></a>
+			<?php } ?>
+		</div>
+		
+		<!-- MISE EN COMMENTAIRE REDIRECTION VERS UN PRODUIT AU HASARD DE LA CATEGORIE
 		<div class="product-latest">
 			<?php  $_smarty_tpl->tpl_vars['product'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['product']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['category']->value['product_latest']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -85,6 +99,7 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 " /></a>
 			<?php } ?>
 		</div>
+		-->
 		</li>
 	<?php } ?>
 	<li class="last view-all"><a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getCategoryLink(2);?>

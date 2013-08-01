@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:19:48
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:41:01
          compiled from "C:\wamp\www\fp-v1\modules\blocksearch\blocksearch-instantsearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2740351fa1a24b75671-55819651%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:71151fa1f1d502ba4-13645186%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2740351fa1a24b75671-55819651',
+  'nocache_hash' => '71151fa1f1d502ba4-13645186',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa1a24c36d84_65311322',
+  'unifunc' => 'content_51fa1f1d78c962_23630634',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa1a24c36d84_65311322')) {function content_51fa1a24c36d84_65311322($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['instantsearch']->value){?>
+<?php if ($_valid && !is_callable('content_51fa1f1d78c962_23630634')) {function content_51fa1f1d78c962_23630634($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['instantsearch']->value){?>
 	<script type="text/javascript">
 	// <![CDATA[
 		function tryToCloseInstantSearch() {

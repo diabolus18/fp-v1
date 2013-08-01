@@ -22,7 +22,7 @@ sub{vertical-align:baseline}
 legend{color:#000}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button,textarea,select{font-size:100%}
-select{border:1px solid #e4e4e4;padding:5px;line-height:25px;color:#646464}
+select{border:1px solid #e4e4e4;padding:5px;line-height:25px;color:#646464; width:100%;}
 textarea{border:1px solid #e4e4e4;padding:10px;color:#646464}
 a {cursor:pointer}
 
@@ -1884,6 +1884,7 @@ tr.subitem > td:first-child + td {
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3 a{color:#397abd;font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3 a:hover{color:#323232;text-decoration:none;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group .product-latest{float:right;padding-left:20px;}
+#cs_home_center_bottom_left  .ul_cat_popular li.cat_group .product-latest img{width:100%;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group .cat-content{float:left;max-width:225px;}
 #cs_home_center_bottom_left  .ul_cat_popular li.view-all {padding-top:10px;}
 #cs_home_center_bottom_left  .ul_cat_popular li.view-all a{color:#397abd;font-size:11px;font-weight:700}

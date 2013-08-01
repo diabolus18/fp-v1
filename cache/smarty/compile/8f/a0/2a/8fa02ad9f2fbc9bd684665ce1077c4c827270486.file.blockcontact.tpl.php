@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:48:43
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 12:13:14
          compiled from "C:\wamp\www\fp-v1\modules\blockcontact\blockcontact.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1109451fa20eb0ae7c8-65105623%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2918551fa34bad0d5b0-25549558%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1109451fa20eb0ae7c8-65105623',
+  'nocache_hash' => '2918551fa34bad0d5b0-25549558',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa20eb1170a2_07764103',
+  'unifunc' => 'content_51fa34bad655e1_76509796',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa20eb1170a2_07764103')) {function content_51fa20eb1170a2_07764103($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51fa34bad655e1_76509796')) {function content_51fa34bad655e1_76509796($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 
 <div id="contact_block" class="block">

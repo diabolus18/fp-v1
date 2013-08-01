@@ -227,9 +227,14 @@ if (awp_add_to_cart_display == "bottom")
 						</div>
 					{/if}
 					{if $awp_is_edit}
+					
+					<!-- MISE EN COMMENTAIRE BOUTON EDITER FICHE PRODUIT
 						<div class="awp_stock_btn">
 							<input type="button" value="{l s='Edit' mod='attributewizardpro'}" class="exclusive awp_edit" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart(true);$(this).attr('disabled', {if $awp_psv3 == '1.4.9' || $awp_psv3 == '1.4.10' || $awp_psv == '1.5'}false{else}''{/if});" />&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
+						-->
+						
+						
 					{/if}
 					<div class="awp_stock_btn">
 						<input type="button" value="{l s='Add to cart' mod='attributewizardpro'}" class="exclusive" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart();{if $awp_popup}awp_customize_func();{/if}$(this).attr('disabled', {if $awp_psv3 == '1.4.9' || $awp_psv3 == '1.4.10' || $awp_psv == '1.5'}false{else}''{/if});" />
@@ -872,9 +877,13 @@ if (awp_add_to_cart_display == "bottom")
 						</div>
 					{/if}
 					{if $awp_is_edit}
+					
+					<!-- MISE EN COMMENTAIRE DU BOUTON EDITER DU BAS DE LA PAGE PRODUIT
 						<div class="awp_stock_btn">
 							<input type="button" value="{l s='Edit' mod='attributewizardpro'}" class="exclusive awp_edit" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart(true);$(this).attr('disabled', {if $awp_psv3 == '1.4.9' || $awp_psv3 == '1.4.10' || $awp_psv == '1.5'}false{else}''{/if});" />&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
+					-->	
+						
 					{/if}	
 					<div class="awp_stock_btn">
 						<input type="button" value="{l s='Add to cart' mod='attributewizardpro'}" class="exclusive" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart();{if $awp_popup}awp_customize_func();{/if}$(this).attr('disabled', {if $awp_psv3 == '1.4.9' || $awp_psv3 == '1.4.10' || $awp_psv == '1.5'}false{else}''{/if});" />

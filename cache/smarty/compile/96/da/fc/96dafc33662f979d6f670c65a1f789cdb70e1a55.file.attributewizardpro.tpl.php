@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 10:22:00
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 12:10:36
          compiled from "C:\wamp\www\fp-v1\modules\attributewizardpro\attributewizardpro.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2811751fa1aa8591886-10252356%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2514351fa341c006bb8-41596191%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '96dafc33662f979d6f670c65a1f789cdb70e1a55' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\attributewizardpro\\attributewizardpro.tpl',
-      1 => 1375264595,
+      1 => 1375351752,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2811751fa1aa8591886-10252356',
+  'nocache_hash' => '2514351fa341c006bb8-41596191',
   'function' => 
   array (
   ),
@@ -65,9 +65,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa1aad4cb497_51317950',
+  'unifunc' => 'content_51fa341e347972_48794462',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa1aad4cb497_51317950')) {function content_51fa1aad4cb497_51317950($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51fa341e347972_48794462')) {function content_51fa341e347972_48794462($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 ?><!-- MODULE Attribute Wizard Pro-->
 <?php if (isset($_smarty_tpl->tpl_vars['groups']->value)){?>
@@ -343,10 +343,15 @@ px;margin:auto">
 						</div>
 					<?php }?>
 					<?php if ($_smarty_tpl->tpl_vars['awp_is_edit']->value){?>
+					
+					<!-- MISE EN COMMENTAIRE BOUTON EDITER FICHE PRODUIT
 						<div class="awp_stock_btn">
 							<input type="button" value="<?php echo smartyTranslate(array('s'=>'Edit','mod'=>'attributewizardpro'),$_smarty_tpl);?>
 " class="exclusive awp_edit" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart(true);$(this).attr('disabled', <?php if ($_smarty_tpl->tpl_vars['awp_psv3']->value=='1.4.9'||$_smarty_tpl->tpl_vars['awp_psv3']->value=='1.4.10'||$_smarty_tpl->tpl_vars['awp_psv']->value=='1.5'){?>false<?php }else{ ?>''<?php }?>);" />&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
+						-->
+						
+						
 					<?php }?>
 					<div class="awp_stock_btn">
 						<input type="button" value="<?php echo smartyTranslate(array('s'=>'Add to cart','mod'=>'attributewizardpro'),$_smarty_tpl);?>
@@ -1106,10 +1111,14 @@ $_smarty_tpl->tpl_vars['attributeImpact']->_loop = true;
 						</div>
 					<?php }?>
 					<?php if ($_smarty_tpl->tpl_vars['awp_is_edit']->value){?>
+					
+					<!-- MISE EN COMMENTAIRE DU BOUTON EDITER DU BAS DE LA PAGE PRODUIT
 						<div class="awp_stock_btn">
 							<input type="button" value="<?php echo smartyTranslate(array('s'=>'Edit','mod'=>'attributewizardpro'),$_smarty_tpl);?>
 " class="exclusive awp_edit" onclick="$(this).attr('disabled', 'disabled');awp_add_to_cart(true);$(this).attr('disabled', <?php if ($_smarty_tpl->tpl_vars['awp_psv3']->value=='1.4.9'||$_smarty_tpl->tpl_vars['awp_psv3']->value=='1.4.10'||$_smarty_tpl->tpl_vars['awp_psv']->value=='1.5'){?>false<?php }else{ ?>''<?php }?>);" />&nbsp;&nbsp;&nbsp;&nbsp;
 						</div>
+					-->	
+						
 					<?php }?>	
 					<div class="awp_stock_btn">
 						<input type="button" value="<?php echo smartyTranslate(array('s'=>'Add to cart','mod'=>'attributewizardpro'),$_smarty_tpl);?>

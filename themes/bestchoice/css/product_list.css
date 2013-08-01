@@ -30,7 +30,7 @@ ul#product_list li p.compare input.comparator{margin:0 5px 0 0;vertical-align:mi
 .product_list li{width:100%!important;margin:0 0 20px!important;border-bottom:1px solid #e4e4e4;padding:0 0 20px!important;display:block!important}
 .product_list li.last_item{border:none}
 .product_list li .center_block{margin:0!important}
-.product_list li .image{width:200px;margin-left:30px;float:right;position:relative;}
+.product_list li .image{width:70%;margin-left:30px;float:right;position:relative;}
 .product_list li .image a.product_img_link{float:right}
 .product_list li .exclusive{margin-right:10px!important;}
 .product_list li p.compare{display:inline}

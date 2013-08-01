@@ -24,8 +24,8 @@
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .cat-content{max-width:185px;}
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .product-latest{width:140px;padding-left:10px;}
 		.cs_sample_block_footer .col, #footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us{width:220px;}
-		.one_column #pb-left-column{width:540px}
-		.two_column   #pb-right-column{margin-right:25px;width:45%}
+		.one_column #pb-left-column{width:300px}
+		.two_column   #pb-right-column{margin-right:5px;width:45%}
 		.two_column	 #pb-left-column{width:50%}
 		.two_column  #account-creation_form .account_creation.customerprivacy{margin-left:18px;}
 		
@@ -36,7 +36,7 @@
 	@media only screen and (max-width: 1023px) {
 		#left_column .block,.advertising_block{padding-right:0}
 		#right_column .block,#right_column .advertising_block{padding-left:0;}		
-		a.product_img_link img{max-width:100%}
+		a.product_img_link img{max-width:70%; float:right;}
 		
 		#create-account_form, #authentication #login_form{width:100%;margin:0 0 20px}
 		
@@ -96,7 +96,7 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 1023px) {
-		.one_column #pb-left-column{width:348px;}
+		.one_column #pb-left-column{width:30%;}
 		.sortPagiBar #bt_compare{padding-bottom:0;line-height:25px}
 		/*theme*/
 		.cs_home_staticblock .col{width:329px;}

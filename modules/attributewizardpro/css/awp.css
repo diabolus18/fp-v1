@@ -2,6 +2,7 @@ div#attributes { display: none !important; }
 
 #awp_container {
 	clear: both;
+	width : 100%;
 }
 
 #awp_attribute_groups {

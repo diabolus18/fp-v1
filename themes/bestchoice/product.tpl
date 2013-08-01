@@ -241,6 +241,7 @@ $(window).load(function(){
 
 	<!-- right infos-->
 	<div id="pb-right-column" class="grid_7 alpha">
+	
 		<!-- product img-->
 		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
 		<div id="image-block">

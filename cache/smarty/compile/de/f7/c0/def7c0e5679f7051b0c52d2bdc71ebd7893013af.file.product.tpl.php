@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 12:10:38
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 16:01:51
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2487951fa341e9bde82-36644007%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2203551fa6a4f780095-99180715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'def7c0e5679f7051b0c52d2bdc71ebd7893013af' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\product.tpl',
-      1 => 1375281694,
+      1 => 1375365189,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2487951fa341e9bde82-36644007',
+  'nocache_hash' => '2203551fa6a4f780095-99180715',
   'function' => 
   array (
   ),
@@ -110,9 +110,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa34202a5a26_43855807',
+  'unifunc' => 'content_51fa6a51009459_56676484',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa34202a5a26_43855807')) {function content_51fa34202a5a26_43855807($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_51fa6a51009459_56676484')) {function content_51fa6a51009459_56676484($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.date_format.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.counter.php';
@@ -462,6 +462,7 @@ $(window).load(function(){
 
 	<!-- right infos-->
 	<div id="pb-right-column" class="grid_7 alpha">
+	
 		<!-- product img-->
 		<h1><?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value->name, 'htmlall', 'UTF-8');?>
 </h1>

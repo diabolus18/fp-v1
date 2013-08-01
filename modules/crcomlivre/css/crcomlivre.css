@@ -1,0 +1,19 @@
+.message{
+	padding:5px;
+	margin:10px 5px 10px 0;
+	border:solid 2px #ccc;
+	box-shadow:6px 6px 6px #aaaaaa;
+	border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;
+	width:500px;
+	background:#fff;
+}
+.message_2{
+	border:solid 1px #aaaaaa;
+	box-shadow:1px 1px 1px #000;
+	width:400px;
+	padding:5px;
+}
+#crcomlivre table tr td{
+	padding-top:10px;
+	pedding-right:5px;
+}

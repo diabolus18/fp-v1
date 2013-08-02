@@ -11,19 +11,23 @@
 <g_link_color_hover>#000000</g_link_color_hover>
 <g_color_1>#000000</g_color_1>
 <g_b_color_custom>#000000</g_b_color_custom>
-<h_color_2>#eedc77</h_color_2>
-<h_color_3>#eedc77</h_color_3>
+<g_fstyle_1>Fenix</g_fstyle_1>
+<h_color_2>#ffffff</h_color_2>
+<h_color_3>#ffffff</h_color_3>
 <h_fstyle_1>Open Sans</h_fstyle_1>
 <h_fsize_1>12</h_fsize_1>
 <h_fweight_1>normal</h_fweight_1>
 <h_fstyle_2>Open Sans</h_fstyle_2>
 <h_fsize_2>12</h_fsize_2>
 <h_fweight_2>normal</h_fweight_2>
-<f_b_color>#edae76</f_b_color>
-<mp_b_color_hover>#e0e0e0</mp_b_color_hover>
+<f_b_color>#d7deee</f_b_color>
+<mp_b_color_normal>#d7deee</mp_b_color_normal>
+<mp_b_color_hover>#ffffff</mp_b_color_hover>
+<mp_text_color_normal>#000000</mp_text_color_normal>
+<mp_text_color_hover>#000000</mp_text_color_hover>
 <p_price_color>#edae76</p_price_color>
 <bt_b_color_normal>#b0b0b0</bt_b_color_normal>
-<bt_b_color_hover>#6b6b6b</bt_b_color_hover>
+<bt_b_color_hover>#4d4d4d</bt_b_color_hover>
 <bt2_b_color_normal>#ababab</bt2_b_color_normal>
 <bt2_b_color_hover>#9c9c9c</bt2_b_color_hover>
 <t_p_color>#000000</t_p_color>

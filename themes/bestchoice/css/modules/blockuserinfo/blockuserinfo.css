@@ -30,13 +30,13 @@
 	float:right;
 	margin-top:10px;
 	padding:0;
-	font-size:12px
+	font-size:14px
 }
 #header_user_info a {
 	display:inline-block;
 	margin:0 0 0 10px;
 	padding:3px 0 0 34px;
-	line-height: 11px;
+	line-height: 18px;
 	border-left:1px solid #000
 }
 #header_user_info a.account {

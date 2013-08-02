@@ -10,7 +10,7 @@
 .cat_desc p {padding:0 10px 5px 10px}
 .cat_desc .lnk_more {
    padding:0 10px;
-   color:#0088CC;
+   color:#cccccc;
 	background:url(../img/arrow_right_1.png) no-repeat 100% 4px transparent;
 }
 
@@ -19,8 +19,9 @@
       SUB CATEGORIES
 ************************************************************************************************ */
 #subcategories {padding:15px 0 20px;overflow:hidden}
+#subcategories h1 {text-align:center;}
 #subcategories h3 {
-	font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;color:#397abd;padding:0 0 10px;background:url(../img/bkg_title_block.jpg) repeat-x left bottom;margin-bottom:15px;
+	font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;color:#cccccc;padding:0 0 10px;background:url(../img/bkg_title_block.jpg) repeat-x left bottom;margin-bottom:15px;
 }
 #subcategories ul{overflow:hidden;padding:10px 0;width:104%}
 

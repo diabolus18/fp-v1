@@ -32,9 +32,9 @@
 #countries {
 	position: relative;
 }
-#countries p {float:left}
+#countries p {float:left; padding-left:5px;}
 #countries p img {
-	padding-left: 5px;
+	padding-left: 10px;
 }
 #countries .countries_ul{float:left;}
 #countries .countries_ul li{float:left;margin-left:10px;}

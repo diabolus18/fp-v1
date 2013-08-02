@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 16:26:26
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-02 16:14:19
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\csheaderlink\csheaderlink.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2041751fa701207d9d1-24819811%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2790151fbbebbb09e57-65198965%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c4395b88bd599f0d590a37fcb06343d89fcb9a23' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\csheaderlink\\csheaderlink.tpl',
-      1 => 1374235096,
+      1 => 1375447670,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2041751fa701207d9d1-24819811',
+  'nocache_hash' => '2790151fbbebbb09e57-65198965',
   'function' => 
   array (
   ),
@@ -23,16 +23,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa70120f3bb9_40690096',
+  'unifunc' => 'content_51fbbebbba2777_33180496',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa70120f3bb9_40690096')) {function content_51fa70120f3bb9_40690096($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_51fbbebbba2777_33180496')) {function content_51fbbebbba2777_33180496($_smarty_tpl) {?>
 
 <!-- CS Block header links -->
 <div id="cs_header_link">
 	<ul id="cs_header_links">	
 		<li id="cs_header_user_info">
-		<?php echo smartyTranslate(array('s'=>'Welcome','mod'=>'csheaderlink'),$_smarty_tpl);?>
-
+		<!--<?php echo smartyTranslate(array('s'=>'Welcome','mod'=>'csheaderlink'),$_smarty_tpl);?>
+-->
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value){?>
 			<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true);?>
 " title="<?php echo smartyTranslate(array('s'=>'View my customer account','mod'=>'csheaderlink'),$_smarty_tpl);?>
@@ -50,10 +50,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </a>
 		<?php }?>
 		</li>
+		<!--
 		<li id="cs_your_account"><a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true);?>
 " title="<?php echo smartyTranslate(array('s'=>'View my customer account','mod'=>'csheaderlink'),$_smarty_tpl);?>
 " rel="nofollow"><?php echo smartyTranslate(array('s'=>'My Account','mod'=>'csheaderlink'),$_smarty_tpl);?>
 </a></li>
+		-->
 	</ul>
 	
 </div>

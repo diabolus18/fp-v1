@@ -27,7 +27,7 @@
 <div id="cs_header_link">
 	<ul id="cs_header_links">	
 		<li id="cs_header_user_info">
-		{l s='Welcome' mod='csheaderlink'}
+		<!--{l s='Welcome' mod='csheaderlink'}-->
 		{if $logged}
 			<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' mod='csheaderlink'}" class="account" rel="nofollow"><span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span></a>
 			<a href="{$link->getPageLink('index', true, NULL, "mylogout")}" title="{l s='Log me out' mod='csheaderlink'}" class="logout" rel="nofollow">{l s='Log out' mod='csheaderlink'}</a>
@@ -35,7 +35,9 @@
 			<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login to your customer account' mod='csheaderlink'}" class="login" rel="nofollow">{l s='Login' mod='csheaderlink'}</a>
 		{/if}
 		</li>
+		<!--
 		<li id="cs_your_account"><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' mod='csheaderlink'}" rel="nofollow">{l s='My Account' mod='csheaderlink'}</a></li>
+		-->
 	</ul>
 	
 </div>

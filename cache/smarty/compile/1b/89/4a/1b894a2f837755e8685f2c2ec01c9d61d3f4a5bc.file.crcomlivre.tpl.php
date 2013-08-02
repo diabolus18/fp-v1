@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-01 16:26:27
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-02 16:14:20
          compiled from "C:\wamp\www\fp-v1\modules\crcomlivre\crcomlivre.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1451751fa7013456039-15277207%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:440151fbbebcf0b316-10903730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1451751fa7013456039-15277207',
+  'nocache_hash' => '440151fbbebcf0b316-10903730',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fa7013497270_83279119',
+  'unifunc' => 'content_51fbbebd017cd3_40411450',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fa7013497270_83279119')) {function content_51fa7013497270_83279119($_smarty_tpl) {?><div class="block">
+<?php if ($_valid && !is_callable('content_51fbbebd017cd3_40411450')) {function content_51fbbebd017cd3_40411450($_smarty_tpl) {?><div class="block">
 	<h4>Derniers commentaires</h4>
    	<div class="block_content">
         <?php if (isset($_smarty_tpl->tpl_vars['commentaires']->value)&&!empty($_smarty_tpl->tpl_vars['commentaires']->value)){?>

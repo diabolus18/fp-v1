@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <setting>
-<g_b_img>1374846197bkg_page_dfault_fontenille-pataud.jpg</g_b_img>
+<g_b_img>1375457495bkg_page_dfault_fontenille-pataud.jpg</g_b_img>
 <t_b_img>bkg_title_default.jpg</t_b_img>
-<bg_mode>box_mode</bg_mode>
+<bg_mode>wide_mode</bg_mode>
 <column>1_column</column>
 <column_class>grid_24(3)</column_class>
 <g_b_pattern>up_load_image_general</g_b_pattern>
 <g_b_repeat>repeat-x</g_b_repeat>
-<g_link_color_normal>#eedc77</g_link_color_normal>
+<g_link_color_normal>#995F5D</g_link_color_normal>
 <g_link_color_hover>#000000</g_link_color_hover>
 <g_color_1>#000000</g_color_1>
 <g_b_color_custom>#000000</g_b_color_custom>
@@ -25,7 +25,11 @@
 <mp_b_color_hover>#ffffff</mp_b_color_hover>
 <mp_text_color_normal>#000000</mp_text_color_normal>
 <mp_text_color_hover>#000000</mp_text_color_hover>
-<p_price_color>#edae76</p_price_color>
+<s_bt_b_color>#995F5D</s_bt_b_color>
+<s_color_1>#995F5D</s_color_1>
+<s_color_2>#995F5D</s_color_2>
+<s_color_3>#995F5D</s_color_3>
+<p_price_color>#995F5D</p_price_color>
 <bt_b_color_normal>#b0b0b0</bt_b_color_normal>
 <bt_b_color_hover>#4d4d4d</bt_b_color_hover>
 <bt2_b_color_normal>#ababab</bt2_b_color_normal>

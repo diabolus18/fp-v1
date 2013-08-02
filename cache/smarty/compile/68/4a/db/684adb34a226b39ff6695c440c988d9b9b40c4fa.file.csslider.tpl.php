@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-02 16:14:19
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-02 17:52:16
          compiled from "C:\wamp\www\fp-v1\modules\csslider\csslider.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2493451fbbebb740ff8-43236726%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2044251fbd5b018bad5-28111316%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2493451fbbebb740ff8-43236726',
+  'nocache_hash' => '2044251fbd5b018bad5-28111316',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fbbebb90eed9_85982881',
+  'unifunc' => 'content_51fbd5b043ff01_58950990',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fbbebb90eed9_85982881')) {function content_51fbbebb90eed9_85982881($_smarty_tpl) {?><!-- CS Slider module -->
+<?php if ($_valid && !is_callable('content_51fbd5b043ff01_58950990')) {function content_51fbd5b043ff01_58950990($_smarty_tpl) {?><!-- CS Slider module -->
 <?php if (isset($_smarty_tpl->tpl_vars['sliders']->value)&&count($_smarty_tpl->tpl_vars['sliders']->value)>0){?>
 <?php if ($_smarty_tpl->tpl_vars['page_name']->value=='index'){?>
 <div class="cs_mode_slideshow">

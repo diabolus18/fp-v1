@@ -1023,7 +1023,7 @@
 .content_slider  .block_content{background:url(../images/bkg_caption.png) repeat 0 0;padding:10px 15px;font-size:11px;color:#fff;text-transform:none;font-weight:700}
 .content_slider  .block_content h5{color:#55adff;font-size:20px;text-transform:uppercase;font-family: 'Roboto Condensed', sans-serif;}
 .content_slider  .block_content  p{margin-top:0}
-.content_slider p.price{background:#397abd;float:left;padding:7px 15px;color:#fff!important;font-size:20px;font-weight:700;margin:0;font-family: 'Roboto Condensed', sans-serif;}
+.content_slider p.price{background:#995F5D;float:left;padding:7px 15px;color:#fff!important;font-size:20px;font-weight:700;margin:0;font-family: 'Roboto Condensed', sans-serif;}
 /* Full screen */
 .cs_mode_slideshow{width:100%;position:relative;}
 .cs_slide_no_full_screen{width:1180px;margin:0 auto;}

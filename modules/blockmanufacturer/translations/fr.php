@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_bc3e73cfa718a3237fb1d7e1da491395'] = 'Bloc fabricant';
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_71087c7035e626bd33c72ae9a7f042af'] = 'Ajoute un bloc avec les fabricants/marques';
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_067931ed6c365d76c9f32285a6b49839'] = 'Nombre non valable d\'éléments';
@@ -22,4 +21,3 @@ $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_2377be3c2ad9b435ba277
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_9d098ff02f6813055b869f6f9acd831c'] = 'En savoir plus sur';
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_bf24faeb13210b5a703f3ccef792b000'] = 'Tous les fabricants';
 $_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_1c407c118b89fa6feaae6b0af5fc0970'] = 'Aucun fabricant';
-$_MODULE['<{blockmanufacturer}prestashop>blockmanufacturer_49fa2426b7903b3d4c89e2c1874d9346'] = 'En savoir plus sur';

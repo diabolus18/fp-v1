@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsbestvouchers}prestashop>statsbestvouchers_4f29d8c727dcf2022ac241cb96c31083'] = 'Aucun résultat';
 $_MODULE['<{statsbestvouchers}prestashop>statsbestvouchers_f5c493141bb4b2508c5938fd9353291a'] = 'Affichage de %1$s de %2$s';
 $_MODULE['<{statsbestvouchers}prestashop>statsbestvouchers_49ee3087348e8d44e1feda1917443987'] = 'Nom';

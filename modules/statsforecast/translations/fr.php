@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsforecast}prestashop>statsforecast_240c994d8b61c7bd68ac1c5182bbdb2e'] = 'Tableau de bord statistiques';
 $_MODULE['<{statsforecast}prestashop>statsforecast_72c24d8aa8b0a7a47035b1e9d905b582'] = 'Tous les montants sont exprimés HT.';
 $_MODULE['<{statsforecast}prestashop>statsforecast_1ee1c44c2dc81681f961235604247b81'] = 'Mode :';

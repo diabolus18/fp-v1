@@ -2,7 +2,7 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_68f24ec2c67eac4b14418be7472906ee'] = 'Paiement par carte de crédit hors ligne - physique POS';
+$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_68f24ec2c67eac4b14418be7472906ee'] = 'Le paiement par carte de crédit hors ligne';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_0617e0e4a623e09ecc905ed9abe27a86'] = 'Ce module vous permet de faire les frais à leurs clients ayant une déficience physique POS';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a76d2e13ceec25c19b206121a8e367ed'] = 'Etes-vous sûr de vouloir supprimer le module et l\'information connexe?';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_3b58e5cc2424c37c3beac7f10a488238'] = 'Le module n\'est pas activé';
@@ -11,14 +11,12 @@ $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a2b2b0c
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_44f88329bacbde5ea55080f93a85ca4d'] = 'L\'adresse email ne peut pas être vide.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_0852c937df3cfb295a080ac10c199660'] = 'L\'adresse email est invalide.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_f38f5974cdc23279ffe6d203641a8bdf'] = 'Paramètres mis à jour.';
-$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a82e0d057f443115e807bd6ca595fc8c'] = 'Objet Order incorrect.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_e2b7dec8fa4b498156dfee6e4c84b156'] = 'Ce mode de paiement n\'est pas disponible.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_ce2b2162958e02a8ff2408df544239d2'] = 'Vous devez entrer crédit du titulaire de carte.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_1e22b3be6e32bfb7031c8a55aba09950'] = 'Le nom entré n\'est pas valide.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_4a1142cdd85ff6b84e13eef404215f24'] = 'Vous devez entrer le numéro d\'identification.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_1b229afdb1f4e2e764f2f685acb069bf'] = 'Vous devez entrer l\'adresse.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_899cd4dd5fa8fc44dc8e281026b14545'] = 'Vous devez saisir le code postal';
-$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_9bc6af550d6632a4fd236f124b2e4442'] = 'Le code postal saisi n\'est pas correct.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_147e983d8dfdb3f851c9f7688691f2f6'] = 'Vous devez entrer le numéro de carte de crédit.';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_1d01a8b3d4aa21d0791b305d83aa028b'] = 'Le numéro de carte de crédit entré n\'est pas';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_90f39247183d9f455db4a46a51474cfb'] = 'Vous devez entrer le code de sécurité (CVV)';
@@ -27,9 +25,9 @@ $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_35292f7
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_996932d1097b4ed7241a616a037c4a06'] = 'Vous devez entrer le mois d\'expiration de la carte';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a5475a26959fb2853780187594657dc6'] = 'Vous devez entrer l\'année d\'expiration de la carte';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_93942da81f38c3e29158c0dcbad7fe01'] = 'La date de péremption indiquée ne peut pas être';
-$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_68f24ec2c67eac4b14418be7472906ee'] = 'Le paiement par carte de crédit hors ligne';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a240fa27925a635b08dc28c9e4f9216d'] = 'Commande';
 $_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_6aa82624ddbe9f128367e344e984756e'] = 'payée par carte de crédit';
+$_MODULE['<{creditcardofflinepayment}prestashop>creditcardofflinepayment_a82e0d057f443115e807bd6ca595fc8c'] = 'Objet Order incorrect.';
 $_MODULE['<{creditcardofflinepayment}prestashop>payment_e2b7dec8fa4b498156dfee6e4c84b156'] = 'Ce mode de paiement n\'est pas activé.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_e2b7dec8fa4b498156dfee6e4c84b156'] = 'Ce mode de paiement n\'est pas disponible.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_ce2b2162958e02a8ff2408df544239d2'] = 'Vous devez entrer crédit du titulaire de carte.';
@@ -37,7 +35,6 @@ $_MODULE['<{creditcardofflinepayment}prestashop>validation_1e22b3be6e32bfb7031c8
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_4a1142cdd85ff6b84e13eef404215f24'] = 'Vous devez entrer le numéro d\'identification.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_1b229afdb1f4e2e764f2f685acb069bf'] = 'Vous devez entrer l\'adresse.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_899cd4dd5fa8fc44dc8e281026b14545'] = 'Vous devez saisir le code postal';
-$_MODULE['<{creditcardofflinepayment}prestashop>validation_9bc6af550d6632a4fd236f124b2e4442'] = 'Le code postal saisi n\'est pas correct.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_147e983d8dfdb3f851c9f7688691f2f6'] = 'Vous devez entrer le numéro de carte de crédit.';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_1d01a8b3d4aa21d0791b305d83aa028b'] = 'Le numéro de carte de crédit entré n\'est pas';
 $_MODULE['<{creditcardofflinepayment}prestashop>validation_90f39247183d9f455db4a46a51474cfb'] = 'Vous devez entrer le code de sécurité (CVV)';

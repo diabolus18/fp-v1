@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{sekeywords}prestashop>sekeywords_65b0b42febc8ea16db4652eab6f420a4'] = 'Mots clés';
 $_MODULE['<{sekeywords}prestashop>sekeywords_de13be6263895a5efe4d51e15ab1535e'] = 'Affiche les mots clés qui ont mené les visiteurs jusqu\'à votre boutique';
 $_MODULE['<{sekeywords}prestashop>sekeywords_16d5f8dc3bc4411c85848ae9cf6a947a'] = '%d mot-clé trouvé pour votre recherche.';

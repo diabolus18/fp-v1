@@ -1,7 +1,7 @@
 <!-- CS catalog popular -->
 {if isset($category_list)}
 {$col=2}
-	<h4>{l s='more way to shopping...' mod='cscatalogpoppular'}</h4>
+	<h4>{l s='more way to shopping...' mod='cscatalogpopular'}</h4>
 	<div class="cat_popular">
 	<ul class="ul_cat_popular">
 		{$i=0}
@@ -26,6 +26,10 @@
 			{foreach from=$category.product_latest item=product name=product_latest}
 				<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}"><img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.name|escape:html:'UTF-8'}" /></a>
 			{/foreach}
+			
+			{foreach from=$category.product_latest item=product name=product_latest}
+				<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}">Voir la gamme {$category.name}</a>
+			{/foreach}
 		</div>
 		
 		<!-- MISE EN COMMENTAIRE REDIRECTION VERS UN PRODUIT AU HASARD DE LA CATEGORIE
@@ -37,7 +41,7 @@
 		-->
 		</li>
 	{/foreach}
-	<li class="last view-all"><a href="{$link->getCategoryLink(2)}" title="View All"><span>{l s="View All"}</span></a></li>
+	<li class="last view-all"><a href="{$link->getCategoryLink(2)}" title="View All"><span>{l s="View All" mod='cscatalogpopular'}</span></a></li>
 	</ul>
 	</div>
 {/if}

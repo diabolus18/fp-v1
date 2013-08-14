@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsequipment}prestashop>statsequipment_719d067b229178f03bcfa1da4ac4dede'] = 'Equipement';
 $_MODULE['<{statsequipment}prestashop>statsequipment_236d6d0b5cc4428f346c235e0c60faaa'] = 'Affiche l\'équipement de vos visiteurs.';
 $_MODULE['<{statsequipment}prestashop>statsequipment_d36312e9992d0b03780a32fedd6650b7'] = 'Déterminez la répartition des navigateurs web utilisés par vos clients.';

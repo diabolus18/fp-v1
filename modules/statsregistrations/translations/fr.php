@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_8b15fc6468c919d299f9a601b61b95fc'] = 'Comptes clients';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_5eaafc713c2425b16202065927ea0220'] = 'Affiche l\'évolution des créations de compte';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_247b3bdef50a59d5a83f23c4f1c8fa47'] = 'Visiteurs bloqués à la phase d\'inscription :';

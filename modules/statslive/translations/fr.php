@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statslive}prestashop>statslive_fa55230e9791f2b71322869318a5f00f'] = 'Visiteurs en ligne';
 $_MODULE['<{statslive}prestashop>statslive_b8a5ea9b6e7f2d0b56fbb18e5b6b9246'] = 'Affiche la liste des clients et visiteurs en ligne actuellement';
 $_MODULE['<{statslive}prestashop>statslive_e6214c05e17c56f81e4a56f4c4fdce8c'] = 'Vous devez activer l\'option \"pages vues pour chaque client\" dans le module \"Récupération des données statistiques\" pour visualiser les pages consultées par vos clients.';

@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{favoriteproducts}prestashop>favoriteproducts_c249aeb21294d5e97598462b550e73eb'] = 'Produits favoris';
 $_MODULE['<{favoriteproducts}prestashop>favoriteproducts_018770f4456d82ec755cd9d0180e4cce'] = 'Affiche une page avec les produits favoris de l\'utilisateur';
 $_MODULE['<{favoriteproducts}prestashop>favoriteproducts-account_d95cf4ab2cbf1dfb63f066b50558b07d'] = 'Mon compte';

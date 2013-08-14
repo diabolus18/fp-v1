@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockadvertising}prestashop>blockadvertising_fd4c71c948857cce596a69fbaea7426b'] = 'Bloc publicité';
 $_MODULE['<{blockadvertising}prestashop>blockadvertising_91cd1ee56ea5324ff51578684a393a81'] = 'Ajoute un bloc affichant une publicité';
 $_MODULE['<{blockadvertising}prestashop>blockadvertising_070e16b4f77b90e802f789b5be583cfa'] = 'Erreur de déplacement du fichier mis en ligne';

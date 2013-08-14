@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsvisits}prestashop>statsvisits_504c16c26a96283f91fb46a69b7c8153'] = 'Visites et visiteurs';
 $_MODULE['<{statsvisits}prestashop>statsvisits_5d2b93d36c456f9dc204de59d789b777'] = 'Propose des graphiques montrant l\'évolution de vos visites et visiteurs.';
 $_MODULE['<{statsvisits}prestashop>statsvisits_b8901fb7bbfaf9b0c4724343c7cd1f90'] = 'Une visite correspond au passage d\'un internaute sur votre boutique. Une seule visite est comptée pour toute la durée de sa session.';

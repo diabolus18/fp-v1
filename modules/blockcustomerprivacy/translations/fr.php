@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockcustomerprivacy}prestashop>blockcustomerprivacy_f2ec0fd2abc5714608241a1a0eac321b'] = 'Bloc confidentialité des données clients';
 $_MODULE['<{blockcustomerprivacy}prestashop>blockcustomerprivacy_cb6b92b60c9302e74a26ac246d0af0fa'] = 'Ajoute un bloc qui affiche un message concernant la confidentialité des données clients.';
 $_MODULE['<{blockcustomerprivacy}prestashop>blockcustomerprivacy_d71315851e7e67cbacf5101c5c4ab83d'] = 'Les informations personnelles que nous collectons sont destinées à mieux répondre à vos demandes et traiter vos commandes.';

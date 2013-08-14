@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statspersonalinfos}prestashop>statspersonalinfos_1b94af23fd8ea879910a6307460ebba4'] = 'Informations clients';
 $_MODULE['<{statspersonalinfos}prestashop>statspersonalinfos_ff9c34d2829b95a0936b22b409640143'] = 'Affiche la répartition de vos clients par âge, sexe ou pays';
 $_MODULE['<{statspersonalinfos}prestashop>statspersonalinfos_62a9b5081b2dab89113e94a0b4cb4be0'] = 'La répartition par sexe vous permet de déterminer le pourcentage d\'hommes et de femmes parmi vos clients.';

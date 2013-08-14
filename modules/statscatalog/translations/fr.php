@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statscatalog}prestashop>statscatalog_cf3aa21c6a2147ddbd86f34091daeccd'] = 'Statistiques catalogue';
 $_MODULE['<{statscatalog}prestashop>statscatalog_226ed1224c5b2db3d3e0716bb4f74da5'] = 'Statistiques générales sur le catalogue';
 $_MODULE['<{statscatalog}prestashop>statscatalog_74cda5a02df704cc5c3e8fee7fc0f7bc'] = '(1 achat / %d visites)';

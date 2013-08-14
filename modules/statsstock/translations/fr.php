@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsstock}prestashop>statsstock_4416eb048e458e909c65b5210cee2b83'] = 'Quantités statistiques disponibles';
 $_MODULE['<{statsstock}prestashop>statsstock_f27f89ed1aeb8108c091677cf7b99c28'] = 'Quantités disponibles pour la valorisation de la vente';
 $_MODULE['<{statsstock}prestashop>statsstock_3adbdb3ac060038aa0e6e6c138ef9873'] = 'Catégorie';

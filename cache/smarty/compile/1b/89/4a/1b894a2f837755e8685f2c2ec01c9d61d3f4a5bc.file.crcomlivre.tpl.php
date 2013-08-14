@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-02 17:52:18
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-14 11:07:29
          compiled from "C:\wamp\www\fp-v1\modules\crcomlivre\crcomlivre.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:664551fbd5b20766c3-27321462%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:15593520b48d11854b9-00299414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '1b894a2f837755e8685f2c2ec01c9d61d3f4a5bc' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\crcomlivre\\crcomlivre.tpl',
-      1 => 1375356916,
+      1 => 1376470566,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '664551fbd5b20766c3-27321462',
+  'nocache_hash' => '15593520b48d11854b9-00299414',
   'function' => 
   array (
   ),
@@ -23,10 +23,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51fbd5b20d8a21_08821295',
+  'unifunc' => 'content_520b48d11d62f9_03139342',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51fbd5b20d8a21_08821295')) {function content_51fbd5b20d8a21_08821295($_smarty_tpl) {?><div class="block">
-	<h4>Derniers commentaires</h4>
+<?php if ($_valid && !is_callable('content_520b48d11d62f9_03139342')) {function content_520b48d11d62f9_03139342($_smarty_tpl) {?><div class="block">
+	<h4><?php echo smartyTranslate(array('s'=>"View All"),$_smarty_tpl);?>
+Derniers commentaires</h4>
    	<div class="block_content">
         <?php if (isset($_smarty_tpl->tpl_vars['commentaires']->value)&&!empty($_smarty_tpl->tpl_vars['commentaires']->value)){?>
             <?php  $_smarty_tpl->tpl_vars['commentaire'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['commentaire']->_loop = false;

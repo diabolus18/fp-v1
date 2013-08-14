@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{themeinstallator}prestashop>themeinstallator_fff01a1de50e0559f82501a927654d1b'] = 'Importer / Exporter un thème';
 $_MODULE['<{themeinstallator}prestashop>themeinstallator_83ebbd7865677d356ffde5ad7e12784f'] = 'Exporter ou importer un thème et ses modules sur votre boutique.';
 $_MODULE['<{themeinstallator}prestashop>themeinstallator_ea5eb3f904bf42377277255cbd0e2251'] = 'Pour fonctionner correctement ce module nécessite que le module de rétrocompatibilité soit installé';

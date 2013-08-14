@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statssales}prestashop>statssales_45c4b3e103155326596d6ccd2fea0f25'] = 'Commandes et CA';
 $_MODULE['<{statssales}prestashop>statssales_f57f893f9fbc11843fd4c9997ec41824'] = 'Affiche l\'évolution du chiffre d\'affaires et la répartition des commandes par leurs états.';
 $_MODULE['<{statssales}prestashop>statssales_b1c94ca2fbc3e78fc30069c8d0f01680'] = 'Tout afficher';

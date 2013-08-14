@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockcms}prestashop>blockcms_cd275312651aebf8cbbb8d3bb1c086ae'] = 'Bloc CMS';
 $_MODULE['<{blockcms}prestashop>blockcms_cdca12007979fc49008fd125cdb775fc'] = 'Ajoute un bloc contenant plusieurs lien vers vos pages CMS';
 $_MODULE['<{blockcms}prestashop>blockcms_a82be0f551b8708bc08eb33cd9ded0cf'] = 'Information';
@@ -54,8 +53,6 @@ $_MODULE['<{blockcms}prestashop>blockcms_01f7ac959c1e6ebbb2e0ee706a7a5255'] = 'M
 $_MODULE['<{blockcms}prestashop>blockcms_02d4482d332e1aef3437cd61c9bcc624'] = 'Contactez-nous';
 $_MODULE['<{blockcms}prestashop>blockcms_5813ce0ec7196c492c97596718f71969'] = 'Plan du site';
 $_MODULE['<{blockcms}prestashop>blockcms_7a52e36bf4a1caa031c75a742fb9927a'] = 'Propulsé par';
-$_MODULE['<{blockcms}prestashop>blockcms_3cb29f0ccc5fd220a97df89dafe46290'] = 'Meilleures ventes';
-$_MODULE['<{blockcms}prestashop>blockcms_e1da49db34b0bdfdddaba2ad6552f848'] = 'Plan du site';
 $_MODULE['<{blockcms}prestashop>form_4dabfa54822012dfc78d6ef40f224173'] = 'Blocs à gauche';
 $_MODULE['<{blockcms}prestashop>form_d9ca3009e18447d91cd2e324e8e680ce'] = 'Blocs à droite';
 $_MODULE['<{blockcms}prestashop>form_b718adec73e04ce3ec720dd11a06a308'] = 'ID';

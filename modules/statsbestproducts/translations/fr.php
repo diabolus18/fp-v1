@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_8c4d7af5f578693f9a6cf391e912ee33'] = 'Aucun résultat';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_f5c493141bb4b2508c5938fd9353291a'] = 'Affichage de %1$s de %2$s';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_12d3c7a4296542c62474856ec452c045'] = 'Ref.';

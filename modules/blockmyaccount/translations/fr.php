@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockmyaccount}prestashop>blockmyaccount_ecf3e4f8f34a293099620cc25d5b4d93'] = 'Bloc Mon compte';
 $_MODULE['<{blockmyaccount}prestashop>blockmyaccount_ecf2ffd31994b3edea4b916011b08bfa'] = 'Affiche un bloc avec des liens relatifs au compte du client.';
 $_MODULE['<{blockmyaccount}prestashop>blockmyaccount_d95cf4ab2cbf1dfb63f066b50558b07d'] = 'Mon compte';

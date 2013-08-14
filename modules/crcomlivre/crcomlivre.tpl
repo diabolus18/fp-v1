@@ -1,5 +1,5 @@
 <div class="block">
-	<h4>Derniers commentaires</h4>
+	<h4>{l s="View All"}Derniers commentaires</h4>
    	<div class="block_content">
         {if isset($commentaires) and !empty($commentaires)}
             {foreach from=$commentaires item=commentaire}

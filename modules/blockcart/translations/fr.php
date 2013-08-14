@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockcart}prestashop>blockcart_c2e1362a9710a3dd86f937c2ea1f336d'] = 'Bloc panier';
 $_MODULE['<{blockcart}prestashop>blockcart_e03093a5753b436ee1de63b6e3e1bd02'] = 'Ajoute un bloc avec le contenu du panier du client';
 $_MODULE['<{blockcart}prestashop>blockcart_eb4ae207521bbe6403f7fe9564d38cda'] = 'Ajax : choix non valable.';
@@ -33,9 +32,3 @@ $_MODULE['<{blockcart}prestashop>blockcart_96b0141273eabab320119c467cdcaf17'] = 
 $_MODULE['<{blockcart}prestashop>blockcart_52a1f8f55ec919087809ef31b72c31c8'] = 'Les prix sont TTC';
 $_MODULE['<{blockcart}prestashop>blockcart_3c5a90ab81573c044caffb847d9157f6'] = 'Les prix sont HT';
 $_MODULE['<{blockcart}prestashop>blockcart_6ff063fbc860a79759a7369ac32cee22'] = 'Commander';
-$_MODULE['<{blockcart}prestashop>blockcart_ed6e9a09a111035684bb23682561e12d'] = 'supprimer cet article du panier';
-$_MODULE['<{blockcart}prestashop>blockcart_86024cad1e83101d97359d7351051156'] = 'articles';
-$_MODULE['<{blockcart}prestashop>blockcart_f5bf48aa40cad7891eb709fcf1fde128'] = 'article';
-$_MODULE['<{blockcart}prestashop>blockcart_0d11c2b75cf03522c8d97938490466b2'] = 'Les prix sont TTC';
-$_MODULE['<{blockcart}prestashop>blockcart_41202aa6b8cf7ae885644717dab1e8b4'] = 'Les prix sont HT';
-$_MODULE['<{blockcart}prestashop>blockcart_377e99e7404b414341a9621f7fb3f906'] = 'Commander';

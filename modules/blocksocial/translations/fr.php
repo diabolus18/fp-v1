@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blocksocial}prestashop>blocksocial_3c3fcc2aa9705117ce4b589ed5a72853'] = 'Bloc social';
 $_MODULE['<{blocksocial}prestashop>blocksocial_012a4601e8b615cf6aea084a1b334889'] = 'Permet d\'ajouter des informations supplémentaires concernant les réseaux sociaux';
 $_MODULE['<{blocksocial}prestashop>blocksocial_20015706a8cbd457cbb6ea3e7d5dc9b3'] = 'Configuration mise à jour';
@@ -14,6 +13,3 @@ $_MODULE['<{blocksocial}prestashop>blocksocial_d918f99442796e88b6fe5ad32c217f76'
 $_MODULE['<{blocksocial}prestashop>blocksocial_d85544fce402c7a2a96a48078edaf203'] = 'Facebook';
 $_MODULE['<{blocksocial}prestashop>blocksocial_2491bc9c7d8731e1ae33124093bc7026'] = 'Twitter';
 $_MODULE['<{blocksocial}prestashop>blocksocial_bf1981220040a8ac147698c85d55334f'] = 'RSS';
-$_MODULE['<{blocksocial}prestashop>blockspecials_d1aa22a3126f04664e0fe3f598994014'] = 'Réductions';
-$_MODULE['<{blocksocial}prestashop>blockspecials_b4f95c1ea534936cc60c6368c225f480'] = 'Toutes les promos';
-$_MODULE['<{blocksocial}prestashop>blockspecials_fd21fcc9fc4c1d5202d6fc11597b3fca'] = 'Pas de réduction en ce moment';

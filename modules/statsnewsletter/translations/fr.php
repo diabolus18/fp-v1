@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsnewsletter}prestashop>statsnewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Newsletter';
 $_MODULE['<{statsnewsletter}prestashop>statsnewsletter_02fdcd14459a8b5b8b0e3ac877bcf732'] = 'Affiche les inscriptions à la newsletter';
 $_MODULE['<{statsnewsletter}prestashop>statsnewsletter_61a898af87607e3f4d41c3613d8761c7'] = 'Inscriptions depuis le compte client :';

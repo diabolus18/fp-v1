@@ -3,25 +3,50 @@
 <h_b_img>1376461290bkg_page_dfault_fontenille-pataud.jpg</h_b_img>
 <bg_mode>wide_mode</bg_mode>
 <column>1_column</column>
+<column_class>grid_24(4)</column_class>
 <g_b_pattern>no_img.jpg</g_b_pattern>
 <g_link_color_normal>#995f5d</g_link_color_normal>
-<g_link_color_hover>#995f5d</g_link_color_hover>
+<g_link_color_hover>#888888</g_link_color_hover>
+<g_fstyle_1>Roboto Condensed</g_fstyle_1>
+<g_fsize_1>14</g_fsize_1>
 <h_b_pattern>up_load_image_header</h_b_pattern>
 <h_b_repeat>repeat-x</h_b_repeat>
+<h_fstyle_1>Roboto Condensed</h_fstyle_1>
+<h_fstyle_2>Roboto Condensed</h_fstyle_2>
 <f_b_color>#c2cde5</f_b_color>
+<f_fstyle_1>Roboto Condensed</f_fstyle_1>
+<f_fstyle_2>Roboto Condensed</f_fstyle_2>
 <mp_b_color_normal>#c2cde5</mp_b_color_normal>
 <mp_b_color_hover>#ffffff</mp_b_color_hover>
 <mp_b_pattern>no_img.jpg</mp_b_pattern>
 <mp_text_color_normal>#555555</mp_text_color_normal>
 <mp_text_color_hover>#555555</mp_text_color_hover>
-<ms_b_pattern>foggy_birds.png</ms_b_pattern>
+<ms_b_pattern>swirl.png</ms_b_pattern>
 <ms_text1_color_normal>#555555</ms_text1_color_normal>
 <ms_text1_color_hover>#555555</ms_text1_color_hover>
+<m_fstyle_1>Roboto Condensed</m_fstyle_1>
+<m_fstyle_2>Roboto Condensed</m_fstyle_2>
+<s_color_1>#995f5d</s_color_1>
+<s_fstyle_1>Roboto Condensed</s_fstyle_1>
+<s_fsize_1>25</s_fsize_1>
+<s_fweight_1>normal</s_fweight_1>
+<s_fstyle_2>Roboto Condensed</s_fstyle_2>
+<s_fsize_2>25</s_fsize_2>
+<s_fweight_2>normal</s_fweight_2>
 <p_price_color>#995f5d</p_price_color>
 <p_color_1>#995f5d</p_color_1>
 <p_color_2>#995f5d</p_color_2>
 <p_color_3>#995f5d</p_color_3>
+<p_fstyle_name>Roboto Condensed</p_fstyle_name>
+<p_fweight_name>inherit</p_fweight_name>
+<p_fstyle_description>Roboto</p_fstyle_description>
+<p_fstyle_price>Roboto</p_fstyle_price>
 <bt_b_color_normal>#995f5d</bt_b_color_normal>
+<bt_b_color_hover>#c2cde5</bt_b_color_hover>
 <bt2_b_color_normal>#995f5d</bt2_b_color_normal>
+<bt_fstyle_text>Roboto Condensed</bt_fstyle_text>
 <t_t_color>#995f5d</t_t_color>
+<t_fstyle_page>Roboto Condensed</t_fstyle_page>
+<t_fstyle_block>Roboto Condensed</t_fstyle_block>
+<t_fstyle_breadcrumb>Roboto Condensed</t_fstyle_breadcrumb>
 </setting>

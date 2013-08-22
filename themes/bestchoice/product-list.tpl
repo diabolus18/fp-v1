@@ -44,14 +44,17 @@ $(document).ready(function()
 				<p class="category_name">{$product.category|escape:'htmlall':'UTF-8'}</p>
 				
 				{if isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
+				
+				<!-- MISE EN COMMENTAIRE EN STOCK 
 				{if ($product.allow_oosp || $product.quantity > 0)}
 					<span class="availability">{l s='Available'}</span>
 				{elseif (isset($product.quantity_all_versions) && $product.quantity_all_versions > 0)}
 					<span class="availability">{l s='Product available with different options'}</span>
 				{else}<span class="cs_out_of_stock">{l s='Out of stock'}</span>{/if}
 				{/if}
+				-->
 				
-				<p class="product_desc">{$product.description_short|strip_tags:'UTF-8'|truncate:90:'...'}</p>
+				<p class="product_desc">{$product.description_short|strip_tags:'UTF-8'|truncate:150:'...'}</p>
 				{if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 				<div class="content_price">
 					{if $product.reduction}<span class="price-discount">{displayWtPrice p=$product.price_without_reduction}</span>{/if}

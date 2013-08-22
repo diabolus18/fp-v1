@@ -1,8 +1,8 @@
 <pre>Array
 (
     [currentFolderPath] => ../../img/cms/
-    [new_folder] => Top of page
+    [new_folder] => Details Declinaison
 )
 </pre>
 
-13/Aug/2013 10:39:46
+16/Aug/2013 14:45:36

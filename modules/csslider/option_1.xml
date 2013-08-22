@@ -14,11 +14,11 @@
 <navigationHover>true</navigationHover>
 <pagination>true</pagination>
 <thumbnails>true</thumbnails>
-<playPause>false</playPause>
-<loader>none</loader>
-<loaderBgColor>#31e63d</loaderBgColor>
-<loaderColor>#e631e6</loaderColor>
-<loaderOpacity>.8</loaderOpacity>
+<playPause>true</playPause>
+<loader>bar</loader>
+<loaderBgColor>#c2cde5</loaderBgColor>
+<loaderColor>#995f5d</loaderColor>
+<loaderOpacity>.5</loaderOpacity>
 <loaderPadding>2</loaderPadding>
 <loaderStroke>7</loaderStroke>
 <barDirection>leftToRight</barDirection>

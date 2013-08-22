@@ -43,6 +43,7 @@ div#attributes { display: none !important; }
 	padding: 0px 0px 3px 10px;
 	font-weight: bold;
 	font-size: 13px;
+	font-family : Georgia;
 }
 
 .awp_description {

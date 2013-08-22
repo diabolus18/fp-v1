@@ -7,7 +7,7 @@
 #menu ul  li.menu_item a.title_menu_parent span.icon_menu{display:block;margin-bottom:0;}
 #menu ul  li.menu_item a.title_menu_parent{text-align:center;display:block;padding:0 5px 6px;min-height:75px;}
 #menu ul  li.menu_item a.title_menu_parent:hover,#menu ul  li.menu_item:hover  a.title_menu_parent {color:#fff;text-decoration:none; }
-#menu > ul > li:last-child{padding-right:0; border:1px solid #d7deee;}
+#menu > ul > li:last-child{padding-right:0;}
 #menu > ul > li ul > li{padding:5px 20px;display:block;width:auto;position:relative;z-index:20;  }
 #menu > ul > li ul > li.parent{background: url(../img/bkg_arrow.png) no-repeat center right;  }
 #menu > ul > li ul > li.parent:hover{z-index:100; }

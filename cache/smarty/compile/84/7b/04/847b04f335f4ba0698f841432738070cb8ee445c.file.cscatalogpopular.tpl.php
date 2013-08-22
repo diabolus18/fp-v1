@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-14 11:07:26
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-22 15:27:04
          compiled from "C:\wamp\www\fp-v1\modules\cscatalogpopular\cscatalogpopular.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:39520b48ce10ac67-58667898%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7844521611a899dc61-46497722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '847b04f335f4ba0698f841432738070cb8ee445c' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cscatalogpopular\\cscatalogpopular.tpl',
-      1 => 1376471243,
+      1 => 1376983984,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '39520b48ce10ac67-58667898',
+  'nocache_hash' => '7844521611a899dc61-46497722',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_520b48ce2d0f52_36597184',
+  'unifunc' => 'content_521611a8bd3433_02993683',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_520b48ce2d0f52_36597184')) {function content_520b48ce2d0f52_36597184($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_521611a8bd3433_02993683')) {function content_521611a8bd3433_02993683($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS catalog popular -->
 <?php if (isset($_smarty_tpl->tpl_vars['category_list']->value)){?>
 <?php $_smarty_tpl->tpl_vars['col'] = new Smarty_variable(2, null, 0);?>
@@ -91,7 +91,8 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 ?>
 				<a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['link']->value->getCategoryLink($_smarty_tpl->tpl_vars['category']->value['id_category'],$_smarty_tpl->tpl_vars['category']->value['link_rewrite']), 'htmlall', 'UTF-8');?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['category']->value['name'], 'htmlall', 'UTF-8');?>
-">Voir la gamme <?php echo $_smarty_tpl->tpl_vars['category']->value['name'];?>
+" class="button"><?php echo smartyTranslate(array('s'=>'See the range ','mod'=>'cscatalogpopular'),$_smarty_tpl);?>
+<?php echo $_smarty_tpl->tpl_vars['category']->value['name'];?>
 </a>
 			<?php } ?>
 		</div>

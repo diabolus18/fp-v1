@@ -216,7 +216,9 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
 		{/if}
 		{if isset($images) && count($images) > 1}<p class="resetimg clear"><span id="wrapResetImages" style="display: none;"><img src="{$img_dir}icon/cancel_11x13.gif" alt="{l s='Cancel'}" width="11" height="13"/> <a id="resetImages" href="{$link->getProductLink($product)}" onclick="$('span#wrapResetImages').hide('slow');return (false);">{l s='Display all pictures'}</a></span></p>{/if}
 		<!-- usefull links-->
+		
 		<ul id="usefull_link_block">
+		
 			{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
 			<li class="print"><a href="javascript:print();">{l s='Print'}</a></li>
 			{if $have_image && !$jqZoomEnabled}
@@ -227,7 +229,8 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
 	<!-- left infos-->
 	<div id="pb-left-column">
 		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
-
+		{hook h="awpProduct"}
+         test
 		{if $product->description_short OR $packItems|@count > 0}
 		<div id="short_description_block">
 			{if $product->description_short}

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-20 16:02:33
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-23 00:54:45
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\controllers\products\helpers\form\form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:11780521376f99e2eb8-36862163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:18010521696b5a50267-66605499%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '11780521376f99e2eb8-36862163',
+  'nocache_hash' => '18010521696b5a50267-66605499',
   'function' => 
   array (
   ),
@@ -80,9 +80,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521376fab9e967_58157399',
+  'unifunc' => 'content_521696bae5fcd4_49952491',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521376fab9e967_58157399')) {function content_521376fab9e967_58157399($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_521696bae5fcd4_49952491')) {function content_521696bae5fcd4_49952491($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['show_toolbar']->value){?>
@@ -456,9 +456,9 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 	
 	</script>
 <?php }?>
-<?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2013-08-20 16:02:34
+<?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2013-08-23 00:54:48
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\helpers\form\form_group.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_521376fa4d94d7_40130562')) {function content_521376fa4d94d7_40130562($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_521696b8ee9454_96543911')) {function content_521696b8ee9454_96543911($_smarty_tpl) {?>
 
 <?php if (count($_smarty_tpl->tpl_vars['groups']->value)&&isset($_smarty_tpl->tpl_vars['groups']->value)){?>
 <table cellspacing="0" cellpadding="0" class="table" style="width:28em;">
@@ -496,9 +496,9 @@ $_smarty_tpl->tpl_vars['group']->_loop = true;
 <?php }else{ ?>
 <p><?php echo smartyTranslate(array('s'=>'No group created'),$_smarty_tpl);?>
 </p>
-<?php }?><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2013-08-20 16:02:34
+<?php }?><?php }} ?><?php /* Smarty version Smarty-3.1.13, created on 2013-08-23 00:54:49
          compiled from "C:\wamp\www\fp-v1\admin0057\themes\default\template\helpers\form\form_category.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_521376fa56b1d0_01809844')) {function content_521376fa56b1d0_01809844($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.implode.php';
+<?php if ($_valid && !is_callable('content_521696b91bf160_88865302')) {function content_521696b91bf160_88865302($_smarty_tpl) {?><?php if (!is_callable('smarty_function_implode')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.implode.php';
 ?>
 <?php if (count($_smarty_tpl->tpl_vars['categories']->value)&&isset($_smarty_tpl->tpl_vars['categories']->value)){?>
 	<script type="text/javascript">

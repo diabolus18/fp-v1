@@ -351,6 +351,7 @@ $(window).load(function(){
 		{if ($product->show_price AND !isset($restricted_country_mode)) OR isset($groups) OR $product->reference OR (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
 		
 		<!-- add to cart form-->
+		{hook h="awpProduct"}
 		<form id="buy_block" {if $PS_CATALOG_MODE AND !isset($groups) AND $product->quantity > 0}class="hidden"{/if} action="{$link->getPageLink('cart')}" method="post">
 
 			<!-- hidden datas -->

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-22 15:27:10
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-23 09:23:52
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22306521611ae6f62b3-39872633%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1722752170e089a13d2-96329160%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'def7c0e5679f7051b0c52d2bdc71ebd7893013af' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\product.tpl',
-      1 => 1375365189,
+      1 => 1377212705,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22306521611ae6f62b3-39872633',
+  'nocache_hash' => '1722752170e089a13d2-96329160',
   'function' => 
   array (
   ),
@@ -110,9 +110,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521611afc0f461_59002152',
+  'unifunc' => 'content_52170e0a0cba75_20732325',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521611afc0f461_59002152')) {function content_521611afc0f461_59002152($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_52170e0a0cba75_20732325')) {function content_52170e0a0cba75_20732325($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.date_format.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.counter.php';
@@ -601,6 +601,8 @@ $_smarty_tpl->tpl_vars['packItem']->_loop = true;
 		<?php if (($_smarty_tpl->tpl_vars['product']->value->show_price&&!isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value))||isset($_smarty_tpl->tpl_vars['groups']->value)||$_smarty_tpl->tpl_vars['product']->value->reference||(isset($_smarty_tpl->tpl_vars['HOOK_PRODUCT_ACTIONS']->value)&&$_smarty_tpl->tpl_vars['HOOK_PRODUCT_ACTIONS']->value)){?>
 		
 		<!-- add to cart form-->
+		<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>"awpProduct"),$_smarty_tpl);?>
+
 		<form id="buy_block" <?php if ($_smarty_tpl->tpl_vars['PS_CATALOG_MODE']->value&&!isset($_smarty_tpl->tpl_vars['groups']->value)&&$_smarty_tpl->tpl_vars['product']->value->quantity>0){?>class="hidden"<?php }?> action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('cart');?>
 " method="post">
 

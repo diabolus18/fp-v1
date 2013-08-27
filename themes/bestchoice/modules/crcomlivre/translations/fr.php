@@ -20,4 +20,5 @@ $_MODULE['<{crcomlivre}bestchoice>crcomlivre_254f642527b45bc260048e30704edb39'] 
 $_MODULE['<{crcomlivre}bestchoice>crcomlivre_6a1d4ee22639cb871ec9f1dc6ae9b459'] = 'Autoriser les invités à laisser des commentaires';
 $_MODULE['<{crcomlivre}bestchoice>crcomlivre_e9fe804d531bd553e65cc0cb08d99b53'] = 'Gesiton des commentaires que vous avez déjà validé';
 $_MODULE['<{crcomlivre}bestchoice>crcomlivre_86fbb1cf3712e49ad053cb079052277d'] = 'Tout éditer';
+$_MODULE['<{crcomlivre}bestchoice>crcomlivre_3bf8447bee6cf062fc4d7c774d0a2e14'] = 'Derniers commentaires';
 $_MODULE['<{crcomlivre}bestchoice>crcomlivre_f3a648d591b6c76efb96f7a77071d23c'] = 'Pas de commentaires pour l\'instant';

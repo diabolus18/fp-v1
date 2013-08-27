@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-27 11:58:48
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-27 15:28:22
          compiled from "C:\wamp\www\fp-v1\modules\csaddtocartextend\csaddtocartextend.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:21591521c78580a0b29-03206917%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:25238521ca9762631a4-16725464%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '21591521c78580a0b29-03206917',
+  'nocache_hash' => '25238521ca9762631a4-16725464',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521c78580de986_23569825',
+  'unifunc' => 'content_521ca9762a6108_26058495',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521c78580de986_23569825')) {function content_521c78580de986_23569825($_smarty_tpl) {?><!-- CS add to cart extend module -->
+<?php if ($_valid && !is_callable('content_521ca9762a6108_26058495')) {function content_521ca9762a6108_26058495($_smarty_tpl) {?><!-- CS add to cart extend module -->
 <script type="text/javascript">
 //<![CDATA[
 	$(window).ready(function(){

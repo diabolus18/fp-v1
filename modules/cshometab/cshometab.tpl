@@ -33,6 +33,8 @@
 						
 						<h3><a href="{$product.link}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|truncate:50:'...'|escape:'htmlall':'UTF-8'}</a></h3>
 						<p class="category_name">{$product.category|escape:'htmlall':'UTF-8'}</p>
+						
+						<!-- MISE EN COMMENTAIRE AFFICHAGE ETOILES EVALUATION
 						<div class="star_content clearfix">
 							{section name="i" start=0 loop=5 step=1}
 								{if $product.ratting le $smarty.section.i.index}
@@ -42,6 +44,8 @@
 								{/if}
 							{/section}
 						</div>
+						-->
+						
 						
 						<div class="products_list_price">
 							{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}

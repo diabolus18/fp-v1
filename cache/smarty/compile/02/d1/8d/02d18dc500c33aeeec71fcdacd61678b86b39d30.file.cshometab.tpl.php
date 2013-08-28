@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-27 15:28:23
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 10:54:19
          compiled from "C:\wamp\www\fp-v1\modules\cshometab\cshometab.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:18386521ca977d7ed26-18398706%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:14433521dbabb188f17-48025550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02d18dc500c33aeeec71fcdacd61678b86b39d30' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cshometab\\cshometab.tpl',
-      1 => 1377609064,
+      1 => 1377612687,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18386521ca977d7ed26-18398706',
+  'nocache_hash' => '14433521dbabb188f17-48025550',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521ca97814eef0_49729912',
+  'unifunc' => 'content_521dbabb48a4f1_97754798',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521ca97814eef0_49729912')) {function content_521ca97814eef0_49729912($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_521dbabb48a4f1_97754798')) {function content_521dbabb48a4f1_97754798($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS Home Tab module -->
 <div class="home_top_tab">
 <?php if (count($_smarty_tpl->tpl_vars['tabs']->value)>0){?>
@@ -124,6 +124,8 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 </a></h3>
 						<p class="category_name"><?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['category'], 'htmlall', 'UTF-8');?>
 </p>
+						
+						<!-- MISE EN COMMENTAIRE AFFICHAGE ETOILES EVALUATION
 						<div class="star_content clearfix">
 							<?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']["i"])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']["i"]);
 $_smarty_tpl->tpl_vars['smarty']->value['section']["i"]['name'] = "i";
@@ -160,6 +162,8 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']["i"]['last']       = ($_smart
 								<?php }?>
 							<?php endfor; endif; ?>
 						</div>
+						-->
+						
 						
 						<div class="products_list_price">
 							<?php if (isset($_smarty_tpl->tpl_vars['product']->value['show_price'])&&$_smarty_tpl->tpl_vars['product']->value['show_price']&&!isset($_smarty_tpl->tpl_vars['restricted_country_mode']->value)){?>

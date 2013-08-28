@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-27 15:28:23
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 10:59:19
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\blockuserinfo\blockuserinfo.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:17317521ca97725f4f2-04495699%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:21513521dbbe7d33010-75528025%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17317521ca97725f4f2-04495699',
+  'nocache_hash' => '21513521dbbe7d33010-75528025',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521ca977355f16_29459649',
+  'unifunc' => 'content_521dbbe7dd6c20_56339960',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521ca977355f16_29459649')) {function content_521ca977355f16_29459649($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_521dbbe7dd6c20_56339960')) {function content_521dbbe7dd6c20_56339960($_smarty_tpl) {?>
 
 <!-- Block user information module HEADER -->
 <div id="header_user">	

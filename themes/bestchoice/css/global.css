@@ -1912,8 +1912,9 @@ tr.subitem > td:first-child + td {
 .price-discount{color:#969696;margin-right:5px;text-decoration:line-through}
 .static_block_banner_home_right{text-align:center;overflow:hidden;padding-bottom:10px;clear:both}
 .static_block_banner_home_right p{float:left}
+.static_block_banner_home_right h4{background:url(../img/bkg_cs_tabs.jpg) repeat-x left bottom;padding:0 0 12px;color:#397abd;font:700 14px/16px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;margin-bottom:15px;}
 #cs_home_center_bottom_right .static_block_banner_home_right p{float:none}
-.static_block_banner_home_right a{display:block;border:1px solid #4a4547;padding:2px}
+.static_block_banner_home_right a{display:block;padding:2px}
 .static_block_banner_home_right a img{max-width:100%;vertical-align:middle}
 .cs_sample_block_footer{overflow:hidden;padding:10px 0 20px;margin:0 auto}
 .cs_sample_block_footer h4{text-align:center;color:#323232;font:700 14px/17px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;background:none!important;padding:0}

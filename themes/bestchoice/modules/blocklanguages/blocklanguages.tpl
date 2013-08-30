@@ -41,7 +41,11 @@
 
 				{/if}
 			{/if}
+			         <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="40" height="20" />
+					
+					<!-- MISE EN COMMENTAIRE AFFICHAGE ISO CODE DE LA LANGUE
 					{$language.iso_code}
+					-->
 			{if $language.iso_code != $lang_iso}
 				</a>
 			{/if}

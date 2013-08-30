@@ -8,10 +8,10 @@
 
 #header_user #header_nav {
 	list-style-type:none;margin-left:20px;
-	float:left;background: url('img/bkg_cart_right.png') no-repeat 100% 100%;height:30px;padding-left:2px;
+	float:left;background: none repeat scroll 0% 0% rgb(153, 95, 93);height:42px;padding-left:2px;
 }
-#header_user #header_nav  #shopping_cart{background: url('img/bkg_cart_left.png') no-repeat 0 0;padding:0 10px 2px 0;line-height:30px;overflow:hidden;height:30px;margin-left:-5px;float:left;font-size:13px;}
-#header_user #header_nav  #shopping_cart a{background: url('img/bkg_cart_a.png') no-repeat 0 0;padding-left:40px}
+#header_user #header_nav  #shopping_cart{background:  no-repeat 0 0;padding:0 10px 2px 0;line-height:42px;overflow:hidden;height:42px;margin-left:-5px;float:left;font-size:13px;}
+#header_user #header_nav  #shopping_cart a{background: url('img/bkg_cart_a.png') no-repeat 0 0;padding-left:50px}
 /* cart */
 .lt-ie6 #shopping_cart {width: 130px;}
 #shopping_cart a,#shopping_cart p{float:left;margin:0;font-weight:700;font-family:"Roboto Condensed";text-transform:uppercase;color:#fff}

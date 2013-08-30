@@ -17,3 +17,5 @@ $_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_4394c8d8e63c470de62ced3ae85de
 $_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_b145abfd6b2f88971d725cbd94a5879f'] = 'Identifiez-vous';
 $_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_99dea78007133396a7b8ed70578ac6ae'] = 'Identifiez-vous';
 $_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_dc1c2b8c25c07bd49078e2bedee6d512'] = 'Mon Panier:';
+$_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_447b7147e84be512208dcc0995d67ebc'] = 'Produit';
+$_MODULE['<{blockuserinfo}bestchoice>blockuserinfo_691d502cfd0e0626cd3b058e5682ad1c'] = 'Produits';

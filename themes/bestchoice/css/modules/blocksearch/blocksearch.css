@@ -1,5 +1,5 @@
 /* block top search */
-#search_block_top {float:right;margin-top:35px;border:1px solid #d1d7de;border-radius:3px;-moz-border-radius:3px;height:28px;width:555px;background:#fff; }
+#search_block_top {margin-left:auto; margin-right:auto; margin-top:60px;border:1px solid #d1d7de;border-radius:3px;-moz-border-radius:3px;height:28px;width:50%;background:#fff; }
 #search_block_top p {padding:0;margin:0}
 #search_block_top #search_query_top {float: left;}
 
@@ -14,6 +14,6 @@
 }
 
 form#searchbox label{color:#323232;float:left;padding:6px 10px;text-transform:uppercase;font:700 12px/1.35 "Roboto Condensed",Helvetica,arial;}
-form#searchbox input#search_query_top{background:none;border:none;border-left:1px solid #d1d7de;height:29px;line-height:29px;width:430px;color:#929292;padding:0 10px;border-radius:0!important}
+form#searchbox input#search_query_top{background:none;border:none;border-left:1px solid #d1d7de;height:29px;line-height:29px;width:50%;color:#929292;padding:0 10px;border-radius:0!important}
 form#searchbox input#search_button{padding: 1px 4px;}
 

@@ -1,8 +1,8 @@
 <pre>Array
 (
-    [currentFolderPath] => ../../img/cms/
-    [new_folder] => Details Declinaison
+    [currentFolderPath] => ../../img/cms
+    [new_folder] => Pictos
 )
 </pre>
 
-16/Aug/2013 14:45:36
+30/Aug/2013 10:30:00

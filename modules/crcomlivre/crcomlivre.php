@@ -114,6 +114,7 @@ class CrComLivre extends Module
 			$this->output.='<div class="contenu_onglets">';
 			//Début affichage des onglets
 			
+			
 			//Premier onglet modération des commentaires + configuration
 			$this->output.='<div class="contenu_onglet" id="contenu_onglet_parametres">';
 			//Affichage adresse (URL) de la page livre d'or
@@ -286,3 +287,5 @@ class CrComLivre extends Module
 
 
 ?>
+
+

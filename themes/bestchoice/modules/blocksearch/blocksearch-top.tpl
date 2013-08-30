@@ -38,7 +38,7 @@
 
 	<form method="get" action="{$link->getPageLink('search')}" id="searchbox">
 		<p>
-			<label for="search_query_top">Search</label>
+			<label for="search_query_top">{l s='Searchbutton1' mod='blocksearch'}</label>
 			<input type="hidden" name="controller" value="search" />
 			<input type="hidden" name="orderby" value="position" />
 			<input type="hidden" name="orderway" value="desc" />

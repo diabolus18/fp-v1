@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 10:59:19
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-30 17:24:13
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\blocklanguages\blocklanguages.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1037521dbbe74f4c16-16079673%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:163045220b91d55ebf6-89109997%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cb2d86632cd3bd850ad3cbfcbf33e3ec05647972' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\blocklanguages\\blocklanguages.tpl',
-      1 => 1374235095,
+      1 => 1377693376,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1037521dbbe74f4c16-16079673',
+  'nocache_hash' => '163045220b91d55ebf6-89109997',
   'function' => 
   array (
   ),
@@ -23,12 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'indice_lang' => 0,
     'lang_rewrite_urls' => 0,
     'link' => 0,
+    'img_lang_dir' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521dbbe75806d6_16300677',
+  'unifunc' => 'content_5220b91d5f29a4_76509595',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521dbbe75806d6_16300677')) {function content_521dbbe75806d6_16300677($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5220b91d5f29a4_76509595')) {function content_5220b91d5f29a4_76509595($_smarty_tpl) {?>
 
 <!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value)>1){?>
@@ -59,8 +60,15 @@ $_smarty_tpl->tpl_vars['language']->_loop = true;
 
 				<?php }?>
 			<?php }?>
+			         <img src="<?php echo $_smarty_tpl->tpl_vars['img_lang_dir']->value;?>
+<?php echo $_smarty_tpl->tpl_vars['language']->value['id_lang'];?>
+.jpg" alt="<?php echo $_smarty_tpl->tpl_vars['language']->value['iso_code'];?>
+" width="40" height="20" />
+					
+					<!-- MISE EN COMMENTAIRE AFFICHAGE ISO CODE DE LA LANGUE
 					<?php echo $_smarty_tpl->tpl_vars['language']->value['iso_code'];?>
 
+					-->
 			<?php if ($_smarty_tpl->tpl_vars['language']->value['iso_code']!=$_smarty_tpl->tpl_vars['lang_iso']->value){?>
 				</a>
 			<?php }?>

@@ -521,12 +521,12 @@ div.star.star_readonly.star_on a{background-position:0 -9px;cursor:text}
 /* ************************************************************************************************
 		HEADER
 ************************************************************************************************ */
-#header {position:relative;padding-top:13px;}
+#header {position:relative;padding-top:5px;}
 #header_logo {
-	float:left;position:relative;margin:-51px 0 10px;z-index:100
+	float:left;position:relative;margin:-61px 0 10px;z-index:100
 }
 @media screen and (-webkit-min-device-pixel-ratio:0)
-	{ #header_logo { margin-bottom:12px; } }
+	{ #header_logo { margin-bottom:5px; } }
 
 #header_right {
 	position:relative;

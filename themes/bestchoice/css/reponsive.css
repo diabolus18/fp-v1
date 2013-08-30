@@ -107,7 +107,7 @@
 		#footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us{width:364px;margin-bottom:20px}
 		#footer .block_various_links,#footer .static-blokc-follow-us{margin-right:0}
 		#search_block_top{width:320px;}
-		form#searchbox input#search_query_top{width:205px;}
+		form#searchbox input#search_query_top{width:100px;}
 		.two_column #pb-right-column{margin-right:17px;}
 		.three_column .grid_8 ul.step li{width:73%}
 		ul.step li{border:1px solid #e4e4e4;margin:0 0 1px!important;padding:10px 30px 9px 30px}
@@ -177,7 +177,7 @@
 		/*theme*/
 		#page{background:none}
 		#header{padding-top:5px;text-align:center}
-		#search_block_top{width:100%;margin:0}
+		#search_block_top{display:none;}
 		form#searchbox input#search_query_top{width:305px;}
 		.static_block_chat_with{display:inline-block;float:none;width:100%;text-align:center;color:#646464}
 		#cs_header_link{float:left}
@@ -255,7 +255,7 @@
 		/*theme*/
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .product-latest{width:120px;}
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .cat-content{max-width:160px;}
-		form#searchbox input#search_query_top{width:185px;}
+		form#searchbox input#search_query_top{width:100px;display:none;}
 		.addresses #ordermsg .textarea textarea{width:90%}
 		
 		

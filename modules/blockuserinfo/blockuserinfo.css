@@ -14,7 +14,7 @@
 /* cart */
 .lt-ie6 #shopping_cart {width: 130px;}
 #shopping_cart a{
-	height: 15px;
+	height: 30px;
 	padding:15px 27px 10px 43px;
 	background: url('img/icon/cart.gif') no-repeat 10px 9px #eee;
 	min-width: 130px;/* 200 */

@@ -4,13 +4,13 @@
 	border:solid 2px #ccc;
 	box-shadow:6px 6px 6px #aaaaaa;
 	border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;
-	width:500px;
+	width:80%;
 	background:#fff;
 }
 .message_2{
 	border:solid 1px #aaaaaa;
 	box-shadow:1px 1px 1px #000;
-	width:400px;
+	width:80%;
 	padding:5px;
 }
 #crcomlivre table tr td{

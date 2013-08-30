@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 10:54:19
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-30 17:24:14
          compiled from "C:\wamp\www\fp-v1\modules\cshometab\cshometab.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14433521dbabb188f17-48025550%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:27175220b91e321c48-68528726%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02d18dc500c33aeeec71fcdacd61678b86b39d30' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cshometab\\cshometab.tpl',
-      1 => 1377612687,
+      1 => 1377789682,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14433521dbabb188f17-48025550',
+  'nocache_hash' => '27175220b91e321c48-68528726',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521dbabb48a4f1_97754798',
+  'unifunc' => 'content_5220b91e603797_24832073',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521dbabb48a4f1_97754798')) {function content_521dbabb48a4f1_97754798($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5220b91e603797_24832073')) {function content_5220b91e603797_24832073($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS Home Tab module -->
 <div class="home_top_tab">
 <?php if (count($_smarty_tpl->tpl_vars['tabs']->value)>0){?>
@@ -180,8 +180,6 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']["i"]['last']       = ($_smart
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'htmlall', 'UTF-8');?>
 " class="button" style="margin:auto;"><?php echo smartyTranslate(array('s'=>'See this knife ','mod'=>'cshometab'),$_smarty_tpl);?>
 </a>
-						
-						
 					</li>
 					<?php } ?>
 					</ul>
@@ -289,7 +287,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 				},
 				items: {
 					width: 155,
-					height: 280,	//	optionally resize item-height
+					height: 220,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max: <?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>
@@ -335,7 +333,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 				},
 				items: {
 					width: 155,
-					height: 280,	//	optionally resize item-height
+					height: 220,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max:<?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>
@@ -373,7 +371,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 			},
 			items: {
 				width: 155,
-				height: 280,	//	optionally resize item-height
+				height: 220,	//	optionally resize item-height
 				visible: {
 					min: 1,
 					max: <?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>

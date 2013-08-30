@@ -56,8 +56,6 @@
 						<br/>
 						
 						<a href="{$product.link}" title="{$product.name|escape:'htmlall':'UTF-8'}" class="button" style="margin:auto;">{l s='See this knife ' mod='cshometab'}</a>
-						
-						
 					</li>
 					{/foreach}
 					</ul>
@@ -149,7 +147,7 @@
 				},
 				items: {
 					width: 155,
-					height: 280,	//	optionally resize item-height
+					height: 220,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max: {$option->show}
@@ -180,7 +178,7 @@
 				},
 				items: {
 					width: 155,
-					height: 280,	//	optionally resize item-height
+					height: 220,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max:{$option->show}
@@ -217,7 +215,7 @@
 			},
 			items: {
 				width: 155,
-				height: 280,	//	optionally resize item-height
+				height: 220,	//	optionally resize item-height
 				visible: {
 					min: 1,
 					max: {$option->show}

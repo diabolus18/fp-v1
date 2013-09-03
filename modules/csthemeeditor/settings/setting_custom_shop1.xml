@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <setting>
-<h_b_img>1376461290bkg_page_dfault_fontenille-pataud.jpg</h_b_img>
+<h_b_img>13781995351376461290bkg_page_dfault_fontenille-pataud.jpg</h_b_img>
 <bg_mode>wide_mode</bg_mode>
 <column>1_column</column>
 <column_class>grid_24(4)</column_class>
@@ -43,7 +43,9 @@
 <p_fstyle_price>Roboto</p_fstyle_price>
 <bt_b_color_normal>#995f5d</bt_b_color_normal>
 <bt_b_color_hover>#c2cde5</bt_b_color_hover>
+<bt_text_color_normal>#c2cde5</bt_text_color_normal>
 <bt2_b_color_normal>#995f5d</bt2_b_color_normal>
+<bt2_b_color_hover>#c2cde5</bt2_b_color_hover>
 <bt_fstyle_text>Roboto Condensed</bt_fstyle_text>
 <t_t_color>#995f5d</t_t_color>
 <t_fstyle_page>Roboto Condensed</t_fstyle_page>

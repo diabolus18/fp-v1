@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 13:49:40
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-03 11:25:05
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:18101521de3d4e83491-91608356%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:261185225aaf1ca46a2-28894809%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'def7c0e5679f7051b0c52d2bdc71ebd7893013af' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\product.tpl',
-      1 => 1377261969,
+      1 => 1378197596,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18101521de3d4e83491-91608356',
+  'nocache_hash' => '261185225aaf1ca46a2-28894809',
   'function' => 
   array (
   ),
@@ -110,9 +110,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521de3d6df8141_23121997',
+  'unifunc' => 'content_5225aaf3b9bf90_41778669',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521de3d6df8141_23121997')) {function content_521de3d6df8141_23121997($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5225aaf3b9bf90_41778669')) {function content_5225aaf3b9bf90_41778669($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_modifier_date_format')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.date_format.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 if (!is_callable('smarty_function_counter')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.counter.php';
@@ -1035,7 +1035,7 @@ $_smarty_tpl->tpl_vars['accessory']->_loop = true;
 							<div class="center_block">
 							<div class="image"><a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['accessoryLink']->value, 'htmlall', 'UTF-8');?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['accessory']->value['name'], 'htmlall', 'UTF-8');?>
-" class="product_img_link"><img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['accessory']->value['link_rewrite'],$_smarty_tpl->tpl_vars['accessory']->value['id_image'],'home_default');?>
+" class="product_img_link"><img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['accessory']->value['link_rewrite'],$_smarty_tpl->tpl_vars['accessory']->value['id_image'],'medium_default');?>
 " alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['accessory']->value['legend'], 'htmlall', 'UTF-8');?>
 "/></a></div>
 							<div class="name_product"><a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['accessoryLink']->value, 'htmlall', 'UTF-8');?>

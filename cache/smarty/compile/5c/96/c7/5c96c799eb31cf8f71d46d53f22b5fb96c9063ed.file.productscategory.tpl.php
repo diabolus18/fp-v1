@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-28 13:49:40
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-03 11:25:05
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\productscategory\productscategory.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5618521de3d431c487-42407158%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:314395225aaf1385c69-21216168%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5618521de3d431c487-42407158',
+  'nocache_hash' => '314395225aaf1385c69-21216168',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_521de3d4562ef5_87148926',
+  'unifunc' => 'content_5225aaf1699a66_32211609',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_521de3d4562ef5_87148926')) {function content_521de3d4562ef5_87148926($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
+<?php if ($_valid && !is_callable('content_5225aaf1699a66_32211609')) {function content_5225aaf1699a66_32211609($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 

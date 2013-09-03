@@ -523,7 +523,7 @@ div.star.star_readonly.star_on a{background-position:0 -9px;cursor:text}
 ************************************************************************************************ */
 #header {position:relative;padding-top:5px;}
 #header_logo {
-	float:left;position:relative;margin:-61px 0 10px;z-index:100
+	float:left;position:relative;margin:-75px 0 10px;z-index:100
 }
 @media screen and (-webkit-min-device-pixel-ratio:0)
 	{ #header_logo { margin-bottom:5px; } }
@@ -610,7 +610,7 @@ ul.idTabs li {
 #more_info_sheets .rte ul{list-style: disc outside none!important;padding-left:15px;}
 #more_info_sheets ul.bullet{padding-left:0;}
 #more_info_sheets .rte ol{list-style: decimal  outside none!important;padding-left:20px;}
-#more_info_sheets ul li, #more_info_sheets ol li{padding:3px 0}
+#more_info_sheets ul li, #more_info_sheets ol li{padding:20px 0}
 #more_info_sheets p img{margin: 20px auto 0;max-width:100%}
 
 #more_info_sheets .product_desc .block_description{
@@ -2002,7 +2002,10 @@ li .ajax_block_product h3 a,
 .ajax_add_to_cart_button.exclusive{background-image: url("../img/bkg_add_cart.jpg");
     border-left: 1px solid #E4E4E4;
     border-right: 1px solid #E4E4E4;
-    color: #323232;}
+    color: #323232;
+    float : right;
+	display:inline-block;
+	}
 	
 #left_column input.button_mini,#left_column  input.button_small,#left_column  input.button,#left_column  input.button_large,#left_column input.button_mini_disabled,#left_column  input.button_small_disabled,#left_column  input.button_disabled,#left_column  input.button_large_disabled,#left_column input.exclusive_mini,#left_column  input.exclusive_small,#left_column  input.exclusive,#left_column  input.exclusive_large,#left_column input.exclusive_mini_disabled,#left_column  input.exclusive_small_disabled,#left_column  input.exclusive_disabled,#left_column  input.exclusive_large_disabled,#left_column a.button_mini,#left_column  a.button_small,#left_column  a.button,#left_column  a.button_large,#left_column a.exclusive_mini,#left_column  a.exclusive_small,#left_column  a.exclusive,#left_column  a.exclusive_large,#left_column span.button_mini,#left_column  span.button_small,#left_column  span.button,#left_column  span.button_large,#left_column span.exclusive_mini,#left_column  span.exclusive_small,#left_column  span.exclusive,#left_column  span.exclusive_large,#left_column  span.exclusive_large_disabled,
 #right_column  input.button_mini,#right_column   input.button_small,#right_column   input.button,#right_column   input.button_large,#right_column  input.button_mini_disabled,#right_column   input.button_small_disabled,#right_column   input.button_disabled,#right_column   input.button_large_disabled,#right_column  input.exclusive_mini,#right_column   input.exclusive_small,#right_column   input.exclusive,#right_column   input.exclusive_large,#right_column  input.exclusive_mini_disabled,#right_column   input.exclusive_small_disabled,#right_column   input.exclusive_disabled,#right_column   input.exclusive_large_disabled,#right_column  a.button_mini,#right_column   a.button_small,#right_column   a.button,#right_column   a.button_large,#right_column  a.exclusive_mini,#right_column   a.exclusive_small,#right_column   a.exclusive,#right_column   a.exclusive_large,#right_column  span.button_mini,#right_column   span.button_small,#right_column   span.button,#right_column   span.button_large,#right_column  span.exclusive_mini,#right_column   span.exclusive_small,#right_column   span.exclusive,#right_column   span.exclusive_large,#right_column   span.exclusive_large_disabled

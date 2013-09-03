@@ -34,6 +34,8 @@
 	
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 1023px) {
+	    .static_block_chat_with {display:none;}
+		.fontenille1929{display:none;}
 		#left_column .block,.advertising_block{padding-right:0}
 		#right_column .block,#right_column .advertising_block{padding-left:0;}		
 		a.product_img_link img{max-width:70%; float:right;}

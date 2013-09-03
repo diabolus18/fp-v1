@@ -639,7 +639,7 @@ $(window).load(function(){
 							{assign var='accessoryLink' value=$link->getProductLink($accessory.id_product, $accessory.link_rewrite, $accessory.category)}
 							<li class="{if isset($grid_product)}{$grid_product}{else}grid_6{/if} ajax_block_product {if $smarty.foreach.accessories_list.first}first_item{elseif $smarty.foreach.accessories_list.last}last_item{else}item{/if} product_accessories_description clearfix">
 							<div class="center_block">
-							<div class="image"><a href="{$accessoryLink|escape:'htmlall':'UTF-8'}" title="{$accessory.name|escape:'htmlall':'UTF-8'}" class="product_img_link"><img src="{$link->getImageLink($accessory.link_rewrite, $accessory.id_image, 'home_default')}" alt="{$accessory.legend|escape:'htmlall':'UTF-8'}"/></a></div>
+							<div class="image"><a href="{$accessoryLink|escape:'htmlall':'UTF-8'}" title="{$accessory.name|escape:'htmlall':'UTF-8'}" class="product_img_link"><img src="{$link->getImageLink($accessory.link_rewrite, $accessory.id_image, 'medium_default')}" alt="{$accessory.legend|escape:'htmlall':'UTF-8'}"/></a></div>
 							<div class="name_product"><a href="{$accessoryLink|escape:'htmlall':'UTF-8'}">{$accessory.name|escape:'htmlall':'UTF-8'}</a></div>
 							<div class="content_price">
 							{if $accessory.show_price AND !isset($restricted_country_mode) AND !$PS_CATALOG_MODE} <span class="price">{if $priceDisplay != 1}{displayWtPrice p=$accessory.price}{else}{displayWtPrice p=$accessory.price_tax_exc}{/if}</span>{/if}

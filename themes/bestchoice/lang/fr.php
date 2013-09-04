@@ -749,6 +749,7 @@ $_LANG['product-list_77798ad342555ffa834758a2aaa6fc11'] = 'Comparer';
 $_LANG['product-list_78945de8de090e90045d299651a68a9b'] = 'En stock';
 $_LANG['product-list_b55197a49e8c4cd8c314bc2aa39d6feb'] = 'Stock épuisé';
 $_LANG['product-list_cb3c718c905f00adbb6735f55bfb38ef'] = 'Produit disponible avec d\'autres options';
+$_LANG['product-list_d470ffe7d365728cd7209911bba8f21c'] = 'Voir ce produit';
 $_LANG['product-prices_03de921a8ea82897e13d33d66c28b4db'] = 'Exclusivité web';
 $_LANG['product-prices_58ef6750a23ba432fc1377b7de085d9f'] = 'HT';
 $_LANG['product-prices_7bb63c7de5a5ee79356083a12f21e1e8'] = 'au lieu de';

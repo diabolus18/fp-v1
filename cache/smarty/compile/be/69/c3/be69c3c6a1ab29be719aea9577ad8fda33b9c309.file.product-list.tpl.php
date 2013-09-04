@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-03 13:16:03
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 16:13:00
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\product-list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:232455225c4f3ee3204-40511432%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:162852273fecc430c9-75513226%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'be69c3c6a1ab29be719aea9577ad8fda33b9c309' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\product-list.tpl',
-      1 => 1376488756,
+      1 => 1378222996,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '232455225c4f3ee3204-40511432',
+  'nocache_hash' => '162852273fecc430c9-75513226',
   'function' => 
   array (
   ),
@@ -31,9 +31,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5225c4f42c3dc3_55983783',
+  'unifunc' => 'content_52273fecf3d4a3_20221166',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5225c4f42c3dc3_55983783')) {function content_5225c4f42c3dc3_55983783($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_52273fecf3d4a3_20221166')) {function content_52273fecf3d4a3_20221166($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 <script type="text/javascript">
 //<![CDATA[
@@ -77,7 +77,7 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 				
 				<div class="name_product"><h3><a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['link'], 'htmlall', 'UTF-8');?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'htmlall', 'UTF-8');?>
-"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate(smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'htmlall', 'UTF-8'),45,'...');?>
+"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate(smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'htmlall', 'UTF-8'),55,'...');?>
 </a></h3></div>
 				<p class="category_name"><?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['category'], 'htmlall', 'UTF-8');?>
 </p>
@@ -106,6 +106,12 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 <?php }else{ ?><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['product']->value['price_tax_exc']),$_smarty_tpl);?>
 <?php }?></span><?php }?>
 					
+				</div>
+				<div>
+				<a href="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['link'], 'htmlall', 'UTF-8');?>
+" title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['product']->value['name'], 'htmlall', 'UTF-8');?>
+" class="button" style="float:right;"><?php echo smartyTranslate(array('s'=>'See this product'),$_smarty_tpl);?>
+</a>
 				</div>
 						
 				<?php if (isset($_smarty_tpl->tpl_vars['product']->value['online_only'])&&$_smarty_tpl->tpl_vars['product']->value['online_only']){?>

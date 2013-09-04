@@ -24,17 +24,19 @@
 #cart_block  .block_content {padding:20px;overflow:hidden}
 
 #cart_block #cart_block_summary {display:none}
-#cart_block .quantity-formated {display:block;color:#969696}
+#cart_block .quantity-formated {display:block;color:#969696; float:right;}
 #cart_block .cart_block_product_name {font-weight:bold}
 #cart_block .remove_link {position:absolute;top:20px;left:0px;	height:9px;
 	width:9px;z-index:10;
 }
 #cart_block #cart_block_list dt.first_item .remove_link{top:0}
 #cart_block .remove_link a {
-	display:inline-block;
+	display:block;
 	height:16px;
 	width:16px;
-	background: url(img/icon/delete.png) no-repeat 0 0
+	background: url(img/icon/delete.png) no-repeat ;	
+	margin-top:-10px;
+	float:right;
 }
 #cart_block .price {display:block;padding-bottom:5px;}
 
@@ -75,5 +77,5 @@
 .bloc_cart_voucher span.price{float:right!important}
 .bloc_cart_voucher span.name{float:left!important}
 .bloc_cart_voucher span.delete{float:right!important}
-.bloc_cart_voucher span.delete a img{display:none;}
+.bloc_cart_voucher span.delete a img{}
 #vouchers dt{border:none;border-top:1px dotted #D5D5D5;margin:8px 0 0!important;padding:10px 0 0!important}

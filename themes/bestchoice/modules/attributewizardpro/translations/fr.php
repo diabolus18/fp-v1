@@ -45,7 +45,7 @@ $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_8e3243a904b1b47be4b
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_d0de8291d1039ccf8b2415c9ed68b150'] = 'dans /header.php ajouter';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_8e177d09fc14a20f161dc8e2d90ff2c5'] = 'en dessous de : HOOK_TOP vers la ligne #15';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_efeb369cccbd560588a756610865664c'] = 'vers';
-$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_34ec78fcc91ffb1e54cd85e4a0924332'] = 'ajouter';
+$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_34ec78fcc91ffb1e54cd85e4a0924332'] = 'Ajouter';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_a8372734c3cac5267f64031cd85f0179'] = 'Si vous souhaitez afficher l\'assistant, assurez-vous que ce n\'est pas dans une balise form';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_d02ed3276516bb8e6013413523d8b02d'] = 'Merci de lire ces lignes attentivement, l\'ajout d\'attribut (déclinaison) n\'est plus gérer de la même façon';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_515e0d414f50e8d2fc30ad2d9dac9103'] = 'Pour ajouter des attributs (déclinaisons) faites comme d\'habitude, mais ne toucher surtout pas au générateur';
@@ -172,8 +172,8 @@ $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_2b4d1e7f4b2394ef534
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_9453afc2813496d9337f4de5febe83f8'] = 'Seulement si l\'API en utilisant Paypal';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_bdbcf7856e48078912f06fbb2511b52f'] = 'Personnalisation';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_2d0f6b8300be19cf35e89e66f0677f95'] = 'Ajouter au panier';
-$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_ec211f7c20af43e742bf2570c3cb84f9'] = 'Ajouter';
-$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_1d9baf077ee87921f57a8fe42d510b65'] = 'Retirer';
+$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_ec211f7c20af43e742bf2570c3cb84f9'] = '+';
+$_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_1d9baf077ee87921f57a8fe42d510b65'] = '-';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_bfe08d238d3f0cabac9e841c1efb43f9'] = '(Min:';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_9371d7a2e3ae86a00aab4771e39d255d'] = ')';
 $_MODULE['<{attributewizardpro}bestchoice>attributewizardpro_2db28b122c4841a156bb254232c3ad93'] = 'Erreur : extension de fichier invalide, n\'utiliser que';

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-03 11:25:05
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 16:20:25
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\productcomments\productcomments.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:46805225aaf1985375-94841730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17060522741a9d9ed94-81552686%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '46805225aaf1985375-94841730',
+  'nocache_hash' => '17060522741a9d9ed94-81552686',
   'function' => 
   array (
   ),
@@ -34,9 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5225aaf1bd91c8_95033409',
+  'unifunc' => 'content_522741aa1d7326_11006091',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5225aaf1bd91c8_95033409')) {function content_5225aaf1bd91c8_95033409($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_522741aa1d7326_11006091')) {function content_522741aa1d7326_11006091($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 <script type="text/javascript">
 var productcomments_controller_url = '<?php echo $_smarty_tpl->tpl_vars['productcomments_controller_url']->value;?>

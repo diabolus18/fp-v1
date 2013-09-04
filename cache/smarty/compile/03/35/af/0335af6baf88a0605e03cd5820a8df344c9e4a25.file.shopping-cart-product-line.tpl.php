@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-03 11:25:37
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 15:35:08
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\shopping-cart-product-line.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:126465225ab114741d3-85832863%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:159255227370ce8cc21-83802586%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '126465225ab114741d3-85832863',
+  'nocache_hash' => '159255227370ce8cc21-83802586',
   'function' => 
   array (
   ),
@@ -40,9 +40,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5225ab11b34587_73343812',
+  'unifunc' => 'content_5227370d6bedd0_24416258',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5225ab11b34587_73343812')) {function content_5225ab11b34587_73343812($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5227370d6bedd0_24416258')) {function content_5227370d6bedd0_24416258($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 <?php $_smarty_tpl->tpl_vars["product_link"] = new Smarty_variable(smarty_modifier_escape($_smarty_tpl->tpl_vars['link']->value->getProductLink($_smarty_tpl->tpl_vars['product']->value['id_product'],$_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['category'],null,null,$_smarty_tpl->tpl_vars['product']->value['id_shop'],$_smarty_tpl->tpl_vars['product']->value['id_product_attribute']), 'htmlall', 'UTF-8'), null, 0);?>
 <?php if ($_smarty_tpl->tpl_vars['awp_url_rewrite']->value){?>

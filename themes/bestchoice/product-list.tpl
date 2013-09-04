@@ -40,7 +40,7 @@ $(document).ready(function()
 				</a>
 				</div>
 				
-				<div class="name_product"><h3><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:45:'...'}</a></h3></div>
+				<div class="name_product"><h3><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:55:'...'}</a></h3></div>
 				<p class="category_name">{$product.category|escape:'htmlall':'UTF-8'}</p>
 				
 				{if isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
@@ -60,6 +60,9 @@ $(document).ready(function()
 					{if $product.reduction}<span class="price-discount">{displayWtPrice p=$product.price_without_reduction}</span>{/if}
 					{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}<span class="price{if $product.reduction} old{/if}" style="display: inline;">{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}</span>{/if}
 					
+				</div>
+				<div>
+				<a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}" class="button" style="float:right;">{l s='See this product'}</a>
 				</div>
 						
 				{if isset($product.online_only) && $product.online_only}

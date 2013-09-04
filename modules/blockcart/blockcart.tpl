@@ -54,8 +54,8 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 	<!-- block summary -->
 	<div id="cart_block_summary" class="{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded' || !$ajax_allowed || !isset($colapseExpandStatus)}collapsed{else}expanded{/if}">
 		<span class="ajax_cart_quantity" {if $cart_qties <= 0}style="display:none;"{/if}>{$cart_qties}</span>
-		<span class="ajax_cart_product_txt_s" {if $cart_qties <= 1}style="display:none"{/if}>{l s='Products' mod='blockcart'}</span>
-		<span class="ajax_cart_product_txt" {if $cart_qties > 1}style="display:none"{/if}>{l s='Product' mod='blockcart'}</span>
+		<span class="ajax_cart_product_txt_s" {if $cart_qties <= 1}style="display:none"{/if}>{l s='products' mod='blockcart'}</span>
+		<span class="ajax_cart_product_txt" {if $cart_qties > 1}style="display:none"{/if}>{l s='product' mod='blockcart'}</span>
 		<span class="ajax_cart_total" {if $cart_qties == 0}style="display:none"{/if}>
 			{if $cart_qties > 0}
 				{if $priceDisplay == 1}
@@ -74,11 +74,23 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 		{foreach from=$products item='product' name='myLoop'}
 			{assign var='productId' value=$product.id_product}
 			{assign var='productAttributeId' value=$product.id_product_attribute}
-			<dt id="cart_block_product_{$product.id_product}_{if $product.id_product_attribute}{$product.id_product_attribute}{else}0{/if}_{if $product.id_address_delivery}{$product.id_address_delivery}{else}0{/if}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
+			{assign var="product_link" value=$link->getProductLink($product.id_product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)|escape:'htmlall':'UTF-8'}
+			{if $product_link|strpos:'?' === false}
+				{assign var="awp_product_link" value="?"}
+			{else}
+				{assign var="awp_product_link" value="&"}
+			{/if}
+			{assign var="awp_product_link" value=$awp_product_link|cat:'ipa='|cat:$productAttributeId|cat:'&ins='|cat:$product.instructions_valid}
+			{if $product_link|strpos:'#' > 0}
+				{assign var='amp_pos' value=$product_link|strpos:'#'}
+				{assign var='product_link' value=$product_link|substr:0:$amp_pos}
+			{/if}
+			{assign var='product_link' value=$product_link|cat:$awp_product_link}
+			<dt id="cart_block_product_{$product.id_product}_{if $product.id_product_attribute}{$product.id_product_attribute}{else}0{/if}{if $product.instructions_valid}_{$product.instructions_valid}{/if}_{if $product.id_address_delivery}{$product.id_address_delivery}{else}0{/if}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
 				<span class="quantity-formated"><span class="quantity">{$product.cart_quantity}</span>x</span>
-				<a class="cart_block_product_name" href="{$link->getProductLink($product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)}" title="{$product.name|escape:html:'UTF-8'}">
-				{$product.name|truncate:13:'...'|escape:html:'UTF-8'}</a>
-				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId) && (!isset($product.is_gift) || !$product.is_gift)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete=1&amp;id_product={$product.id_product}&amp;ipa={$product.id_product_attribute}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$static_token}", true)}" title="{l s='Please remove this product from my cart.' mod='blockcart'}">&nbsp;</a>{/if}</span>
+				<a class="cart_block_product_name" href="{$product_link}" title="{$product.name|escape:html:'UTF-8'}">
+				{$product.name|truncate:50:'...'|escape:html:'UTF-8'}</a>
+				<span class="remove_link">{if !isset($customizedDatas.$productId.$productAttributeId) && (!isset($product.is_gift) || !$product.is_gift)}<a rel="nofollow" class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete=1&amp;id_product={$product.id_product}&amp;special_instructions={$product.instructions_valid|urlencode}&amp;ipa={$product.id_product_attribute}&amp;id_address_delivery={$product.id_address_delivery}&amp;token={$static_token}", true)}" title="{l s='Please remove this product from my cart.' mod='blockcart'}">&nbsp;</a>{/if}</span>
 				<span class="price">
 					{if !isset($product.is_gift) || !$product.is_gift}
 						{if $priceDisplay == $smarty.const.PS_TAX_EXC}{displayWtPrice p="`$product.total`"}{else}{displayWtPrice p="`$product.total_wt`"}{/if}
@@ -88,8 +100,8 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 				</span>
 			</dt>
 			{if isset($product.attributes_small)}
-			<dd id="cart_block_combination_of_{$product.id_product}{if $product.id_product_attribute}_{$product.id_product_attribute}{/if}_{$product.id_address_delivery|intval}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
-				<a href="{$link->getProductLink($product, $product.link_rewrite, $product.category, null, null, $product.id_shop, $product.id_product_attribute)}" title="{l s='Product detail' mod='blockcart'}">{$product.attributes_small}</a>
+			<dd id="cart_block_combination_of_{$product.id_product}{if $product.id_product_attribute}_{$product.id_product_attribute}{/if}{if $product.instructions_valid}_{$product.instructions_valid}{/if}_{$product.id_address_delivery|intval}" class="{if $smarty.foreach.myLoop.first}first_item{elseif $smarty.foreach.myLoop.last}last_item{else}item{/if}">
+				<a href="{$product_link}" title="{l s='Product detail' mod='blockcart'}">{$product.attributes_small}</a>
 			{/if}
 
 			<!-- Customizable datas -->
@@ -111,12 +123,18 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 			{/if}
 
 			{if isset($product.attributes_small)}</dd>{/if}
+			{if isset($product.instructions)}
+			<dd id="cart_block_instructions_{$product.id_product}_{if $product.id_product_attribute}{$product.id_product_attribute}{/if}{if $product.instructions_valid}_{$product.instructions_valid}{/if}_{if $product.id_address_delivery}{$product.id_address_delivery}{else}0{/if}" class="item">
+				{$product.instructions}
+			</dd>
+			{/if}
 
 		{/foreach}
 		</dl>
 	{/if}
 		<p {if $products}class="hidden"{/if} id="cart_block_no_products">{l s='No products' mod='blockcart'}</p>
-		<table id="vouchers"{if $discounts|@count == 0} style="display:none;"{/if}>
+	{if $discounts|@count > 0}
+		<table id="vouchers">
 			<tbody>
 					{foreach from=$discounts item=discount}
 						{if $discount.value_real > 0}
@@ -131,9 +149,11 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 							</td>
 						</tr>
 						{/if}
-					{/foreach}					
+					{/foreach}
 			</tbody>
 		</table>
+		{/if}
+		
 		<p id="cart-prices">
 			<span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost">{$shipping_cost}</span>
 			<span>{l s='Shipping' mod='blockcart'}</span>
@@ -171,5 +191,6 @@ var delete_txt = '{l s='Delete' mod='blockcart' js=1}';
 	</div>
 	</div>
 </div>
+<!-- /MODULE Block cart -->
 <!-- /MODULE Block cart -->
 

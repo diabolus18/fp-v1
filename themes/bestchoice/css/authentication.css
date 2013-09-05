@@ -1,5 +1,5 @@
-#account-creation_form .account_creation{padding:0;width:340px;float:left}
-#account-creation_form .account_creation.customerprivacy{margin-left:70px;}
+#account-creation_form .account_creation{padding:0;width:340px;float:left;margin-left:40px;}
+#account-creation_form .account_creation.customerprivacy{margin-left:40px;}
 #create-account_form,#authentication #login_form{clear:none;float:left;width:340px;margin:0  70px 0 0;}
 #create-account_form{clear:left}
 #create-account_form h4{font-weight:400;height:auto;margin-bottom:48px;padding-left:0;text-transform:none;color:#969696;font-family:arial;padding-top:7px;font-size:11px;}

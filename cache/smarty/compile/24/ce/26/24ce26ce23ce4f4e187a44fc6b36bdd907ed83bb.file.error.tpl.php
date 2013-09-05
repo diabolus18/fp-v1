@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 14:01:58
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 16:49:48
          compiled from "C:\wamp\www\fp-v1\modules\paypal\views\templates\front\error.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:26795522721360ca943-80676238%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:326805227488cbeb7a4-95823110%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '26795522721360ca943-80676238',
+  'nocache_hash' => '326805227488cbeb7a4-95823110',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_52272136165a08_58355756',
+  'unifunc' => 'content_5227488cc8ce35_10447505',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52272136165a08_58355756')) {function content_52272136165a08_58355756($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5227488cc8ce35_10447505')) {function content_5227488cc8ce35_10447505($_smarty_tpl) {?>
 
 <?php if (@constant('_PS_VERSION_')<1.5&&isset($_smarty_tpl->tpl_vars['use_mobile']->value)&&$_smarty_tpl->tpl_vars['use_mobile']->value){?>
 	<?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./modules/paypal/views/templates/front/error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

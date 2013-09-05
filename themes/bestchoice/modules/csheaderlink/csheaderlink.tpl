@@ -33,6 +33,7 @@
 			<a href="{$link->getPageLink('index', true, NULL, "mylogout")}" title="{l s='Log me out' mod='csheaderlink'}" class="logout" rel="nofollow">{l s='Log out' mod='csheaderlink'}</a>
 		{else}
 			<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login to your customer account' mod='csheaderlink'}" class="login" rel="nofollow">{l s='Login' mod='csheaderlink'}</a>
+			<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login to your customer account' mod='csheaderlink'}" class="login" rel="nofollow">{l s='Wholesale' mod='csheaderlink'}</a>
 		{/if}
 		</li>
 		<!--

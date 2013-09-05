@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{paypal}bestchoice>paypal_ad69e733ebae8d264bccaa38d68830e8'] = 'PayPal';
 $_MODULE['<{paypal}bestchoice>paypal_6e7012516038a096b9f6bb71ba2cc5a3'] = 'Acceptez le paiements par cartes de crédits  (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 stars)  avec PayPal.';
 $_MODULE['<{paypal}bestchoice>paypal_69a1a3ad8dd5da6db3c4da838a0cf9c7'] = 'Êtes-vous certain de vouloir supprimer vos informations ?';
 $_MODULE['<{paypal}bestchoice>paypal_8b57f95f1e9cf09dc028fa5a671781ff'] = 'Toutes les fonctionnalités du module PayPal API sont incluses dans le nouveau module PayPal. Avant tout, pour ne pas rencontrer de conflits, veuillez ne pas utiliser ou supprimer le module PayPal API.';

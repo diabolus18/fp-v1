@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 16:20:20
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-05 14:53:59
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\csheaderlink\csheaderlink.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29767522741a4006962-21064251%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2966652287ee7d986b9-85483402%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c4395b88bd599f0d590a37fcb06343d89fcb9a23' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\csheaderlink\\csheaderlink.tpl',
-      1 => 1375447670,
+      1 => 1378384805,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29767522741a4006962-21064251',
+  'nocache_hash' => '2966652287ee7d986b9-85483402',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_522741a40aa868_72945308',
+  'unifunc' => 'content_52287ee7e467c3_83950137',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_522741a40aa868_72945308')) {function content_522741a40aa868_72945308($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52287ee7e467c3_83950137')) {function content_52287ee7e467c3_83950137($_smarty_tpl) {?>
 
 <!-- CS Block header links -->
 <div id="cs_header_link">
@@ -47,6 +47,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true);?>
 " title="<?php echo smartyTranslate(array('s'=>'Login to your customer account','mod'=>'csheaderlink'),$_smarty_tpl);?>
 " class="login" rel="nofollow"><?php echo smartyTranslate(array('s'=>'Login','mod'=>'csheaderlink'),$_smarty_tpl);?>
+</a>
+			<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true);?>
+" title="<?php echo smartyTranslate(array('s'=>'Login to your customer account','mod'=>'csheaderlink'),$_smarty_tpl);?>
+" class="login" rel="nofollow"><?php echo smartyTranslate(array('s'=>'Wholesale','mod'=>'csheaderlink'),$_smarty_tpl);?>
 </a>
 		<?php }?>
 		</li>

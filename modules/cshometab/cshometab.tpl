@@ -31,7 +31,7 @@
 						<li class="ajax_block_product {if $smarty.foreach.product_list.first}first_item{elseif $smarty.foreach.product_list.last}last_item{/if}{if $smarty.foreach.product_list.iteration%$option->show == 0} last_item_of_line{/if}">
 						<a href="{$product.link}" title="{$product.name|escape:html:'UTF-8'}" class="product_image"><img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'p_menu_default')}" alt="{$product.name|escape:html:'UTF-8'}" /></a>
 						
-						<h3><a href="{$product.link}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|truncate:50:'...'|escape:'htmlall':'UTF-8'}</a></h3>
+						<h3><a href="{$product.link}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|truncate:150:'...'|escape:'htmlall':'UTF-8'}</a></h3>
 						<p class="category_name">{$product.category|escape:'htmlall':'UTF-8'}</p>
 						
 						<!-- MISE EN COMMENTAIRE AFFICHAGE ETOILES EVALUATION

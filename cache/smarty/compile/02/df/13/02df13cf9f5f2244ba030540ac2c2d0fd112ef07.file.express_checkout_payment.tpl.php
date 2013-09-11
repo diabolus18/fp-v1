@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-04 17:28:52
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-11 14:10:20
          compiled from "C:\wamp\www\fp-v1\modules\paypal\views\templates\hook\express_checkout_payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:21393522751b4b40465-30835876%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2335652305dac84a597-00227048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02df13cf9f5f2244ba030540ac2c2d0fd112ef07' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\paypal\\views\\templates\\hook\\express_checkout_payment.tpl',
-      1 => 1378293308,
+      1 => 1378365142,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '21393522751b4b40465-30835876',
+  'nocache_hash' => '2335652305dac84a597-00227048',
   'function' => 
   array (
   ),
@@ -24,45 +24,49 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'PayPal_payment_method' => 0,
     'PayPal_integral' => 0,
     'PayPal_content' => 0,
+    'fee' => 0,
     'PayPal_payment_type' => 0,
     'PayPal_current_page' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_522751b4bb7d68_96870474',
+  'unifunc' => 'content_52305dac8fb416_59422107',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_522751b4bb7d68_96870474')) {function content_522751b4bb7d68_96870474($_smarty_tpl) {?>
-
-<p class="payment_module">
+<?php if ($_valid && !is_callable('content_52305dac8fb416_59422107')) {function content_52305dac8fb416_59422107($_smarty_tpl) {?>
+
+<p class="payment_module">
 	<a href="javascript:void(0)" onclick="$('#paypal_payment_form').submit();" id="paypal_process_payment" title="<?php echo smartyTranslate(array('s'=>'Pay with PayPal','mod'=>'paypal'),$_smarty_tpl);?>
-">
-		<?php if (isset($_smarty_tpl->tpl_vars['use_mobile']->value)&&$_smarty_tpl->tpl_vars['use_mobile']->value){?>
+">
+		<?php if (isset($_smarty_tpl->tpl_vars['use_mobile']->value)&&$_smarty_tpl->tpl_vars['use_mobile']->value){?>
 			<img src="<?php echo $_smarty_tpl->tpl_vars['base_dir_ssl']->value;?>
 modules/paypal/img/logos/express_checkout_mobile/CO_<?php echo $_smarty_tpl->tpl_vars['PayPal_lang_code']->value;?>
-_orange_295x43.png" />
-		<?php }else{ ?>
-			<?php if (isset($_smarty_tpl->tpl_vars['logos']->value['LocalPayPalHorizontalSolutionPP'])&&$_smarty_tpl->tpl_vars['PayPal_payment_method']->value==$_smarty_tpl->tpl_vars['PayPal_integral']->value){?>
+_orange_295x43.png" />
+		<?php }else{ ?>
+			<?php if (isset($_smarty_tpl->tpl_vars['logos']->value['LocalPayPalHorizontalSolutionPP'])&&$_smarty_tpl->tpl_vars['PayPal_payment_method']->value==$_smarty_tpl->tpl_vars['PayPal_integral']->value){?>
 				<img src="<?php echo $_smarty_tpl->tpl_vars['logos']->value['LocalPayPalHorizontalSolutionPP'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['PayPal_content']->value['payment_choice'];?>
-" height="48px" />
-			<?php }else{ ?>
+" height="48px" />
+			<?php }else{ ?>
 				<img src="<?php echo $_smarty_tpl->tpl_vars['logos']->value['LocalPayPalLogoMedium'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['PayPal_content']->value['payment_choice'];?>
-" />
-			<?php }?>
+" />
+			<?php }?>
 			<?php echo $_smarty_tpl->tpl_vars['PayPal_content']->value['payment_choice'];?>
-
-		<?php }?>
-		
-	</a>
-</p>
-
+
+			<br /><?php echo smartyTranslate(array('s'=>'Additional cost','mod'=>'paypal'),$_smarty_tpl);?>
+: <span style="font-weight:bold"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['convertPrice'][0][0]->convertPrice(array('price'=>$_smarty_tpl->tpl_vars['fee']->value),$_smarty_tpl);?>
+</span>
+		<?php }?>
+		
+	</a>
+</p>
+
 <form id="paypal_payment_form" action="<?php echo $_smarty_tpl->tpl_vars['base_dir_ssl']->value;?>
 modules/paypal/express_checkout/payment.php" data-ajax="false" title="<?php echo smartyTranslate(array('s'=>'Pay with PayPal','mod'=>'paypal'),$_smarty_tpl);?>
-" method="post">
+" method="post">
 	<input type="hidden" name="express_checkout" value="<?php echo $_smarty_tpl->tpl_vars['PayPal_payment_type']->value;?>
-"/>
+"/>
 	<input type="hidden" name="current_shop_url" value="<?php echo $_smarty_tpl->tpl_vars['PayPal_current_page']->value;?>
-" />
-</form>
+" />
+</form>
 <?php }} ?>

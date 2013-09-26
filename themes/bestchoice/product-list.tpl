@@ -35,12 +35,14 @@ $(document).ready(function()
 	{foreach from=$products item=product name=products}
 		<li class="{if isset($grid_product)}{$grid_product}{elseif isset($smarty.cookies.grid_product)}{$smarty.cookies.grid_product}{else}grid_6{/if} ajax_block_product {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if} clearfix">
 			<div class="center_block">				
+				<div class="name_product"><h3><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:80:'...'}</a></h3></div>
+				
 				<div class="image"><a href="{$product.link|escape:'htmlall':'UTF-8'}" class="product_img_link" title="{$product.name|escape:'htmlall':'UTF-8'}">
 					<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')}" alt="{$product.legend|escape:'htmlall':'UTF-8'}" />
 				</a>
 				</div>
 				
-				<div class="name_product"><h3><a href="{$product.link|escape:'htmlall':'UTF-8'}" title="{$product.name|escape:'htmlall':'UTF-8'}">{$product.name|escape:'htmlall':'UTF-8'|truncate:100:'...'}</a></h3></div>
+
 				<p class="category_name">{$product.category|escape:'htmlall':'UTF-8'}</p>
 				
 				{if isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
@@ -54,7 +56,7 @@ $(document).ready(function()
 				{/if}
 				-->
 				
-				<p class="product_desc">{$product.description|strip_tags:'UTF-8'|truncate:300:'...'}</p>
+				<p class="product_desc">{$product.description|strip_tags:'UTF-8'|truncate:200:'...'}</p>
 				{if (!$PS_CATALOG_MODE AND ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 				<div class="content_price">
 					{if $product.reduction}<span class="price-discount">{displayWtPrice p=$product.price_without_reduction}</span>{/if}

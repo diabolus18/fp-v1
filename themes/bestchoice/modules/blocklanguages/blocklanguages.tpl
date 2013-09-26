@@ -28,7 +28,7 @@
 <div id="languages_block_footer">
 	<div id="countries">
 	{* @todo fix display current languages, removing the first foreach loop *}
-		<p>{l s="Languages:"}</p>
+		<p>{l s="Languages:" mod='blocklanguages'}</p>
 		<ul id="first-languages" class="countries_ul">
 		{foreach from=$languages key=k item=language name="languages"}
 			<li {if $language.iso_code == $lang_iso}class="selected_language"{/if}>

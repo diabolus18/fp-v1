@@ -135,12 +135,11 @@ div#attributes { display: none !important; }
 }
 .awp_nila
 {
-	float: left;
-	text-align: center;
+    text-align: left;
 }
 .awp_nica
 {
-	text-align: center;
+	text-align: left;
 	clear: left;
 }
 .awp_sel_conth
@@ -153,16 +152,15 @@ div#attributes { display: none !important; }
 	margin-top: 6px;
 }
 .awp_tbla
-{
-	float: left;
-	text-align: center;
-	margin-left: 6px;
+{    width: 110%;
+    text-align: left;
+	margin-left: 5px;
 }
 .awp_tbca
 {
 	text-align: center;
 	clear: left;
-	margin-bottom: 4px;
+	margin-bottom: 0px;
 }
 .awp_red
 {

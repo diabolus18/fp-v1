@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-11 14:10:20
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-17 09:12:19
          compiled from "C:\wamp\www\fp-v1\modules\cheque\views\templates\hook\payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2791352305dac6c3559-85979594%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:25424523800d314a580-15443739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2791352305dac6c3559-85979594',
+  'nocache_hash' => '25424523800d314a580-15443739',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_52305dac6f5bb0_03035165',
+  'unifunc' => 'content_523800d3192999_53855852',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52305dac6f5bb0_03035165')) {function content_52305dac6f5bb0_03035165($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_523800d3192999_53855852')) {function content_523800d3192999_53855852($_smarty_tpl) {?>
 
 <p class="payment_module">
 	<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getModuleLink('cheque','payment',array(),true);?>

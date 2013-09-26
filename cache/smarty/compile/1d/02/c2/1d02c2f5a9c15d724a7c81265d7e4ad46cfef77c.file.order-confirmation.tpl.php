@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-11 11:32:26
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-17 09:14:43
          compiled from "C:\wamp\www\fp-v1\modules\creditcardofflinepayment\views\templates\hook\order-confirmation.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15720523038aabc8376-28206530%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3902523801638fc436-87447806%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15720523038aabc8376-28206530',
+  'nocache_hash' => '3902523801638fc436-87447806',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_523038aac4c437_89146128',
+  'unifunc' => 'content_5238016397b9b0_57774084',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_523038aac4c437_89146128')) {function content_523038aac4c437_89146128($_smarty_tpl) {?><!--
+<?php if ($_valid && !is_callable('content_5238016397b9b0_57774084')) {function content_5238016397b9b0_57774084($_smarty_tpl) {?><!--
  * idnovate.com
  * Credit Card Offline Payment Module
 -->

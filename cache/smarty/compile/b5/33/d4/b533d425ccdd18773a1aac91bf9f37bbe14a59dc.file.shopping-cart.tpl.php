@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-11 14:11:18
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-17 09:10:47
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\shopping-cart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2270252305de6623d46-13520564%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:237345238007748a3d7-62839409%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2270252305de6623d46-13520564',
+  'nocache_hash' => '237345238007748a3d7-62839409',
   'function' => 
   array (
   ),
@@ -97,9 +97,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_52305de7252c30_47249573',
+  'unifunc' => 'content_5238007866ae57_88385033',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52305de7252c30_47249573')) {function content_52305de7252c30_47249573($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5238007866ae57_88385033')) {function content_5238007866ae57_88385033($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 
 <?php $_smarty_tpl->_capture_stack[0][] = array('path', null, null); ob_start(); ?><?php echo smartyTranslate(array('s'=>'Your shopping cart'),$_smarty_tpl);?>

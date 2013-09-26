@@ -36,6 +36,9 @@
 					<div class="name_product"><h3><a href="{$link->getProductLink($categoryProduct.id_product, $categoryProduct.link_rewrite, $categoryProduct.category, $categoryProduct.ean13)}" title="{$categoryProduct.name|htmlspecialchars}">{$categoryProduct.name|truncate:45:'...'|escape:'htmlall':'UTF-8'}</a></h3></div>
 					<p class="category_name">{$categoryProduct.category|escape:'htmlall':'UTF-8'}</p>
 					
+					
+					<!-- MISE EN COMMENTAIRE DISPONIBILITE
+					
 					{if isset($categoryProduct.available_for_order) && $categoryProduct.available_for_order && !isset($restricted_country_mode)}
 					{if ($categoryProduct.allow_oosp || $categoryProduct.quantity > 0)}
 						<span class="availability">{l s='Available' mod='productscategory'}</span>
@@ -43,6 +46,8 @@
 						<span class="availability">{l s='Product available with different options'}</span>
 					{else}<span class="cs_out_of_stock">{l s='Out of stock' mod='productscategory'}</span>{/if}
 					{/if}
+					
+					-->
 
 					<p class="product_desc">{$categoryProduct.description_short|strip_tags:'UTF-8'|truncate:90:'...'}</p>	
 					

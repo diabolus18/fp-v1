@@ -10,8 +10,8 @@ ul#product_list li,
 .accessories_block ul#product_list li{vertical-align:top;height:auto;padding:10px 0 30px;position:relative;float:none;display:inline-block;#display:inline;}
 
 ul#product_list li .center_block{margin:0 10px;vertical-align:middle;position:relative}
-ul#product_list li .image,
 .accessories_block ul#product_list li .image{display:block;text-align:center;margin-bottom:10px}
+ul#product_list li .image{display:block;text-align:right;margin-bottom:10px}
 ul#product_list li .image a.product_img_link{display:block}
 ul#product_list h3,
 .accessories_block ul#product_list .name_product{display:block;padding-bottom:5px;line-height:15px;}

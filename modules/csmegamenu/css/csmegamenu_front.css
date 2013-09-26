@@ -1,6 +1,6 @@
 #menu {clear:both;padding: 0px;background-image: url(../img/bkg_menu.jpg);min-height:65px;background-repeat:repeat-x;background-position:left bottom;padding:0;margin-bottom:10px;}
 #menu ul {list-style: none;margin: 0;padding: 0; }
-#menu ul  li.menu_item{width:114px;position:relative;margin:0;padding:10px 0 0;display:inline-block;vertical-align:top;min-height:81px;}
+#menu ul  li.menu_item{width:114px;position:relative;margin:0;padding:10px 0 0;display:inline-block;vertical-align:top;min-height:40px;}
 #menu ul  li.menu_item:hover{background:#397abd; }
 #menu ul  li.menu_item.menu_first{padding-left:0;}
 #menu ul  li.menu_item a{float:none;padding:0;color:#646464;font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase; }	

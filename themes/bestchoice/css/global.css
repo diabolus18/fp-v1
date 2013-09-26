@@ -316,7 +316,7 @@ table.table_block  td {
 	.products_block li {float:left;
 }
 	.products_block li img {max-width:100%}
-	.products_block li a.button{margin-right:30%;}
+	.products_block li a.button{ float:none; margin-top:15px;}
 
 /* BLOCK customer privacy ******************************************************************* */
 .account_creation p.required.password span.form_info{#position:relative;#top:-2px;margin:5px;width:100%;margin:5px 0}

@@ -9,7 +9,7 @@
 	@media only screen and (min-width:1024px) and (max-width: 1279px) {
 		#left_column .block,#left_column .advertising_block{padding-right:0}
 		#right_column .block,#right_column .advertising_block{padding-left:0;}
-		a.product_img_link img{max-width:70%; float:right;}
+		a.product_img_link img{max-width:80%;margin-right:20px;}
 		
 		.three_column #center_column .sortPagiBar form.compare,
 		.three_column #center_column #pagination.pagination{float:right}
@@ -23,7 +23,7 @@
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group{width:335px;}
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .cat-content{max-width:185px;}
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .product-latest{width:100%;padding-left:10px;}
-		.cs_sample_block_footer .col, #footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us{width:220px;}
+		.cs_sample_block_footer .col, #footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us, #footer .block{width:220px;}
 		.one_column #pb-left-column{width:300px}
 		.two_column   #pb-right-column{margin-right:5px;width:45%}
 		.two_column	 #pb-left-column{width:50%}
@@ -35,11 +35,12 @@
 	
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 1023px) {
-	    .static_block_chat_with {display:none;}
+	    #subcategories ul li{width:29%;}
+		.static_block_chat_with {display:none;}
 		.fontenille1929{display:none;}
 		#left_column .block,.advertising_block{padding-right:0}
 		#right_column .block,#right_column .advertising_block{padding-left:0;}		
-		a.product_img_link img{max-width:60%; float:right;}
+		a.product_img_link img{max-width:60%; margin-right:30px; }
 		
 		#create-account_form, #authentication #login_form{width:100%;margin:0 0 20px}
 		
@@ -108,7 +109,7 @@
 		.cs_sample_block_footer .col .s_f_img img{width:100%;}
 		.cs_sample_block_footer .col.consectetur_2,.cs_sample_block_footer .col.meacenas{margin-right:0} 
 		
-		#footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us{width:364px;margin-bottom:20px}
+		#footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us, #footer .block{width:364px;margin-bottom:20px}
 		#footer .block_various_links,#footer .static-blokc-follow-us{margin-right:0}
 		#search_block_top{width:320px;}
 		form#searchbox input#search_query_top{width:100px;}
@@ -191,7 +192,7 @@
 		.static_block_free_account{float:none}
 		.cs_home_staticblock .col{width:89%}
 		.content_slider{margin-left:0;width:100%}
-		.cs_sample_block_footer .col, #footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us{width:100%;margin:0 0 20px}
+		.cs_sample_block_footer .col, #footer .block_customer_service_links, #footer .block_various_links, #footer #block_contact_infos, #footer .static-blokc-follow-us, #footer .block{width:100%;margin:0 0 20px}
 		.block_popular_word_search .block_content{padding:0 15px}
 		.footer_copy_payment p.copy,
 		.footer_copy_payment p.copy a{color:#6E6E6E}
@@ -234,6 +235,7 @@
 	
 	/* Small Tablet Portrait size to standard 600 (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	    a.product_img_link img{max-width:100%; margin-right:0px;}
 		body{font-size:13pt;}
 		/*theme*/
 		#cs_home_center_bottom_left .ul_cat_popular li.cat_group .product-latest{width:100%;}
@@ -247,6 +249,8 @@
 	
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 479px) {					
+		a.product_img_link img{max-width:100%; margin-right:0px;}
+		#subcategories ul li{width:24%;}
 		.cart_voucher input.discount_name{width:278px}
 		
 		#new_account_form p.radio span, #new_account_form p.text label, #new_account_form p.password label, #new_account_form p.select label, #new_account_form p.select span, #new_account_form p.textarea label{width:100%;text-align:left}

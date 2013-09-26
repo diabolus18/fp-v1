@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-11 14:33:22
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:46:03
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\blocklanguages\blocklanguages.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:131695230631216cca1-91370335%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:28675243f44b6f22b4-92978897%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cb2d86632cd3bd850ad3cbfcbf33e3ec05647972' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\blocklanguages\\blocklanguages.tpl',
-      1 => 1377693376,
+      1 => 1379064672,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '131695230631216cca1-91370335',
+  'nocache_hash' => '28675243f44b6f22b4-92978897',
   'function' => 
   array (
   ),
@@ -27,16 +27,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5230631223f2f1_24712700',
+  'unifunc' => 'content_5243f44b80e695_90206103',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5230631223f2f1_24712700')) {function content_5230631223f2f1_24712700($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5243f44b80e695_90206103')) {function content_5243f44b80e695_90206103($_smarty_tpl) {?>
 
 <!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value)>1){?>
 <div id="languages_block_footer">
 	<div id="countries">
 	
-		<p><?php echo smartyTranslate(array('s'=>"Languages:"),$_smarty_tpl);?>
+		<p><?php echo smartyTranslate(array('s'=>"Languages:",'mod'=>'blocklanguages'),$_smarty_tpl);?>
 </p>
 		<ul id="first-languages" class="countries_ul">
 		<?php  $_smarty_tpl->tpl_vars['language'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['language']->_loop = false;

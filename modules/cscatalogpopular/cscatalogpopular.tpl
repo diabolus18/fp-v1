@@ -28,7 +28,7 @@
 			{/foreach}
 			
 			{foreach from=$category.product_latest item=product name=product_latest}
-				<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}" class="button">{l s='See the range ' mod='cscatalogpopular'}{$category.name}</a>
+				<a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}" class="button">{l s='Discover these knifes' mod='cscatalogpopular'}</a>
 			{/foreach}
 		</div>
 		

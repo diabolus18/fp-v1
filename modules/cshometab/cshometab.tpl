@@ -147,7 +147,7 @@
 				},
 				items: {
 					width: 155,
-					height: 230,	//	optionally resize item-height
+					height: 245,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max: {$option->show}
@@ -178,7 +178,7 @@
 				},
 				items: {
 					width: 155,
-					height: 230,	//	optionally resize item-height
+					height: 245,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max:{$option->show}
@@ -215,7 +215,7 @@
 			},
 			items: {
 				width: 155,
-				height: 230,	//	optionally resize item-height
+				height: 245,	//	optionally resize item-height
 				visible: {
 					min: 1,
 					max: {$option->show}

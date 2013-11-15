@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>lofmodalcart</name>
+            <displayName><![CDATA[Lof Modal Cart]]></displayName>
+            <version><![CDATA[1.0]]></version>
+            <description><![CDATA[Display a confirmation modal window when add product to cart.]]></description>
+            <author><![CDATA[landofcoder]]></author>
+            <tab><![CDATA[landofcoder]]></tab>
+	<confirmUninstall>Are you sure to uninstall this module?</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+        </module>

@@ -35,17 +35,22 @@
 				<!-- Scenes -->
 				{include file="$tpl_dir./scenes.tpl" scenes=$scenes}
 			{else}
+				
+				
 				<!-- Category image -->
 				{if $category->id_image}
 				<div class="align_center">
+				<!-- MISE EN COMMENTAIRE AFFICHAGE IMAGE CATEGORIES
 					<img src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')}" alt="{$category->name|escape:'htmlall':'UTF-8'}" title="{$category->name|escape:'htmlall':'UTF-8'}" id="categoryImage"/>
+				-->
+				
 				</div>
 				{/if}
 			{/if}
 
 			{if $category->description}
 				<div class="cat_desc">
-				{if strlen($category->description) > 120}
+				{if strlen($category->description) > 600}
 					<p id="category_description_short">{$category->description|truncate:120}</p>
 					<p id="category_description_full" style="display:none">{$category->description}</p>
 					<a href="#" onclick="$('#category_description_short').hide(); $('#category_description_full').show(); $(this).hide(); return false;" class="lnk_more">{l s='More'}</a>

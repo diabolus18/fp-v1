@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:46:12
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-13 17:55:02
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:141365243f454c75d94-97340412%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:244715283aee6378df4-66745247%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bb8ece48ec5dedca904a42388aa8f5b5abc8e4db' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\header.tpl',
-      1 => 1374235091,
+      1 => 1381938904,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '141365243f454c75d94-97340412',
+  'nocache_hash' => '244715283aee6378df4-66745247',
   'function' => 
   array (
   ),
@@ -61,9 +61,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5243f455bb6121_37265043',
+  'unifunc' => 'content_5283aee6a9e066_67694308',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5243f455bb6121_37265043')) {function content_5243f455bb6121_37265043($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5283aee6a9e066_67694308')) {function content_5283aee6a9e066_67694308($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 " lang="<?php echo $_smarty_tpl->tpl_vars['lang_iso']->value;?>
@@ -93,7 +93,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="<?php if (isset($_smarty_tpl->tpl_vars['nobots']->value)){?>no<?php }?>index,<?php if (isset($_smarty_tpl->tpl_vars['nofollow']->value)&&$_smarty_tpl->tpl_vars['nofollow']->value){?>no<?php }?>follow" />
 		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>			
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>	
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>	
 		<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo $_smarty_tpl->tpl_vars['favicon_url']->value;?>
 ?<?php echo $_smarty_tpl->tpl_vars['img_update_time']->value;?>
 " />

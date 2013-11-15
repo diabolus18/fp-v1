@@ -15,5 +15,6 @@
 
 form#searchbox label{color:#323232;float:left;padding:6px 10px;text-transform:uppercase;font:700 12px/1.35 "Roboto Condensed",Helvetica,arial;}
 form#searchbox input#search_query_top{background:none;border:none;border-left:1px solid #d1d7de;height:29px;line-height:29px;width:50%;color:#929292;padding:0 10px;border-radius:0!important}
-form#searchbox input#search_button{padding: 1px 4px;}
+form#searchbox input#search_button{padding: 1px 4px;;
+}
 

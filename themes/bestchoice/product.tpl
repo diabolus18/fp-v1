@@ -243,7 +243,7 @@ $(window).load(function(){
 	<div id="pb-right-column" class="grid_7 alpha">
 	
 		<!-- product img-->
-		<h1>{$product->name|escape:'htmlall':'UTF-8'}</h1>
+		<h1>{$product->name|escape:'htmlall':'UTF-8'} ({$product->reference|escape:'htmlall':'UTF-8'})</h1>
 		<div id="image-block">
 		{if $have_image}
 			<span id="view_full_size">
@@ -289,12 +289,16 @@ $(window).load(function(){
 		
 		<div id="short_description_block">
 		
+		{if isset($accessories) AND $accessories}
+		<p class="buttons_bottom_block"><a href="javascript:{ldelim}{rdelim}" class="button">{l s='Accessories'}</a></p>
+		{/if}
+		
 			{if $product->description_short}
 				<div id="short_description_content" class="rte align_justify">{$product->description_short}</div>
 			{/if}
-			{if $product->description}
-			<p class="buttons_bottom_block"><a href="javascript:{ldelim}{rdelim}" class="button">{l s='More details'}</a></p>
-			{/if}
+			
+			
+			
 			{if $packItems|@count > 0}
 			<div class="short_description_pack">
 				<h3>{l s='Pack content'}</h3>
@@ -590,26 +594,47 @@ $(window).load(function(){
 	</table>
 </div>
 {/if}
+
+
+
 <!-- description and features -->
 {if (isset($product) && $product->description) || (isset($features) && $features) || (isset($accessories) && $accessories) || (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($attachments) && $attachments) || isset($product) && $product->customizable}
 <div id="more_info_block" class="clear">
 	<ul id="more_info_tabs" class="idTabs idTabsShort clearfix">
 	{if isset($accessories) AND $accessories}<li><a href="#idTab4">{l s='Accessories'}</a></li>{/if}
+		
+		<!-- MISE EN COMMENTAIRE DESCRIPTION LONGUE
 		{if $product->description}<li><a id="more_info_tab_more_info" href="#idTab1">{l s='More info'}</a></li>{/if}
+		-->
+		
 		{if $features}<li><a id="more_info_tab_data_sheet" href="#idTab2">{l s='Data sheet'}</a></li>{/if}
 		{if $attachments}<li><a id="more_info_tab_attachments" href="#idTab9">{l s='Download'}</a></li>{/if}
 		
 		{if isset($product) && $product->customizable}<li><a href="#idTab10">{l s='Product customization'}</a></li>{/if}
 		{$HOOK_PRODUCT_TAB}
 	</ul>
-	<div id="more_info_sheets" class="sheets align_justify">
+	
+	
+<div id="more_info_sheets" class="sheets align_justify">
+	
+	<!-- MISE EN COMMENTAIRE DESCRIPTION LONGUE
 	{if $product->description}<div class="title_hide_show" style="display:none">{l s='More info'}</div>{/if}
+	-->
+	
+	
+	<!-- MISE EN COMMENTAIRE DESCRIPTION LONGUE
 	{if isset($product) && $product->description}
+	-->
 		<!-- full description -->
+		
+	<!-- MISE EN COMMENTAIRE DESCRIPTION LONGUE	
 		<div id="idTab1" class="rte content_hide_show">{$product->description}</div>
 	{/if}
+	-->
+	
 	{if $features}<div class="title_hide_show" style="display:none">{l s='Data sheet'}</div>{/if}
 	{if isset($features) && $features}
+	
 		<!-- product's features -->
 		<ul id="idTab2" class="bullet content_hide_show">
 		{foreach from=$features item=feature}

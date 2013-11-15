@@ -3,6 +3,7 @@ div#attributes { display: none !important; }
 #awp_container {
 	clear: both;
 	width : 100%;
+	background : #efefef;
 }
 
 #awp_attribute_groups {
@@ -39,11 +40,11 @@ div#attributes { display: none !important; }
 
 .awp_header {
 	display:block;
-	background:#ffffff;  
-	padding: 0px 0px 3px 10px;
+	background:transparent;  
+	padding: 0px 0px 10px 10px;
 	font-weight: bold;
 	font-size: 13px;
-	font-family : Georgia;
+	font-family : Roboto condensed;
 }
 
 .awp_description {
@@ -53,11 +54,11 @@ div#attributes { display: none !important; }
 
 .awp_content {
 	display:block; 
-	border-width:0 0 1px 0; 
-	padding: 10px 0px 5px 10px;
-	overflow: auto;
-	border-style:dashed;
-	border-color:#cccccc;
+	/*border-width:0 0 1px 0; */
+	/*padding: 10px 0px 5px 0px;*/
+	/*overflow: auto;*/
+	/*border-style:dashed;*/
+	/*border-color:#cccccc;*/
 }
 
 
@@ -85,7 +86,7 @@ div#attributes { display: none !important; }
 }
 
 .awp_group_image {
-	border : 1px solid #d9d9d9;
+	border : none;
 	margin:auto;
 	margin-bottom:5px;
 }
@@ -109,8 +110,12 @@ div#attributes { display: none !important; }
 	display: none;
 }
 .awp_left {
-	float: left;
+	float:left;
 }
+.awp_right {
+	float:right
+}
+
 .awp_clean {
 	border: none;
 	margin:0;
@@ -119,6 +124,7 @@ div#attributes { display: none !important; }
 .awp_cell_cont{
 	float: left;
 	margin: 0 0px 5px 0;
+
 }
 .awp_rrla
 {
@@ -136,6 +142,8 @@ div#attributes { display: none !important; }
 .awp_nila
 {
     text-align: left;
+	width:100%;
+	width:320px;
 }
 .awp_nica
 {
@@ -152,7 +160,7 @@ div#attributes { display: none !important; }
 	margin-top: 6px;
 }
 .awp_tbla
-{    width: 110%;
+{   
     text-align: left;
 	margin-left: 5px;
 }

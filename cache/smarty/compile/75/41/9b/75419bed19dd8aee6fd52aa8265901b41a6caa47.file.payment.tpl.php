@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-17 09:12:19
+<?php /* Smarty version Smarty-3.1.13, created on 2013-10-01 12:12:40
          compiled from "C:\wamp\www\fp-v1\modules\bankwire\views\templates\hook\payment.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:22857523800d32f1bb7-47060964%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2877524aa018182c76-15708119%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '22857523800d32f1bb7-47060964',
+  'nocache_hash' => '2877524aa018182c76-15708119',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_523800d3329123_16422772',
+  'unifunc' => 'content_524aa0181a7254_28510738',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_523800d3329123_16422772')) {function content_523800d3329123_16422772($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_524aa0181a7254_28510738')) {function content_524aa0181a7254_28510738($_smarty_tpl) {?>
 
 <p class="payment_module">
 	<a href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getModuleLink('bankwire','payment');?>

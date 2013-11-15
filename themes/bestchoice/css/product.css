@@ -7,7 +7,7 @@
 /* pb-right-column ***************************************************************************** */
 #pb-right-column {
 	float:left;
-	width:56%;margin:0 20px 30px 0;
+	width:65%;margin:0 5px 30px 0;
 }
 /*.three_column #pb-right-column,.three_column #pb-left-column{width:100%;margin:0 0 20px;}*/
 .three_column #pb-right-column{width:51%}
@@ -281,8 +281,9 @@ span.view_scroll_spacer {}
 
 /**/
 .buttons_bottom_block {
-	clear:both;
-	padding-top:20px;
+	float : right;
+	padding-top:0px;
+	padding-left : 5px;
 }
 .buttons_bottom_block .exclusive{background-image: url("../img/bkg_add_cart.jpg");
     border-left: 1px solid #E4E4E4;

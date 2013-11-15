@@ -1,12 +1,10 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <setting>
-<h_b_img>13781995351376461290bkg_page_dfault_fontenille-pataud.jpg</h_b_img>
+<h_b_img>13812330851376461290bkg_page_dfault_fontenille-pataud.jpg</h_b_img>
 <bg_mode>wide_mode</bg_mode>
 <column>1_column</column>
 <column_class>grid_24(4)</column_class>
 <g_b_pattern>no_img.jpg</g_b_pattern>
-<g_link_color_normal>#995f5d</g_link_color_normal>
-<g_link_color_hover>#888888</g_link_color_hover>
 <g_fstyle_1>Roboto Condensed</g_fstyle_1>
 <g_fsize_1>14</g_fsize_1>
 <h_b_pattern>up_load_image_header</h_b_pattern>

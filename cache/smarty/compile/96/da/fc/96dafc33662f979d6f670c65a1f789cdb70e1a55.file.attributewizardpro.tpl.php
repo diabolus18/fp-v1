@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:46:04
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-12 17:06:52
          compiled from "C:\wamp\www\fp-v1\modules\attributewizardpro\attributewizardpro.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:42765243f44cd09f77-85515579%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:310215282521c69ef93-47985230%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '96dafc33662f979d6f670c65a1f789cdb70e1a55' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\attributewizardpro\\attributewizardpro.tpl',
-      1 => 1375351752,
+      1 => 1383057325,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '42765243f44cd09f77-85515579',
+  'nocache_hash' => '310215282521c69ef93-47985230',
   'function' => 
   array (
   ),
@@ -65,9 +65,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5243f451924239_12518529',
+  'unifunc' => 'content_5282521f14a012_37871951',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5243f451924239_12518529')) {function content_5243f451924239_12518529($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5282521f14a012_37871951')) {function content_5282521f14a012_37871951($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 if (!is_callable('smarty_function_math')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\function.math.php';
 ?><!-- MODULE Attribute Wizard Pro-->
 <?php if (isset($_smarty_tpl->tpl_vars['groups']->value)){?>
@@ -538,7 +538,7 @@ $_smarty_tpl->tpl_vars['attributeImpact']->_loop = true;
 " />
 						<input type="hidden" id="awp_group_per_row_<?php echo $_smarty_tpl->tpl_vars['group']->value['id_group'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['group']->value['group_per_row'];?>
-" />
+" /> 
 						<?php  $_smarty_tpl->tpl_vars['group_attribute'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['group_attribute']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['group']->value['attributes']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
  $_smarty_tpl->tpl_vars['group_attribute']->index=-1;
@@ -563,15 +563,13 @@ px;<?php }?><?php }?>" <?php if ($_smarty_tpl->tpl_vars['group']->value['attribu
 , <?php echo $_smarty_tpl->tpl_vars['awp_currency']->value['id_currency'];?>
 , false)<?php }?>"><?php if (file_exists((($_smarty_tpl->tpl_vars['col_img_dir']->value).($_smarty_tpl->tpl_vars['id_attribute']->value)).('.jpg'))){?><div id="awp_tc_<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
 " class="awp_group_image awp_gi_<?php echo $_smarty_tpl->tpl_vars['group']->value['id_group'];?>
-<?php if (!$_smarty_tpl->tpl_vars['group']->value['group_layout']){?> awp_left<?php }?><?php if ($_smarty_tpl->tpl_vars['group']->value['group_type']=="image"){?><?php if (in_array($_smarty_tpl->tpl_vars['id_attribute']->value,$_smarty_tpl->tpl_vars['group']->value['default'])){?> awp_image_sel<?php }else{ ?> awp_image_nosel<?php }?><?php }?>" style="<?php if (isset($_smarty_tpl->tpl_vars['group']->value['group_width'])){?>width:<?php echo $_smarty_tpl->tpl_vars['group']->value['group_width'];?>
+<?php if (!$_smarty_tpl->tpl_vars['group']->value['group_layout']){?> awp_right<?php }?><?php if ($_smarty_tpl->tpl_vars['group']->value['group_type']=="image"){?><?php if (in_array($_smarty_tpl->tpl_vars['id_attribute']->value,$_smarty_tpl->tpl_vars['group']->value['default'])){?> awp_image_sel<?php }else{ ?> awp_image_nosel<?php }?><?php }?>" style="<?php if (isset($_smarty_tpl->tpl_vars['group']->value['group_width'])){?>width:<?php echo $_smarty_tpl->tpl_vars['group']->value['group_width'];?>
 px;<?php }?><?php if (isset($_smarty_tpl->tpl_vars['group']->value['group_height'])){?>height:<?php echo $_smarty_tpl->tpl_vars['group']->value['group_height'];?>
 px;<?php }?>"><?php if ($_smarty_tpl->tpl_vars['group']->value['group_type']!="image"&&!$_smarty_tpl->tpl_vars['awp_popup']->value){?><a href="<?php echo $_smarty_tpl->tpl_vars['img_col_dir']->value;?>
 <?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
 .jpg" border="0" class="thickbox"><?php }?><img <?php if ($_smarty_tpl->tpl_vars['group']->value['group_resize']){?>style="<?php if (isset($_smarty_tpl->tpl_vars['group']->value['group_width'])){?>width:<?php echo $_smarty_tpl->tpl_vars['group']->value['group_width'];?>
 px;<?php }?><?php if (isset($_smarty_tpl->tpl_vars['group']->value['group_height'])){?>height:<?php echo $_smarty_tpl->tpl_vars['group']->value['group_height'];?>
-px;<?php }?>"<?php }?> src="<?php echo $_smarty_tpl->tpl_vars['img_col_dir']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
-.jpg" alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['group_attribute']->value[1], 'htmlall', 'UTF-8');?>
+px;<?php }?>"<?php }?> src="http://www.fontenille-pataud.com/preprod/img/cms/Details Declinaison/bt-infos.jpg" alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['group_attribute']->value[1], 'htmlall', 'UTF-8');?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['group_attribute']->value[1], 'htmlall', 'UTF-8');?>
 " /><?php if ($_smarty_tpl->tpl_vars['group']->value['group_type']!="image"&&!$_smarty_tpl->tpl_vars['awp_popup']->value){?></a><?php }?></div><?php }elseif($_smarty_tpl->tpl_vars['group_attribute']->value[2]!=''){?><div id="awp_tc_<?php echo $_smarty_tpl->tpl_vars['id_attribute']->value;?>
 " class="awp_group_image awp_gi_<?php echo $_smarty_tpl->tpl_vars['group']->value['id_group'];?>

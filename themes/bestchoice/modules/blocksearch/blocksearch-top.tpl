@@ -38,12 +38,12 @@
 
 	<form method="get" action="{$link->getPageLink('search')}" id="searchbox">
 		<p>
-			<label for="search_query_top">{l s='Searchbutton1' mod='blocksearch'}</label>
+		<label for="search_query_top"></label>
 			<input type="hidden" name="controller" value="search" />
 			<input type="hidden" name="orderby" value="position" />
 			<input type="hidden" name="orderway" value="desc" />
 			<input class="search_query" type="text" id="search_query_top" name="search_query" value="{if isset($smarty.get.search_query)}{$smarty.get.search_query|htmlentities:$ENT_QUOTES:'utf-8'|stripslashes}{else}{l s='Search store' mod='blocksearch'} {/if}"  onfocus="this.value=''" onblur="if (this.value =='') this.value='{l s='Search store' mod='blocksearch'}'" />
-			<input type="submit" name="submit_search" value="{l s='Search' mod='blocksearch'}" class="button" />
+			<input type="submit" name="submit_search" value="{l s='Search' mod='blocksearch'}" class="button" />	
 	</p>
 	</form>
 </div>

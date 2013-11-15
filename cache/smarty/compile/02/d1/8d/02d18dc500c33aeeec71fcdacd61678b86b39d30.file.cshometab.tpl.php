@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-25 15:11:44
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-13 17:55:01
          compiled from "C:\wamp\www\fp-v1\modules\cshometab\cshometab.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:236755242e1104a9907-21137518%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:42775283aee533ebf0-33484426%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '02d18dc500c33aeeec71fcdacd61678b86b39d30' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cshometab\\cshometab.tpl',
-      1 => 1378903954,
+      1 => 1381246845,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '236755242e1104a9907-21137518',
+  'nocache_hash' => '42775283aee533ebf0-33484426',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5242e1107f3249_71763115',
+  'unifunc' => 'content_5283aee5dca164_38895329',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5242e1107f3249_71763115')) {function content_5242e1107f3249_71763115($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_5283aee5dca164_38895329')) {function content_5283aee5dca164_38895329($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?><!-- CS Home Tab module -->
 <div class="home_top_tab">
 <?php if (count($_smarty_tpl->tpl_vars['tabs']->value)>0){?>
@@ -287,7 +287,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 				},
 				items: {
 					width: 155,
-					height: 230,	//	optionally resize item-height
+					height: 245,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max: <?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>
@@ -333,7 +333,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 				},
 				items: {
 					width: 155,
-					height: 230,	//	optionally resize item-height
+					height: 245,	//	optionally resize item-height
 					visible: {
 						min: 1,
 						max:<?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>
@@ -371,7 +371,7 @@ $_smarty_tpl->tpl_vars['tab']->_loop = true;
 			},
 			items: {
 				width: 155,
-				height: 230,	//	optionally resize item-height
+				height: 245,	//	optionally resize item-height
 				visible: {
 					min: 1,
 					max: <?php echo $_smarty_tpl->tpl_vars['option']->value->show;?>

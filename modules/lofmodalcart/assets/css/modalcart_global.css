@@ -1,0 +1,8 @@
+.nyroModalBg {background-color: none!important;background: none; background: -webkit-gradient(linear, left top, left bottom, from(#DADEE4), to(#353536))!important;background: -moz-linear-gradient(top,  #DADEE4,  #353536)!important;}
+.nyroModalBg {-moz-opacity:0.8!important; -khtml-opacity:0.8!important;opacity:0.8!important;}
+.nyroModalCont #mc_modal_title {color:#374853!important;border-color:#374853!important;}
+.nyroModalCont #mc_modal_title {font-size:16px!important;}
+.nyroModalCont {border:4px solid #374853;}
+.nyroModalCont {-webkit-border-radius:35px!important; -moz-border-radius:35px!important;border-radius:35px!important;behavior: url(/lofworks/prestashop_1.4.9.0.custom/modules/pm_modalcart/js/PIE.htc);}
+#mc_cart_summary {height:200px!important;}
+.nyroModalBg {filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DADEE4', endColorstr='#353536') filter: alpha(opacity=80)!important;}

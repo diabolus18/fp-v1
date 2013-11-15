@@ -24,8 +24,10 @@
 *}
 
 <!-- CS Block header links -->
+<div id="testimonials"><a href="http://www.fontenille-pataud.com/preprod/index.php?id_cms=14&controller=cms">{l s='Testimonials' mod='csheaderlink'}</a></div>
 <div id="cs_header_link">
 	<ul id="cs_header_links">	
+				
 		<li id="cs_header_user_info">
 		<!--{l s='Welcome' mod='csheaderlink'}-->
 		{if $logged}

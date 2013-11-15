@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:46:02
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-13 17:54:58
          compiled from "C:\wamp\www\fp-v1\modules\cssearchpopular\cssearchpopular.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:225775243f44a301af4-69465826%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:226705283aee2498062-74981268%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'd995a546282665cf39ad06dbc4c71559239a2dc0' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\modules\\cssearchpopular\\cssearchpopular.tpl',
-      1 => 1374235260,
+      1 => 1381321525,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '225775243f44a301af4-69465826',
+  'nocache_hash' => '226705283aee2498062-74981268',
   'function' => 
   array (
   ),
@@ -23,12 +23,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5243f44a3ed516_55791127',
+  'unifunc' => 'content_5283aee24f5cb6_41862054',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5243f44a3ed516_55791127')) {function content_5243f44a3ed516_55791127($_smarty_tpl) {?><!-- MODULE search popular -->
+<?php if ($_valid && !is_callable('content_5283aee24f5cb6_41862054')) {function content_5283aee24f5cb6_41862054($_smarty_tpl) {?><!-- MODULE search popular -->
 <?php if ($_smarty_tpl->tpl_vars['searchList']->value){?>
 <div class="block_popular_word_search clearfix">
-	<h4 class="title_block"><?php echo smartyTranslate(array('s'=>"Most popular top searches",'mod'=>"cssearchpopular"),$_smarty_tpl);?>
+	<h4 class='title_block'><?php echo smartyTranslate(array('s'=>'Most popular top searches','mod'=>'cssearchpopular'),$_smarty_tpl);?>
 </h4>
 	<div class="block_content">
 	<?php  $_smarty_tpl->tpl_vars['search'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['search']->_loop = false;

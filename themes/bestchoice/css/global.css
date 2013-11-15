@@ -32,7 +32,7 @@ sub{vertical-align:baseline}
 legend{color:#000}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button,textarea,select{font-size:100%}
-select{border:1px solid #e4e4e4;padding:5px;line-height:25px;color:#646464; width:100%;}
+select{border:1px solid #e4e4e4;padding:5px;line-height:25px;color:#646464; }
 textarea{border:1px solid #e4e4e4;padding:10px;color:#646464}
 a {cursor:pointer}
 
@@ -335,7 +335,7 @@ ul.footer_links li.f_right {float:right}
 ul.footer_links li .icon {vertical-align:middle;padding-right:5px}
 
 /* barre comparaison / tri ********************************************************************* */
-.content_sortPagiBar {margin:20px 0;overflow:hidden;border-bottom:2px solid #000;padding-bottom:10px;}
+.content_sortPagiBar {margin:2px 0;overflow:hidden;border-bottom:2px solid #000;padding-bottom:1px;}
 .content_sortPagiBar.bottom{border:none;border-top:2px solid #000;padding-top:10px;}
 #center_column .sortPagiBar strong {color:#000;}
 #center_column .sortPagiBar p {padding:0;margin:0}
@@ -354,7 +354,7 @@ ul.footer_links li .icon {vertical-align:middle;padding-right:5px}
 
 .content_sortPagiBar .sortPagiBar .compare{float:right;margin-left:15px;}
 form.compare{float:right}
-.sortPagiBar .select label{float:left;margin-right:10px;line-height:30px;}
+.sortPagiBar .select label{float:left;margin-right:10px;line-height:30px; display:block;}
 
 
 .sortPagiBar #bt_compare {width:auto;margin-top:1px;padding-bottom:1px;}
@@ -522,7 +522,7 @@ div.star.star_readonly.star_on a{background-position:0 -9px;cursor:text}
 /* ************************************************************************************************
 		HEADER
 ************************************************************************************************ */
-#header {position:relative;padding-top:5px;}
+#header {position:relative;padding-top:2px;}
 #header_logo {
 	float:left;position:relative;margin:-75px 0 10px;z-index:100
 }
@@ -533,11 +533,14 @@ div.star.star_readonly.star_on a{background-position:0 -9px;cursor:text}
 	position:relative;
 	float: right;
 }
+#search_block_top{ position:absolute;
+top:20px;
+right:0px;}
 
 /* ************************************************************************************************
 		BREADCRUMB
 ************************************************************************************************ */
-.breadcrumb{color:#323232;height:auto;margin:0 auto;padding:10px 0 20px;font-weight:400;line-height:15px;text-align:left;font-style:italic}
+.breadcrumb{color:#323232;height:auto;margin:0 auto;padding:2px 0 0px;font-weight:400;line-height:15px;text-align:left;font-style:italic}
 .breadcrumb .navigation-pipe{background:url(../img/bkg_bc_span.png) no-repeat scroll center center transparent;float:left;padding:0 5px 0 0;margin-left:5px;width:5px;text-indent:-9999px}
 .breadcrumb a{color:#969696;float:left;text-decoration:none;text-transform:none;}
 .breadcrumb a:hover{text-decoration:none;color:#323232;}
@@ -563,11 +566,11 @@ div.star.star_readonly.star_on a{background-position:0 -9px;cursor:text}
 }
 #footer .title_block ,
 #footer .title_block  a {font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;color:#323232}
-#footer a {color:#646464}
+#footer a {color:#000000}
 #footer a:hover ,#footer li a:hover{text-decoration:none;color:#397abd}
 #footer ul {list-style-type:none}
 #footer li {padding:3px 0}
-#footer li a {color:#646464;font-weight:700}
+#footer li a {color:#000000;font-weight:700}
 
 #footer .myaccount {padding: 15px 10px}
 #footer .myaccount .title_block, #footer .myaccount h4 {
@@ -1734,6 +1737,13 @@ form#sendComment h3 {font-size:14px;}
 
 
 /*************** Block CMS ***************/
+#matiere{float:left; width:30%; padding: 5px; text-align: center; }
+.rte a, a:active {
+	color:blue;
+	text-decoration:underline;
+	outline: medium none
+}
+
 /* footer */
 
 
@@ -1857,11 +1867,12 @@ tr.subitem > td:first-child + td {
 .static_block_chat_with{width:auto;float:left;color:#ffffff;font-size:10px;font-weight:700;text-transform:uppercase}
 .static_block_chat_with p{margin:0}
 .static_block_chat_with span{color:#55adff;}
-.static_block_chat_with a{color:#969696;border-left:1px dotted #969696;padding-left:7px;margin-left:7px;}
+.static_block_chat_with a{color:#ffffff;padding-left:1px; padding-right:1px; margin-left:2px; background-color:#995f5d;}
 .static_block_chat_with a:hover,#cs_header_link li a:hover{color:#fff;text-decoration:none}
 #cs_header_link{float:right;}
 #cs_header_link li{float:left;border-right:1px dotted #969696;padding-right:7px;padding-top:2px; margin-right:7px;color:#969696;text-transform:uppercase;font-size:10px;font-weight:700;line-height:12px;}
 #cs_header_link li a{color:#969696;border-left:1px dotted #969696;padding-left:7px;margin-left:7px;}
+#testimonials a{background-color:#995f5d; border-left:none; color:#ffffff; padding-left:0px;float:right; padding-right:3px; padding-left:3px; font-weight:700; text-transform:uppercase;}
 .static_block_free_account{clear:right;float:right;color:#323232;text-transform:uppercase;font-weight:700;padding-top:10px;font-family:"Roboto Condensed";font-size:14px;}
 .static_block_free_account span{color:#397abd}
 
@@ -1886,13 +1897,14 @@ tr.subitem > td:first-child + td {
 .cs_home_staticblock .col.coveted{background-image:url(../img/bkg_static_home_coveted.png);}
 
 .static_block_banner_home1{padding:5px 0 15px}
+.static_block_banner_home1 h4{background:url(../img/bkg_cs_tabs.jpg) repeat-x left bottom;padding:0 0 12px;color:#995f5d;font:700 14px/16px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;margin-bottom:15px;}
 #cs_home_center_bottom h4{background:url(../img/bkg_cs_tabs.jpg) repeat-x left bottom;padding:0 0 12px;color:#397abd;font:700 14px/16px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;margin-bottom:15px;}
 #cs_home_center_bottom h4 a{color:#397abd;}
-#cs_home_center_bottom_left  .ul_cat_popular li.cat_group{width:425px;border-top:1px solid #e4e4e4;display:inline-block;vertical-align:top;margin-top:15px;padding-top:15px;}
+#cs_home_center_bottom_left  .ul_cat_popular li.cat_group{width:425px;border-top:1px solid #e4e4e4;display:inline-block;vertical-align:top;margin-top:15px;padding-top:15px; }
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group.first{border:none;padding-top:0;margin-top:0}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group.odd{margin-right:26px;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3{margin-bottom:5px;}
-#cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3 a{color:#397abd;font:700 12px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;}
+#cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3 a{color:#397abd;font:700 12px/15px "Roboto Condensed",Helvetica,arial;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group h3 a:hover{color:#323232;text-decoration:none;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group .product-latest{float:right;padding-left:20px;}
 #cs_home_center_bottom_left  .ul_cat_popular li.cat_group .product-latest img{width:100%;}
@@ -1903,6 +1915,7 @@ tr.subitem > td:first-child + td {
 .ul_cat_popular li.cat_group .sub_cat li{display:block;padding:3px 0}
 .ul_cat_popular li.cat_group .sub_cat li a{color:#323232;font-weight:700}
 .ul_cat_popular li.cat_group .sub_cat li a:hover{text-decoration:none;color:#397abd}
+.blockspecials{display:none;}
 .blockspecials   li.product_image{width:100%;float:left}
 .blockspecials   li.product_image .prod_item{overflow:hidden;display:block;}
 .blockspecials   li.product_image .prod_item + .prod_item{border-top:1px solid #e4e4e4;padding-top:20px;margin-top:15px;}
@@ -1932,7 +1945,8 @@ tr.subitem > td:first-child + td {
 .cs_sample_block_footer .col .s_f_img img{max-width:100%;}
 .cs_sample_block_footer .col .s_f_img  .bkg_color{position:absolute;bottom:0;left:0;width:97%;background-position:left bottom;background-repeat:repeat-x;padding:10px;color:#ffffff;font:700 14px/15px "Roboto Condensed",Helvetica,arial;text-transform:uppercase;text-align:center}
 .cs_sample_block_footer .col .s_f_img p{margin:0}
-.cs_sample_block_footer .col .s_f_img h5{font-size:30px;line-height:28px;}
+.cs_sample_block_footer .col .s_f_img h5{font-size:30px;line-height:28px; color:#fff;}
+.cs_sample_block_footer .col .s_f_img h6{color:#fff;}
 .cs_sample_block_footer .col p.Read_more a{/*background:url(../img/arrow.png) no-repeat right center;*/color:#397abd;font-size:11px;font-weight:700;padding-right:7px;}
 .cs_sample_block_footer .col p.Read_more a:hover{text-decoration:underline;color:#F10000}
 

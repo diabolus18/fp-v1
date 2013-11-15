@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:19:59
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-12 17:06:45
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\category.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:258705243ee2fd00be4-25068310%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1730152825215b0c299-65028649%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bf92f3d9f74decbd444e04773c5385d501028901' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\category.tpl',
-      1 => 1375368057,
+      1 => 1381415879,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '258705243ee2fd00be4-25068310',
+  'nocache_hash' => '1730152825215b0c299-65028649',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5243ee2fef4b03_94037720',
+  'unifunc' => 'content_52825215ccddd0_25414493',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5243ee2fef4b03_94037720')) {function content_5243ee2fef4b03_94037720($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
+<?php if ($_valid && !is_callable('content_52825215ccddd0_25414493')) {function content_52825215ccddd0_25414493($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\wamp\\www\\fp-v1\\tools\\smarty\\plugins\\modifier.escape.php';
 ?>
 
 <?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./breadcrumb.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
@@ -48,20 +48,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<?php echo $_smarty_tpl->getSubTemplate (((string)$_smarty_tpl->tpl_vars['tpl_dir']->value)."./scenes.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('scenes'=>$_smarty_tpl->tpl_vars['scenes']->value), 0);?>
 
 			<?php }else{ ?>
+				
+				
 				<!-- Category image -->
 				<?php if ($_smarty_tpl->tpl_vars['category']->value->id_image){?>
 				<div class="align_center">
+				<!-- MISE EN COMMENTAIRE AFFICHAGE IMAGE CATEGORIES
 					<img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getCatImageLink($_smarty_tpl->tpl_vars['category']->value->link_rewrite,$_smarty_tpl->tpl_vars['category']->value->id_image,'category_default');?>
 " alt="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['category']->value->name, 'htmlall', 'UTF-8');?>
 " title="<?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['category']->value->name, 'htmlall', 'UTF-8');?>
 " id="categoryImage"/>
+				-->
+				
 				</div>
 				<?php }?>
 			<?php }?>
 
 			<?php if ($_smarty_tpl->tpl_vars['category']->value->description){?>
 				<div class="cat_desc">
-				<?php if (strlen($_smarty_tpl->tpl_vars['category']->value->description)>120){?>
+				<?php if (strlen($_smarty_tpl->tpl_vars['category']->value->description)>600){?>
 					<p id="category_description_short"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_MODIFIER]['truncate'][0][0]->smarty_modifier_truncate($_smarty_tpl->tpl_vars['category']->value->description,120);?>
 </p>
 					<p id="category_description_full" style="display:none"><?php echo $_smarty_tpl->tpl_vars['category']->value->description;?>

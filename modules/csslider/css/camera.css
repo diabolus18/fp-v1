@@ -283,7 +283,7 @@
 .camera_wrap .camera_pag{position:absolute;bottom:10px;right:0;z-index:100}
 .camera_wrap .camera_pag .camera_pag_ul li {float:left;border:1px solid #646464;padding:4px;text-align:center;min-width:12px;margin-left:5px;height:14px;background:#fff;cursor:pointer}
 .camera_wrap .camera_pag .camera_pag_ul li span{color:#646464}
-.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent{background:#1d1d1d;border:1px solid #1d1d1d;cursor:text}
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent{background:#dddddd;border:1px solid #1d1d1d;cursor:text}
 .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent span{color:#fff}
 .camera_thumbs_cont {
 	-webkit-border-bottom-right-radius: 4px;

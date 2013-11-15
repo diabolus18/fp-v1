@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-09-26 10:46:03
+<?php /* Smarty version Smarty-3.1.13, created on 2013-11-13 17:54:58
          compiled from "C:\wamp\www\fp-v1\themes\bestchoice\modules\csheaderlink\csheaderlink.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:324965243f44b82a654-08782748%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:274945283aee2f08b55-74575045%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c4395b88bd599f0d590a37fcb06343d89fcb9a23' => 
     array (
       0 => 'C:\\wamp\\www\\fp-v1\\themes\\bestchoice\\modules\\csheaderlink\\csheaderlink.tpl',
-      1 => 1378384805,
+      1 => 1380569329,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '324965243f44b82a654-08782748',
+  'nocache_hash' => '274945283aee2f08b55-74575045',
   'function' => 
   array (
   ),
@@ -23,13 +23,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5243f44b8d7c09_00092019',
+  'unifunc' => 'content_5283aee30ce6b1_25282606',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5243f44b8d7c09_00092019')) {function content_5243f44b8d7c09_00092019($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5283aee30ce6b1_25282606')) {function content_5283aee30ce6b1_25282606($_smarty_tpl) {?>
 
 <!-- CS Block header links -->
+<div id="testimonials"><a href="http://www.fontenille-pataud.com/preprod/index.php?id_cms=14&controller=cms"><?php echo smartyTranslate(array('s'=>'Testimonials','mod'=>'csheaderlink'),$_smarty_tpl);?>
+</a></div>
 <div id="cs_header_link">
 	<ul id="cs_header_links">	
+				
 		<li id="cs_header_user_info">
 		<!--<?php echo smartyTranslate(array('s'=>'Welcome','mod'=>'csheaderlink'),$_smarty_tpl);?>
 -->

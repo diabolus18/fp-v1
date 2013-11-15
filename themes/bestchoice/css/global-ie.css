@@ -1,3 +1,4 @@
+
 #menu > ul  li > div{left:0}
 #subcategories ul li{display:inline}
 .sortPagiBar select#selectPrductSort{margin-top:5px;}
@@ -21,6 +22,7 @@ p.select select{margin-top:5px;}
 #menu ul li.menu_item{display:inline}
 #menu .column.manufacture li.product_item{float:left;display:block}
 #cs_home_center_bottom_left .ul_cat_popular li.cat_group{float:left;}
+#cs_home_center_bottom_left .ul_cat_popular li.cat_group h3 {width:250px;}
 .comparison_product_infos {position:static}
 #product_comparison .cmp_remove{position:static;top:0;float:left;clear:both;left:0;margin-bottom:7px}
 #header_right{z-index:100}
@@ -32,9 +34,11 @@ p.select select{margin-top:5px;}
 #cs_megamenu_more a.more{float:left!important}
 .static_block_free_account{white-space:nowrap}
 .cpanelContainer{display:none!important;}
+.static_block_chat_with img {display:none;}
 input[type=submit],
 input[type=reset],
 input[type=button]
 {
     filter:chroma(color=#000000);overflow:visible;border:none!important
 }
+
